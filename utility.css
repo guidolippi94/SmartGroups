@@ -1,6 +1,4 @@
 body{
-    background-image: url('img/head_eventi.jpg');
-    background-repeat: no-repeat;
+    background: url('img/head_eventi.jpg') no-repeat;
     background-size: cover;
-
 }

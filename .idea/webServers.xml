@@ -2,8 +2,8 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="a1208889-9e24-44d1-a737-c3944ddc4c4c" name="Jesus_fablab" url="http://79.28.189.230">
-        <fileTransfer host="79.28.189.230" port="21" rootFolder="/var/www/smartgroups" password="dfdadfdadfc7df98df9adf9bdf9d" username="ppm">
+      <webServer id="a1208889-9e24-44d1-a737-c3944ddc4c4c" name="Jesus_fablab" url="http://smartgroups.ddns.net">
+        <fileTransfer host="79.28.189.230" port="21" rootFolder="/var/www/smartgroups" username="ppm" password="dfdadfdadfc7df98df9adf9bdf9d">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>
