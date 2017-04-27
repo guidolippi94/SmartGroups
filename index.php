@@ -18,11 +18,18 @@ if (!isset($_SESSION['idUtente']) || !is_numeric($_SESSION ['idUtente']) || $_SE
     <meta charset="UTF-8">
 
     <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"
+    <link type="text/css" rel="stylesheet" href="utility.css">
 
+    <script src="Jquery-3.2.1.min/jquery-3.2.1.min.js"></script>
+    <script src="scriptINDEX.js"></script>
 
 <body>
-<p>
-    Questo sarà la pagina del profilo utente
-</p>
+
+<div id="tutorial">
+    <a id="init_FB" class="waves-effect waves-light btn-large">Provalo!!</a>
+</div>
+
+<img id="pic_profile">
+
 </body>
 </html>
