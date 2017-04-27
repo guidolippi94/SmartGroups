@@ -19,33 +19,3 @@ window.fbAsyncInit = function() {
     fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
 
-
-function prendiImmagine(){
-    FB.login(function(response) {
-        if (response.status === 'connected') {
-            FB.api('/me/picture?type=large', function (response) {
-                if (response && !response.error) {
-                    immagine = response.data.url;
-                    document.getElementById("pic_profile").src = immagine;
-                }
-                else {
-                    alert("non fa");
-                }
-            });
-        }}, {scope : 'public_profile'}
-    );
-}
-
-function hideshow(){
-    document.getElementById('tutorial').style.display= 'none'
-}
-
-$(document).ready(function() {
-
-    $('#init_FB').click(function () {
-        hideshow();
-        prendiImmagine();
-    });
-
-
-});

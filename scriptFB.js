@@ -24,12 +24,15 @@ function loginFacebook() {
     FB.login(function(response) {
         if (response.status === 'connected') {
             var idUtente = response.authResponse.userID;
-            FB.api('/me', { fields : "name, email, first_name, last_name" }, function(response) {
+            FB.api('/me', { fields : "name, email, first_name, last_name, picture{url}" }, function(response) {
                 console.log(response);
-                dati = { idFacebook : idUtente,
-                    cognome : response.last_name,
-                    nome : response.first_name,
-                    email : response.email
+                    dati = {
+                        idFacebook : idUtente,
+                        cognome : response.last_name,
+                        nome : response.first_name,
+                        email : response.email,
+                        immagine : response.picture.data.url
+
                 };
                 completaLoginFacebook(dati);
             });

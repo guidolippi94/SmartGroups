@@ -25,11 +25,8 @@ if (!isset($_SESSION['idUtente']) || !is_numeric($_SESSION ['idUtente']) || $_SE
 
 <body>
 
-<div id="tutorial">
-    <a id="init_FB" class="waves-effect waves-light btn-large">Provalo!!</a>
-</div>
 
-<img id="pic_profile">
+<img id="pic_profile" src="<?php echo $_SESSION['immagine'] ?>">
 
 </body>
 </html>
