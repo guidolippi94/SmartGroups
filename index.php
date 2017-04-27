@@ -14,6 +14,12 @@ if (!isset($_SESSION['idUtente']) || !is_numeric($_SESSION ['idUtente']) || $_SE
 ?>
 
 <html>
+
+    <meta charset="UTF-8">
+
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"
+
+
 <body>
 <p>
     Questo sarà la pagina del profilo utente
