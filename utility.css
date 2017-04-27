@@ -1,6 +1,91 @@
+#wrapper{
+    width: 100%;
+}
+
+#header_row{
+    width:100%;
+}
+#pic_profile {
+    border-radius: 50% ;
+    width: 40%;
+
+    background:#FFCC00;
+}
+
+#profile_picture_div{
+    float:left;
+    width: 40%;
+}
+
+#button_homepage{
+    float:left;
+    width:60%;
+    min-height: 200px;
+    background:#62C014;
+
+}
+
+#today_event{
+    background-color: rebeccapurple;
+}
+
+#future_past_event{
+
+}
 
 
-#tutorial{
-    background-color: rgba(0,0,0, 0.5);
-    min-height: 100%;
+#past_event{
+    background-color: yellow;
+}
+
+#future_event{
+    background-color:red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#wrap {
+    width:900px;
+    margin:0 auto;
+    /*temporary text styles below*/
+    text-align:center;
+    font-weight:bold;
+    color:#FFF;
+}
+#nav {
+    min-height:50px;
+    background:#148CE2;
+}
+#header {
+    min-height:200px;
+    background:#A71D1D;
+}
+#main {
+    width:100%;/*IE6 haslayout (contain floats)*/
+    overflow:hidden;/*contain child floats in modern browsers*/
+}
+#content {
+    float:left;
+    width:600px;
+    min-height:200px;
+    background:#FFCC00;
+}
+#links {
+    float:left;
+    width:300px;
+    min-height:200px;
+    background:#62C014;
+}
+#footer {
+    min-height:50px;
+    background:#148CE2;
 }

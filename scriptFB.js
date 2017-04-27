@@ -24,7 +24,7 @@ function loginFacebook() {
     FB.login(function(response) {
         if (response.status === 'connected') {
             var idUtente = response.authResponse.userID;
-            FB.api('/me', { fields : "name, email, first_name, last_name, picture{url}" }, function(response) {
+            FB.api('/me', { fields : "name, email, first_name, last_name, picture.width(800).height(800)" }, function(response) {
                 console.log(response);
                     dati = {
                         idFacebook : idUtente,
