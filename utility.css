@@ -26,9 +26,9 @@
 
 
 #today_event{
-    min-height: 200px;
+    min-height: 400px;
     width: 100%;
-    background:#148CE2;
+    background-image: url("img/today_event_background.jpg");
 }
 
 
@@ -74,6 +74,18 @@
     margin-left: 40%;
     padding-top: 10px;
 }
+ .parallasse{
+     background-attachment: fixed;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+ }
+
+
+
+
+
+
 
 
 
