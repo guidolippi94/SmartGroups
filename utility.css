@@ -1,53 +1,79 @@
 #wrapper{
     width: 100%;
+    margin: 0 auto;
 }
+
+
 
 #header_row{
+    min-height:200px;
     width:100%;
-}
-#pic_profile {
-    border-radius: 50% ;
-    width: 40%;
-
-    background:#FFCC00;
+    background-image: url("img/profile_img_background.jpg");
 }
 
 #profile_picture_div{
     float:left;
-    width: 40%;
+    width: 70%;
+    min-height:200px;
 }
 
 #button_homepage{
     float:left;
-    width:60%;
-    min-height: 200px;
-    background:#62C014;
-
+    width: 30%;
+    min-height:200px;
 }
+
+
 
 #today_event{
-    background-color: rebeccapurple;
+    min-height: 200px;
+    width: 100%;
+    background:#148CE2;
 }
 
-#future_past_event{
 
+
+#future_past_event{
+    width:100%;/*IE6 haslayout (contain floats)*/
+    overflow:hidden;/*contain child floats in modern browsers*/
 }
 
 
 #past_event{
-    background-color: yellow;
+    float:left;
+    width: 50%;
+    min-height:200px;
+    background:#62C014;
 }
 
 #future_event{
-    background-color:red;
+    float:left;
+    width: 50%;
+    min-height:200px;
+    background: rebeccapurple;
 }
 
 
+#pic_profile {
+    border-radius: 50% ;
+    width: 180px;
+    height: 180px;
+    margin-top: 10px;
+    margin-left: 10px;
+    background:#FFCC00;
+}
 
+#buttons_list{
+    margin-top: 30px;
+}
+#settings_button{
+    margin-left: 40%;
+}
 
-
-
-
+#notify_button {
+    margin-left: 40%;
+    padding-top: 10px;
+}
 
 
 

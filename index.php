@@ -24,7 +24,10 @@ if (!isset($_SESSION['idUtente']) || !is_numeric($_SESSION ['idUtente']) || $_SE
     <script src="Jquery-3.2.1.min/jquery-3.2.1.min.js"></script>
     <script src="scriptINDEX.js"></script>
 
-<body>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <body>
 
 
 <!--
@@ -50,11 +53,14 @@ if (!isset($_SESSION['idUtente']) || !is_numeric($_SESSION ['idUtente']) || $_SE
     <div class="row_homepage" id="header_row">
 
         <div id="profile_picture_div">
-           <img id="pic_profile" src="<?php echo $_SESSION['immagine'] ?>" >
+            <img id="pic_profile" src="<?php echo $_SESSION['immagine'] ?>" >
         </div>
 
         <div id="button_homepage">
-
+            <ul id="buttons_list">
+            <li id="settings_button"><a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">settings</i></a></li>
+            <li id="notify_button"><a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add_alert</i></a></li>
+            </ul>
         </div>
 
     </div>
@@ -75,6 +81,7 @@ if (!isset($_SESSION['idUtente']) || !is_numeric($_SESSION ['idUtente']) || $_SE
     </div>
 
 </div>
+
 
 
 </body>
