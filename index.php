@@ -42,19 +42,25 @@
                 <li id="notify_button"><a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add_alert</i></a></li>
                 </ul>
             </div>
-
         </div>
+
+         <div class="spacer"></div>
 
         <div class="row_homepage, parallasse" id="today_event">
 
         </div>
 
-        <div class="row_homepage" id="future_past_event">
-            <div id="past_event">
+         <div class="spacer"></div>
+
+
+         <div class="row_homepage" id="future_past_event">
+            <div class="parallasse" id="past_event">
 
             </div>
 
-            <div id="future_event">
+             <div id="vertical_future_past_spacer"></div>
+
+             <div class="parallasse" id="future_event">
 
             </div>
 
