@@ -17,7 +17,7 @@
             <meta charset="UTF-8">
 
             <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css">
-            <link type="text/css" rel="stylesheet" href="utility.css">
+            <link type="text/css" rel="stylesheet" href="index_style.css">
             <link type="text/css" rel="stylesheet" href="general_style.css">
             <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
