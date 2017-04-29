@@ -10,7 +10,7 @@
 session_start();
 
 // verifico di aver fatto il login
-if (isset($_SESSION['idUtente']) && is_numeric($_SESSION['idUtente']) && $_SESSION['idUtente'] != 0) header("Location: index.php");
+//if (isset($_SESSION['idUtente']) && is_numeric($_SESSION['idUtente']) && $_SESSION['idUtente'] != 0) header("Location: index.php");
 ?>
 <html>
 <head>
@@ -18,6 +18,10 @@ if (isset($_SESSION['idUtente']) && is_numeric($_SESSION['idUtente']) && $_SESSI
     <meta charset="UTF-8">
     <link type="text/css" rel="stylesheet" href="img">
     <link type="text/css" rel="stylesheet" href="utility.css">
+    <link type="text/css" rel="stylesheet" href="login_style.css">
+    <link type="text/css" rel="stylesheet" href="general_style.css">
+
+
     <link type="text/css" rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap-theme.css">
     <link type="text/css" rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap-theme.min.css">
     <link type="text/css" rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css">
@@ -31,12 +35,15 @@ if (isset($_SESSION['idUtente']) && is_numeric($_SESSION['idUtente']) && $_SESSI
 
 </head>
 <body>
-<p>
-    Questa è la pagina iniziale quando non sei loggato
-</p>
-<a onclick="loginFacebook()" class="btn btn-social btn-lg btn-facebook">
-    <span class="fa fa-facebook"></span> Accedi a Facebook
-</a>
+<div class="wrapper, parallasse" id="login_wrapper">
+
+    <a onclick="loginFacebook()" class="btn btn-social btn-lg btn-facebook" id="login_button_facebook">
+        <span class="fa fa-facebook"></span> Accedi a Facebook
+    </a>
+
+
+</div>
+
 
 
 </body>

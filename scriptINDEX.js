@@ -6,3 +6,7 @@ function click_settings() {
     alert("It works");
 
 }
+
+function click_notify() {
+    alert("It works too");
+}
