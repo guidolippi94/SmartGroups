@@ -17,7 +17,7 @@ session_start();
 
     <meta charset="UTF-8">
     <link type="text/css" rel="stylesheet" href="img">
-    <link type="text/css" rel="stylesheet" href="utility.css">
+    <link type="text/css" rel="stylesheet" href="index_style.css">
     <link type="text/css" rel="stylesheet" href="login_style.css">
     <link type="text/css" rel="stylesheet" href="general_style.css">
 
@@ -37,14 +37,14 @@ session_start();
 <body>
 <div class="wrapper, parallasse" id="login_wrapper">
 
+    <p>Test branch guido</p>
     <a onclick="loginFacebook()" class="btn btn-social btn-lg btn-facebook" id="login_button_facebook">
         <span class="fa fa-facebook"></span> Accedi a Facebook
     </a>
 
 
+
 </div>
-
-
 
 </body>
 </html>
