@@ -26,6 +26,9 @@
 
 
     <body>
+
+    <p> <?php echo $_SESSION['tag'] ?> </p>
+
      <div class="wrapper">
 
         <div class="row_homepage, parallasse" id="header_row">

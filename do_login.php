@@ -30,6 +30,7 @@ $cognome = $db->real_escape_string($parametri['cognome']);
 $nome = $db->real_escape_string($parametri['nome']);
 $idFacebook = $db->real_escape_string($parametri['idFacebook']);
 $immagine = $db->real_escape_string($parametri['immagine']);
+$tag = $db->real_escape_string($parametri['tag']);
 
 // ora verifico se l'utente è registrato oppure no
 $query = "SELECT * FROM utenti WHERE email = '$email' AND id_facebook = '$idFacebook'";
@@ -58,7 +59,7 @@ $_SESSION['cognome'] = $parametri['cognome'];
 $_SESSION['nome'] = $parametri['nome'];
 $_SESSION['email'] = $parametri['email'];
 $_SESSION['immagine'] = $parametri['immagine'];
-
+$_SESSION['tag'] = $parametri['tag'];
 
 header("Location: index.php");
 

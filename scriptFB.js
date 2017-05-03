@@ -24,20 +24,21 @@ function loginFacebook() {
     FB.login(function(response) {
         if (response.status === 'connected') {
             var idUtente = response.authResponse.userID;
-            FB.api('/me', { fields : "name, email, first_name, last_name, picture.width(800).height(800)" }, function(response) {
+            FB.api('/me', { fields : "name, email, first_name, last_name, picture.width(800).height(800), tagged_places" }, function(response) {
                 console.log(response);
                     dati = {
                         idFacebook : idUtente,
                         cognome : response.last_name,
                         nome : response.first_name,
                         email : response.email,
-                        immagine : response.picture.data.url
-
+                        immagine : response.picture.data.url,
+                        tag : response.tagged_places.data[0].place.location.city
                 };
+
                 completaLoginFacebook(dati);
             });
         }
-    }, { scope: 'email,public_profile' } );
+    }, { scope: 'email,public_profile,users_tagged_places' } );
 }
 
 function completaLoginFacebook(dati) {
