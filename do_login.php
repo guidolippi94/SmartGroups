@@ -14,9 +14,9 @@ if (isset($_SESSION['idUtente']) && !is_numeric($_SESSION['idUtente']) && $_SESS
 
 // avvio una connessione con il database MySQL
 $dbServer = "localhost";
-$dbUser = "smartgroups";
-$dbPassword = "ppm2017";
-$dbName = "smartgroups";
+$dbUser = "root";
+$dbPassword = "";
+$dbName = "test";
 
 $db = new mysqli("$dbServer", "$dbUser", "$dbPassword", "$dbName");
 if ($db->connect_errno) { echo "Impossibile collegarsi al database"; exit(); }
