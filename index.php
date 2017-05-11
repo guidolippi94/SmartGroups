@@ -10,7 +10,11 @@
     session_start();
 
     // verifico di aver fatto il login
-    if (!isset($_SESSION['idUtente']) || !is_numeric($_SESSION ['idUtente']) || $_SESSION['idUtente'] == 0) header("Location: login.php");
+    if (!isset($_SESSION['idUtente']) || !is_numeric($_SESSION ['idUtente']) || $_SESSION['idUtente'] == 0) {
+        ?>
+        <script>window.location = "login.php";</script>
+        <?php
+    }
     ?>
 
     <html>
@@ -37,8 +41,9 @@
 
             <div id="button_homepage">
                 <ul id="buttons_list">
-                <li id="settings_button"><button onclick="click_settings()" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">settings</i></button></li>
-                <li id="notify_button"><button  onclick="click_notify()" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add_alert</i></button></li>
+                    <li id="settings_button"><button onclick="click_settings()" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">settings</i></button></li>
+                    <li id="notify_button"><button  onclick="click_notify()" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add_alert</i></button></li>
+                    <li id="logout_button"><button  onclick="logout_script()" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">cloud</i></button></li>
                 </ul>
             </div>
         </div>

@@ -24,21 +24,19 @@ function loginFacebook() {
     FB.login(function(response) {
         if (response.status === 'connected') {
             var idUtente = response.authResponse.userID;
-            FB.api('/me', { fields : "name, email, first_name, last_name, picture.width(800).height(800), events" }, function(response) {
+            FB.api('/me', { fields : "name, email, first_name, last_name, picture.width(800).height(800)" }, function(response) {
                 console.log(response);
                     dati = {
                         idFacebook : idUtente,
                         cognome : response.last_name,
                         nome : response.first_name,
                         email : response.email,
-                        immagine : response.picture.data.url,
-                        events_user: response.events.data[0].name
+                        immagine : response.picture.data.url
                     };
-                $.post('/do_login.php' {dati: dati});
-                //completaLoginFacebook(dati);
+                completaLoginFacebook(dati);
             });
         }
-    }, { scope: 'email,public_profile,user_events' } );
+    }, { scope: 'email,public_profile' } );
 }
 
 function completaLoginFacebook(dati) {
