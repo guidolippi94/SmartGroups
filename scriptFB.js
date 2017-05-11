@@ -7,7 +7,7 @@ window.fbAsyncInit = function() {
         appId      : '113406932542743',
         cookie     : true,
         xfbml      : true,
-        version    : 'v2.7'
+        version    : 'v2.9'
     });
 };
 
@@ -24,21 +24,19 @@ function loginFacebook() {
     FB.login(function(response) {
         if (response.status === 'connected') {
             var idUtente = response.authResponse.userID;
-            FB.api('/me', { fields : "name, email, first_name, last_name, picture.width(800).height(800), tagged_places" }, function(response) {
+            FB.api('/me', { fields : "name, email, first_name, last_name, picture.width(800).height(800)" }, function(response) {
                 console.log(response);
                     dati = {
                         idFacebook : idUtente,
                         cognome : response.last_name,
                         nome : response.first_name,
                         email : response.email,
-                        immagine : response.picture.data.url,
-                        tag : response.tagged_places.data[0].place.location.city
-                };
-
+                        immagine : response.picture.data.url
+                    };
                 completaLoginFacebook(dati);
             });
         }
-    }, { scope: 'email,public_profile,users_tagged_places' } );
+    }, { scope: 'email,public_profile' } );
 }
 
 function completaLoginFacebook(dati) {

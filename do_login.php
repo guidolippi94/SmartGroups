@@ -14,7 +14,7 @@ if (isset($_SESSION['idUtente']) && !is_numeric($_SESSION['idUtente']) && $_SESS
 
 // avvio una connessione con il database MySQL
 $dbServer = "localhost";
-$dbUser = "root";
+$dbUser = "root ";
 $dbPassword = "";
 $dbName = "test";
 
