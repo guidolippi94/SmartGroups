@@ -10,3 +10,7 @@ function click_settings() {
 function click_notify() {
     alert("It works too");
 }
+
+function logout_script(){
+    window.location.href="logout.php";
+}

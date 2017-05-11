@@ -24,19 +24,40 @@ function loginFacebook() {
     FB.login(function(response) {
         if (response.status === 'connected') {
             var idUtente = response.authResponse.userID;
-            FB.api('/me', { fields : "name, email, first_name, last_name, picture.width(800).height(800)" }, function(response) {
+            FB.api('/me', { fields : "name, email, first_name, last_name, picture.width(800).height(800), events" }, function(response) {
                 console.log(response);
                     dati = {
                         idFacebook : idUtente,
                         cognome : response.last_name,
                         nome : response.first_name,
                         email : response.email,
-                        immagine : response.picture.data.url
+                        immagine : response.picture.data.url,
+                        eventUser : response.events.data[0]
+
                     };
-                completaLoginFacebook(dati);
+                    var dataJson=dati;
+
+                    var test = "test variabile ajax";
+
+                $.ajax({
+                    url: 'do_login.php',
+                    type: 'POST',
+                    data: {test: test},
+                    dataType: "json",
+                    success: function()
+                    {
+                        alert("success ajax");
+                    },
+                    error: function()
+                    {
+                        alert("Chiamata fallita, si prega di riprovare...");
+                    }
+                });
+
+                window.location.href = "do_login.php";
             });
         }
-    }, { scope: 'email,public_profile' } );
+    }, { scope: 'email,public_profile,user_events' } );
 }
 
 function completaLoginFacebook(dati) {

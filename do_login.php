@@ -10,19 +10,30 @@
 session_start();
 
 // verifico di aver fatto il login
-if (isset($_SESSION['idUtente']) && !is_numeric($_SESSION['idUtente']) && $_SESSION['idUtente'] != 0) header("Location: index.php");
+if (isset($_SESSION['idUtente']) && !is_numeric($_SESSION['idUtente']) && $_SESSION['idUtente'] != 0){
+    ?>
+    <script>window.location = "index.php";</script>
+<?php
+
+}
+
 
 // avvio una connessione con il database MySQL
 $dbServer = "localhost";
-$dbUser = "root ";
-$dbPassword = "";
-$dbName = "test";
+$dbUser = "smartgroups";
+$dbPassword = "ppm2017";
+$dbName = "smartgroups";
 
 $db = new mysqli("$dbServer", "$dbUser", "$dbPassword", "$dbName");
 if ($db->connect_errno) { echo "Impossibile collegarsi al database"; exit(); }
 
 // decodifico i dati
-$parametri = json_decode(base64_decode($_GET['p']), true);
+//$parametri = json_decode(base64_decode($_GET['p']), true);
+$parametri=$_POST['test'];
+
+echo $parametri;
+
+exit();
 
 // tutti i parametri devono essere formattati per evitare attacchi di tipo SQL injection
 $email = $db->real_escape_string($parametri['email']);
