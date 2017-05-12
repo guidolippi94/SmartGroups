@@ -10,7 +10,13 @@
 session_start();
 
 // verifico di aver fatto il login
-if (isset($_SESSION['idUtente']) && is_numeric($_SESSION['idUtente']) && $_SESSION['idUtente'] != 0) header("Location: index.php");
+if (isset($_SESSION['idUtente']) && is_numeric($_SESSION['idUtente']) && $_SESSION['idUtente'] != 0){
+    ?>
+    <script>
+        window.location.href("index.php");
+    </script>
+<?php
+}
 ?>
 <html>
 <head>
