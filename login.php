@@ -13,7 +13,7 @@ session_start();
 if (isset($_SESSION['idUtente']) && is_numeric($_SESSION['idUtente']) && $_SESSION['idUtente'] != 0){
     ?>
     <script>
-        window.location.href("index.php");
+        window.location = ("index.php");
     </script>
 <?php
 }
