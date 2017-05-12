@@ -12,7 +12,7 @@
     // verifico di aver fatto il login
     if (!isset($_SESSION['idUtente']) || !is_numeric($_SESSION ['idUtente']) || $_SESSION['idUtente'] == 0) {
         ?>
-        <script>window.location = "login.php";</script>
+        <script>window.location.href = "login.php";</script>
         <?php
     }
     ?>

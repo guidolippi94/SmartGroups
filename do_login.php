@@ -17,7 +17,7 @@ if (isset($_SESSION['idUtente']) && !is_numeric($_SESSION['idUtente']) && $_SESS
     ?>
     <script>
         alert("stai già dentro");
-        window.location = "index.php";
+        window.location.href = "index.php";
     </script>
 <?php
 
@@ -71,3 +71,4 @@ $_SESSION['immagine'] = $_POST['immagine'];
 header("Location: index.php");
 
 ?>
+<script> window.location.href = "index.php"; </script>

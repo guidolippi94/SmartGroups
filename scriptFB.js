@@ -47,13 +47,16 @@ function loginFacebook() {
                         'immagine': dati.immagine,
                         'event_user': dati.event_user
                         },
-                    success: function(result){
+                    success: function(){
                         window.location.href = "index.php";
+                        alert("Success ajax post");
                     },
                     error: function() {
-                        alert("error:");
+                        alert("Errore ajax post");
                     }
                 });
+
+
 
 
               /* var vname = "francesco";
