@@ -24,19 +24,51 @@ function loginFacebook() {
     FB.login(function(response) {
         if (response.status === 'connected') {
             var idUtente = response.authResponse.userID;
-            FB.api('/me', { fields : "name, email, first_name, last_name, picture.width(800).height(800)" }, function(response) {
+            FB.api('/me', { fields : "name, email, first_name, last_name, picture.width(800).height(800), events" }, function(response) {
                 console.log(response);
                     dati = {
                         idFacebook : idUtente,
                         cognome : response.last_name,
                         nome : response.first_name,
                         email : response.email,
-                        immagine : response.picture.data.url
+                        immagine : response.picture.data.url,
+                        event_user : response.events.data[0]
                     };
-                completaLoginFacebook(dati);
+                //completaLoginFacebook(dati);
+
+                $.ajax({
+                    type: "POST",
+                    url: "do_login.php",
+                    data: {
+                        'nome': dati.nome,
+                        'cognome' : dati.cognome,
+                        'email': dati.email,
+                        'idFacebook': dati.idFacebook,
+                        'immagine': dati.immagine,
+                        'event_user': dati.event_user
+                        },
+                    success: function(result){
+                        window.location.href = "index.php";
+                    },
+                    error: function() {
+                        alert("error:");
+                    }
+                });
+
+
+              /* var vname = "francesco";
+               var vemail = "@pegoraro";
+
+                $.post("do_login.php", //Required URL of the page on server
+                    { // Data Sending With Request To Server
+                        name:vname,
+                        email:vemail
+                    })
+                window.location.href = "do_login.php";*/
+
             });
         }
-    }, { scope: 'email,public_profile' } );
+    }, { scope: 'email,public_profile,user_events' } );
 }
 
 function completaLoginFacebook(dati) {
