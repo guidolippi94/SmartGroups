@@ -1,3 +1,6 @@
+
+<?php include('config.php');?>
+
 <?php
 /**
  * Created by PhpStorm.
@@ -12,40 +15,30 @@ session_start();
 // verifico di aver fatto il login
 if (isset($_SESSION['idUtente']) && !is_numeric($_SESSION['idUtente']) && $_SESSION['idUtente'] != 0){
     ?>
-    <script>window.location = "index.php";</script>
+    <script>
+        alert("stai già dentro");
+        window.location = "index.php";
+    </script>
 <?php
 
 }
 
 
-// avvio una connessione con il database MySQL
-$dbServer = "localhost";
-$dbUser = "smartgroups";
-$dbPassword = "ppm2017";
-$dbName = "smartgroups";
-
-$db = new mysqli("$dbServer", "$dbUser", "$dbPassword", "$dbName");
-if ($db->connect_errno) { echo "Impossibile collegarsi al database"; exit(); }
-
 // decodifico i dati
 //$parametri = json_decode(base64_decode($_GET['p']), true);
 
-
-
-// Set session variables
-$_SESSION["username"] = $_POST['datiPHP'];
-echo $_SESSION["username"]." <---stored in session <br />";
-
-
-exit();
+$email = $_POST['email'];
+$cognome =$_POST['cognome'];
+$nome = $_POST['nome'];
+$idFacebook = $_POST['idFacebook'];
+$immagine = $_POST['immagine'];
 
 // tutti i parametri devono essere formattati per evitare attacchi di tipo SQL injection
-$email = $db->real_escape_string($parametri['email']);
-$cognome = $db->real_escape_string($parametri['cognome']);
-$nome = $db->real_escape_string($parametri['nome']);
-$idFacebook = $db->real_escape_string($parametri['idFacebook']);
-$immagine = $db->real_escape_string($parametri['immagine']);
-$tag = $db->real_escape_string($parametri['tag']);
+$email = $db->real_escape_string($email);
+$cognome = $db->real_escape_string($cognome);
+$nome = $db->real_escape_string($nome);
+$idFacebook = $db->real_escape_string($idFacebook);
+$immagine = $db->real_escape_string($immagine);
 
 // ora verifico se l'utente è registrato oppure no
 $query = "SELECT * FROM utenti WHERE email = '$email' AND id_facebook = '$idFacebook'";
@@ -70,11 +63,10 @@ else
 // a questo punto inizializzo la sessione
 $_SESSION['idUtente'] = $idUtente;
 $_SESSION['idFacebook'] = $idFacebook;
-$_SESSION['cognome'] = $parametri['cognome'];
-$_SESSION['nome'] = $parametri['nome'];
-$_SESSION['email'] = $parametri['email'];
-$_SESSION['immagine'] = $parametri['immagine'];
-$_SESSION['tag'] = $parametri['tag'];
+$_SESSION['cognome'] = $cognome;
+$_SESSION['nome'] = $nome;
+$_SESSION['email'] = $email;
+$_SESSION['immagine'] = $_POST['immagine'];
 
 header("Location: index.php");
 

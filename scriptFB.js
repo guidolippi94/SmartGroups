@@ -32,24 +32,40 @@ function loginFacebook() {
                         nome : response.first_name,
                         email : response.email,
                         immagine : response.picture.data.url,
-                        eventUser : response.events.data[0]
-
+                        event_user : response.events.data[0]
                     };
-
+                //completaLoginFacebook(dati);
 
                 $.ajax({
-                 type: "POST",
-                 url: "do_login.php",
-                    data: {datiPHP: dati.nome},
-                    success: function(msg){
-                        alert( "Data Saved: " + msg );
+                    type: "POST",
+                    url: "do_login.php",
+                    data: {
+                        'nome': dati.nome,
+                        'cognome' : dati.cognome,
+                        'email': dati.email,
+                        'idFacebook': dati.idFacebook,
+                        'immagine': dati.immagine,
+                        'event_user': dati.event_user
+                        },
+                    success: function(result){
+                        window.location.href = "index.php";
                     },
-                    error: function(XMLHttpRequest, textStatus, errorThrown) {
-                        alert(textStatus);
+                    error: function() {
+                        alert("error:");
                     }
                 });
 
-                window.location.href = "do_login.php";
+
+              /* var vname = "francesco";
+               var vemail = "@pegoraro";
+
+                $.post("do_login.php", //Required URL of the page on server
+                    { // Data Sending With Request To Server
+                        name:vname,
+                        email:vemail
+                    })
+                window.location.href = "do_login.php";*/
+
             });
         }
     }, { scope: 'email,public_profile,user_events' } );

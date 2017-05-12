@@ -41,7 +41,9 @@ if (isset($_SESSION['idUtente']) && is_numeric($_SESSION['idUtente']) && $_SESSI
     <a onclick="loginFacebook()" class="btn btn-social btn-lg btn-facebook" id="login_button_facebook">
         <span class="fa fa-facebook"></span> Accedi a Facebook
     </a>
+<script>
 
+</script>
 
 
 </div>
