@@ -29,9 +29,13 @@ if ($db->connect_errno) { echo "Impossibile collegarsi al database"; exit(); }
 
 // decodifico i dati
 //$parametri = json_decode(base64_decode($_GET['p']), true);
-$parametri=$_POST['test'];
 
-echo $parametri;
+
+
+// Set session variables
+$_SESSION["username"] = $_POST['datiPHP'];
+echo $_SESSION["username"]." <---stored in session <br />";
+
 
 exit();
 

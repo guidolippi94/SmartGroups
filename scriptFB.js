@@ -35,22 +35,17 @@ function loginFacebook() {
                         eventUser : response.events.data[0]
 
                     };
-                    var dataJson=dati;
 
-                    var test = "test variabile ajax";
 
                 $.ajax({
-                    url: 'do_login.php',
-                    type: 'POST',
-                    data: {test: test},
-                    dataType: "json",
-                    success: function()
-                    {
-                        alert("success ajax");
+                 type: "POST",
+                 url: "do_login.php",
+                    data: {datiPHP: dati.nome},
+                    success: function(msg){
+                        alert( "Data Saved: " + msg );
                     },
-                    error: function()
-                    {
-                        alert("Chiamata fallita, si prega di riprovare...");
+                    error: function(XMLHttpRequest, textStatus, errorThrown) {
+                        alert(textStatus);
                     }
                 });
 
