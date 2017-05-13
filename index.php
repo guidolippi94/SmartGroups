@@ -10,7 +10,8 @@
     session_start();
 
     // verifico di aver fatto il login
-    if (!isset($_SESSION['idUtente']) || !is_numeric($_SESSION ['idUtente']) || $_SESSION['idUtente'] == 0) {
+
+    if (!isset($_SESSION['idFacebook']) || !is_numeric($_SESSION ['idFacebook']) || $_SESSION['idFacebook'] == 0) {
         ?>
         <script>window.location.href = "login.php";</script>
         <?php

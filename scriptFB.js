@@ -48,7 +48,7 @@ function loginFacebook() {
                         'event_user': dati.event_user
                         },
                     success: function(){
-                        window.location.href = "index.php";
+                        window.location.href = "do_login.php";
                         alert("Success ajax post");
                     },
                     error: function() {

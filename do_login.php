@@ -33,12 +33,19 @@ $nome = $_POST['nome'];
 $idFacebook = $_POST['idFacebook'];
 $immagine = $_POST['immagine'];
 
+?>
+
+<?php
+/*
 // tutti i parametri devono essere formattati per evitare attacchi di tipo SQL injection
 $email = $db->real_escape_string($email);
 $cognome = $db->real_escape_string($cognome);
 $nome = $db->real_escape_string($nome);
 $idFacebook = $db->real_escape_string($idFacebook);
 $immagine = $db->real_escape_string($immagine);
+*/
+
+
 
 // ora verifico se l'utente è registrato oppure no
 $query = "SELECT * FROM utenti WHERE email = '$email' AND id_facebook = '$idFacebook'";
@@ -68,7 +75,7 @@ $_SESSION['nome'] = $nome;
 $_SESSION['email'] = $email;
 $_SESSION['immagine'] = $_POST['immagine'];
 
-header("Location: index.php");
+//header("Location: index.php");
 
 ?>
 <script> window.location.href = "index.php"; </script>
