@@ -10,7 +10,13 @@
 session_start();
 
 // verifico di aver fatto il login
-if (isset($_SESSION['idUtente']) && is_numeric($_SESSION['idUtente']) && $_SESSION['idUtente'] != 0) header("Location: index.php");
+if (isset($_SESSION['idUtente']) && is_numeric($_SESSION['idUtente']) && $_SESSION['idUtente'] != 0){
+    ?>
+    <script>
+        window.location.href = ("index.php");
+    </script>
+<?php
+}
 ?>
 <html>
 <head>
@@ -37,7 +43,6 @@ if (isset($_SESSION['idUtente']) && is_numeric($_SESSION['idUtente']) && $_SESSI
 <body>
 <div class="wrapper, parallasse" id="login_wrapper">
 
-    <p>Test branch guido</p>
     <a onclick="loginFacebook()" class="btn btn-social btn-lg btn-facebook" id="login_button_facebook">
         <span class="fa fa-facebook"></span> Accedi a Facebook
     </a>
