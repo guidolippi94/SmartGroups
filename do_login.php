@@ -1,6 +1,3 @@
-
-<?php include('config.php');?>
-
 <?php
 /**
  * Created by PhpStorm.
@@ -16,17 +13,15 @@ session_start();
 if (isset($_SESSION['idUtente']) && !is_numeric($_SESSION['idUtente']) && $_SESSION['idUtente'] != 0){
     ?>
     <script>
-        alert("stai già dentro");
         window.location = "index.php";
     </script>
 <?php
 
 }
 
+include('config.php');
 
 // decodifico i dati
-//$parametri = json_decode(base64_decode($_GET['p']), true);
-
 $email = $_POST['email'];
 $cognome =$_POST['cognome'];
 $nome = $_POST['nome'];

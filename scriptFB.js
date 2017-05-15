@@ -34,7 +34,6 @@ function loginFacebook() {
                         immagine : response.picture.data.url,
                         event_user : response.events.data[0]
                     };
-                //completaLoginFacebook(dati);
 
                 $.ajax({
                     type: "POST",
@@ -47,30 +46,14 @@ function loginFacebook() {
                         'immagine': dati.immagine,
                         'event_user': dati.event_user
                         },
-                    success: function(result){
+                    success: function(){
                         window.location.href = "index.php";
                     },
                     error: function() {
                         alert("error:");
                     }
                 });
-
-
-              /* var vname = "francesco";
-               var vemail = "@pegoraro";
-
-                $.post("do_login.php", //Required URL of the page on server
-                    { // Data Sending With Request To Server
-                        name:vname,
-                        email:vemail
-                    })
-                window.location.href = "do_login.php";*/
-
             });
         }
     }, { scope: 'email,public_profile,user_events' } );
-}
-
-function completaLoginFacebook(dati) {
-    window.location.href = "do_login.php?p=" + btoa(JSON.stringify(dati));
 }
