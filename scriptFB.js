@@ -24,16 +24,16 @@ function loginFacebook() {
     FB.login(function(response) {
         if (response.status === 'connected') {
             var idUtente = response.authResponse.userID;
-            FB.api('/me', { fields : "name, email, first_name, last_name, picture.width(800).height(800), events" }, function(response) {
+            FB.api('/me', { fields : "name, email, first_name, last_name, picture.width(800).height(800)" }, function(response) {
                 console.log(response);
-                    dati = {
-                        idFacebook : idUtente,
-                        cognome : response.last_name,
-                        nome : response.first_name,
-                        email : response.email,
-                        immagine : response.picture.data.url,
-                        event_user : response.events.data[0]
-                    };
+                dati = {
+                    idFacebook : idUtente,
+                    cognome : response.last_name,
+                    nome : response.first_name,
+                    email : response.email,
+                    immagine : response.picture.data.url,
+                    //event_user : response.events.data[0].city
+                };
                 //completaLoginFacebook(dati);
 
                 $.ajax({
@@ -45,35 +45,34 @@ function loginFacebook() {
                         'email': dati.email,
                         'idFacebook': dati.idFacebook,
                         'immagine': dati.immagine,
-                        'event_user': dati.event_user
-                        },
-                    success: function(){
-                        window.location.href = "do_login.php";
-                        alert("Success ajax post");
+                        //'event_user': dati.event_user
+                    },
+                    success: function(result){
+                        window.location.href = "index.php";
                     },
                     error: function() {
-                        alert("Errore ajax post");
+                        alert("error:");
                     }
                 });
 
+                /* var vname = "francesco";
+                 var vemail = "@pegoraro";
 
-
-
-              /* var vname = "francesco";
-               var vemail = "@pegoraro";
-
-                $.post("do_login.php", //Required URL of the page on server
-                    { // Data Sending With Request To Server
-                        name:vname,
-                        email:vemail
-                    })
-                window.location.href = "do_login.php";*/
+                 $.post("do_login.php", //Required URL of the page on server
+                 { // Data Sending With Request To Server
+                 name:vname,
+                 email:vemail
+                 })
+                 window.location.href = "do_login.php";*/
 
             });
         }
-    }, { scope: 'email,public_profile,user_events' } );
+    }, { scope: 'email,public_profile' } );
 }
 
 function completaLoginFacebook(dati) {
     window.location.href = "do_login.php?p=" + btoa(JSON.stringify(dati));
 }
+
+
+//to-do scope event e fields

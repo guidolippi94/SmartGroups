@@ -32,19 +32,25 @@ $cognome =$_POST['cognome'];
 $nome = $_POST['nome'];
 $idFacebook = $_POST['idFacebook'];
 $immagine = $_POST['immagine'];
+//$single_event_test = $_POST['event_user'];
 
-?>
 
-<?php
-/*
 // tutti i parametri devono essere formattati per evitare attacchi di tipo SQL injection
 $email = $db->real_escape_string($email);
 $cognome = $db->real_escape_string($cognome);
 $nome = $db->real_escape_string($nome);
 $idFacebook = $db->real_escape_string($idFacebook);
 $immagine = $db->real_escape_string($immagine);
-*/
 
+
+// a questo punto inizializzo la sessione
+$_SESSION['idUtente'] = 2;
+$_SESSION['idFacebook'] = $idFacebook;
+$_SESSION['cognome'] = $cognome;
+$_SESSION['nome'] = $nome;
+$_SESSION['email'] = $email;
+$_SESSION['immagine'] = $_POST['immagine'];
+//$_SESSION['session_single_event_test'] = $single_event_test;
 
 
 // ora verifico se l'utente è registrato oppure no
@@ -67,15 +73,4 @@ else
     $idUtente = $rigaUtente['id'];
 }
 
-// a questo punto inizializzo la sessione
-$_SESSION['idUtente'] = $idUtente;
-$_SESSION['idFacebook'] = $idFacebook;
-$_SESSION['cognome'] = $cognome;
-$_SESSION['nome'] = $nome;
-$_SESSION['email'] = $email;
-$_SESSION['immagine'] = $_POST['immagine'];
-
-//header("Location: index.php");
-
 ?>
-<script> window.location.href = "index.php"; </script>

@@ -43,7 +43,6 @@ if (isset($_SESSION['idUtente']) && is_numeric($_SESSION['idUtente']) && $_SESSI
 <body>
 <div class="wrapper, parallasse" id="login_wrapper">
 
-    <p>Test branch guido</p>
     <a onclick="loginFacebook()" class="btn btn-social btn-lg btn-facebook" id="login_button_facebook">
         <span class="fa fa-facebook"></span> Accedi a Facebook
     </a>
