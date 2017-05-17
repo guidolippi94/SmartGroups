@@ -32,39 +32,29 @@ function loginFacebook() {
                     nome : response.first_name,
                     email : response.email,
                     immagine : response.picture.data.url,
-                    //event_user : response.events.data[0].city
+                    //event_user : response.events.data[0]
                 };
-                //completaLoginFacebook(dati);
 
                 $.ajax({
                     type: "POST",
                     url: "do_login.php",
+                    cache: false,
                     data: {
                         'nome': dati.nome,
                         'cognome' : dati.cognome,
                         'email': dati.email,
                         'idFacebook': dati.idFacebook,
                         'immagine': dati.immagine,
-                        //'event_user': dati.event_user
+                        //'single_event': dati.event_user
                     },
                     success: function(result){
+                        alert(result);
                         window.location.href = "index.php";
                     },
                     error: function() {
                         alert("error:");
                     }
                 });
-
-                /* var vname = "francesco";
-                 var vemail = "@pegoraro";
-
-                 $.post("do_login.php", //Required URL of the page on server
-                 { // Data Sending With Request To Server
-                 name:vname,
-                 email:vemail
-                 })
-                 window.location.href = "do_login.php";*/
-
             });
         }
     }, { scope: 'email,public_profile' } );

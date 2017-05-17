@@ -8,8 +8,10 @@
 
 // avvio la sessione
 session_start();
+var_dump($_SESSION);
+
 // verifico di aver fatto il login
-if (!isset($_SESSION['idUtente']) || !is_numeric($_SESSION ['idUtente']) || $_SESSION['idUtente'] == 0) {
+if (!isset($_SESSION['idFacebook']) || !is_numeric($_SESSION ['idFacebook']) || $_SESSION['idFacebook'] == 0) {
     ?>
     <script>window.location = "login.php";</script>
     <?php
