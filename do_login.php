@@ -1,6 +1,3 @@
-
-<?php include('config.php');?>
-
 <?php
 /**
  * Created by PhpStorm.
@@ -13,25 +10,27 @@
 session_start();
 
 // verifico di aver fatto il login
-if (isset($_SESSION['idUtente']) && !is_numeric($_SESSION['idUtente']) && $_SESSION['idUtente'] != 0){
+if (isset($_SESSION['idFacebook']) && !is_numeric($_SESSION['idFacebook']) && $_SESSION['idFaceook'] != 0){
     ?>
     <script>
-        alert("stai già dentro");
         window.location = "index.php";
     </script>
 <?php
 
 }
 
+include('config.php');
 
-// decodifico i dati
-//$parametri = json_decode(base64_decode($_GET['p']), true);
 
 $email = $_POST['email'];
 $cognome =$_POST['cognome'];
 $nome = $_POST['nome'];
 $idFacebook = $_POST['idFacebook'];
 $immagine = $_POST['immagine'];
+
+
+
+
 
 // tutti i parametri devono essere formattati per evitare attacchi di tipo SQL injection
 $email = $db->real_escape_string($email);
@@ -61,13 +60,10 @@ else
 }
 
 // a questo punto inizializzo la sessione
-$_SESSION['idUtente'] = $idUtente;
 $_SESSION['idFacebook'] = $idFacebook;
 $_SESSION['cognome'] = $cognome;
 $_SESSION['nome'] = $nome;
 $_SESSION['email'] = $email;
-$_SESSION['immagine'] = $_POST['immagine'];
-
-header("Location: index.php");
+$_SESSION['immagine'] = $immagine;
 
 ?>
