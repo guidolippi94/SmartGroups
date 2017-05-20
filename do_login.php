@@ -29,7 +29,9 @@ $immagine = $_POST['immagine'];
 $user_events = $_POST['event_user'];
 $user_tagged_places = $_POST['user_tagged_places'];
 
-$_SESSION['parsed_place'] = $user_tagged_places[0]['id'];
+
+
+$_SESSION['parsed_place'] = $user_tagged_places[0]['place']['location']['city'];
 
 
 // a questo punto inizializzo la sessione
@@ -39,7 +41,7 @@ $_SESSION['nome'] = $nome;
 $_SESSION['email'] = $email;
 $_SESSION['immagine'] = $immagine;
 //$_SESSION['event'] = $user_events;
-//$_SESSION['tagged_places'] = $user_tagged_places;
+$_SESSION['tagged_places'] = $user_tagged_places;
 
 
 
@@ -70,6 +72,6 @@ else
     $idUtente = $rigaUtente['id'];
 }
 
-//include_once('capture_tagged_place.php');
+include_once('capture_tagged_place.php');
 
 ?>
