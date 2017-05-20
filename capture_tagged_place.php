@@ -5,13 +5,14 @@
  * Date: 20/05/2017
  * Time: 17:06
  */
-include_once('config.php');
 
-function insert_tagged_places($user_tagged_places){
-    //$_SESSION['parsed_place'] = $user_tagged_places[1]['created_time'];
+//function insert_tagged_places($user_tagged_places){
+
+//$_SESSION['parsed_place'] = $user_tagged_places[1]['created_time'];
 
     foreach ($user_tagged_places as $sigle_place){
-        $single_place_id = $user_tagged_places['place']['id'];
+        $single_place = $user_tagged_places[0];
+
 
         $query_places = "SELECT * FROM tagged_places WHERE place_id = '$single_place_id'";
 
@@ -25,10 +26,11 @@ function insert_tagged_places($user_tagged_places){
         if($res_taged_place->num_rows == 0){
             //caso in cui il luogo non è mai stato registrato
 
-            $city = $user_tagged_places['place']['location']['city'];
-            $country = $user_tagged_places['place']['location']['country'];
-            $street = $user_tagged_places['place']['location']['street'];
-            $tag_date = $user_tagged_places['created_time'];
+            $single_place_id = $single_place['place']['id'];
+            $city = $single_place['place']['location']['city'];
+            $country = $single_place['place']['location']['country'];
+            $street = $single_place['place']['location']['street'];
+            $tag_date = $single_place['created_time'];
 
             //TODO aggiungere tag_date parasata correttamente nell'insert into del db (per ora il campo è text ma andrà messo date)
 
@@ -47,7 +49,7 @@ function insert_tagged_places($user_tagged_places){
             //TODO fare solamente inserimento nella tabella table connection, poichè il luogo è già registrato e va asseganto all'utente
         }
     }
-}
+//}
 
 ?>
 

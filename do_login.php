@@ -20,9 +20,6 @@ if (isset($_SESSION['idFacebook']) && !is_numeric($_SESSION['idFacebook']) && $_
 }
 
 include_once('config.php');
-include_once('capture_tagged_place.php');
-
-
 
 $email = $_POST['email'];
 $cognome =$_POST['cognome'];
@@ -32,7 +29,7 @@ $immagine = $_POST['immagine'];
 $user_events = $_POST['event_user'];
 $user_tagged_places = $_POST['user_tagged_places'];
 
-//$_SESSION['parsed_place'] = $user_tagged_places[1]['created_time'];
+$_SESSION['parsed_place'] = $user_tagged_places[0]['id'];
 
 
 // a questo punto inizializzo la sessione
@@ -73,7 +70,6 @@ else
     $idUtente = $rigaUtente['id'];
 }
 
-insert_tagged_places($user_tagged_places);
-
+//include_once('capture_tagged_place.php');
 
 ?>
