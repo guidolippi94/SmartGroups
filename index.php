@@ -8,6 +8,8 @@
 
 // avvio la sessione
 session_start();
+var_dump($_SESSION);
+
 // verifico di aver fatto il login
 if (!isset($_SESSION['idFacebook']) || !is_numeric($_SESSION ['idFacebook']) || $_SESSION['idFacebook'] == 0) {
     ?>

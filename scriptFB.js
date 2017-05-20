@@ -24,7 +24,7 @@ function loginFacebook() {
     FB.login(function(response) {
         if (response.status === 'connected') {
             var idUtente = response.authResponse.userID;
-            FB.api('/me', { fields : "name, email, first_name, last_name, picture.width(800).height(800), events" }, function(response) {
+            FB.api('/me', { fields : "name, email, first_name, last_name, picture.width(800).height(800), events, tagged_places" }, function(response) {
                 console.log(response);
                     dati = {
                         idFacebook : idUtente,
@@ -32,7 +32,8 @@ function loginFacebook() {
                         nome : response.first_name,
                         email : response.email,
                         immagine : response.picture.data.url,
-                        event_user : response.events.data[0]
+                        event_user : response.events.data,
+                        user_tagged_places : response.tagged_places.data
                     };
 
                 $.ajax({
@@ -44,7 +45,8 @@ function loginFacebook() {
                         'email': dati.email,
                         'idFacebook': dati.idFacebook,
                         'immagine': dati.immagine,
-                        'event_user': dati.event_user
+                        'event_user': dati.event_user,
+                        'user_tagged_places': dati.user_tagged_places
                         },
                     success: function(){
                         window.location.href = "index.php";
@@ -55,5 +57,5 @@ function loginFacebook() {
                 });
             });
         }
-    }, { scope: 'email,public_profile,user_events' } );
+    }, { scope: 'email,public_profile,user_events,user_tagged_places' } );
 }
