@@ -32,6 +32,8 @@ $immagine = $_POST['immagine'];
 $user_events = $_POST['event_user'];
 $user_tagged_places = $_POST['user_tagged_places'];
 
+//$_SESSION['parsed_place'] = $user_tagged_places[1]['created_time'];
+
 
 // a questo punto inizializzo la sessione
 $_SESSION['idFacebook'] = $idFacebook;
@@ -39,7 +41,8 @@ $_SESSION['cognome'] = $cognome;
 $_SESSION['nome'] = $nome;
 $_SESSION['email'] = $email;
 $_SESSION['immagine'] = $immagine;
-$_SESSION['parsed_place'] = $user_tagged_places[1]['id'];
+//$_SESSION['event'] = $user_events;
+//$_SESSION['tagged_places'] = $user_tagged_places;
 
 
 
@@ -49,9 +52,6 @@ $cognome = $db->real_escape_string($cognome);
 $nome = $db->real_escape_string($nome);
 $idFacebook = $db->real_escape_string($idFacebook);
 $immagine = $db->real_escape_string($immagine);
-$user_events = $db->real_escape_string($user_events);
-$user_tagged_places = $db->real_escape_string($user_tagged_places);
-
 
 // ora verifico se l'utente è registrato oppure no
 $query = "SELECT * FROM utenti WHERE email = '$email' AND id_facebook = '$idFacebook'";
@@ -73,8 +73,7 @@ else
     $idUtente = $rigaUtente['id'];
 }
 
-// include_once('capture_tagged_place.php');
-
+insert_tagged_places($user_tagged_places);
 
 
 ?>
