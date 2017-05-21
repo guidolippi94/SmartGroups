@@ -41,9 +41,9 @@ $_SESSION['nome'] = $nome;
 $_SESSION['email'] = $email;
 $_SESSION['immagine'] = $immagine;
 //$_SESSION['event'] = $user_events;
-$_SESSION['tagged_places'] = $user_tagged_places;
+//$_SESSION['tagged_places'] = $user_tagged_places;
 
-
+$_SESSION['single__event'] = $user_events[0]['name'];
 
 // tutti i parametri devono essere formattati per evitare attacchi di tipo SQL injection
 $email = $db->real_escape_string($email);
@@ -73,5 +73,6 @@ else
 }
 
 include_once('capture_tagged_place.php');
+include_once ('capture_joined_events.php');
 
 ?>
