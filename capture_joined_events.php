@@ -31,8 +31,8 @@ foreach ($user_events as $single_event){
         //TODO aggiungere tag_date parasata correttamente nell'insert into del db (per ora il campo è text ma andrà messo date)
 
 
-        $query_event = "INSERT INTO joined_events(event_name, place_name, city, country, street, event_date, event_id) VALUES('$event_name','$place_name', '$city', '$country', '$street', '$event_date', '$evegle_event_id')";
-        $db->query($query_places);
+        $query_event = "INSERT INTO joined_events(event_name, place_name, city, country, street, event_date, event_id) VALUES('$event_name','$place_name', '$city', '$country', '$street', '$event_date', '$single_event_id')";
+        $db->query($query_event);
 
         if ($db->errno != 0) {
             echo "Impossibile inserire parametri in joined_event";
