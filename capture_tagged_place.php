@@ -27,9 +27,6 @@ foreach ($user_tagged_places as $single_place){
         $street = $single_place['place']['location']['street'];
         $tag_date = $single_place['created_time'];
 
-        //TODO aggiungere tag_date parasata correttamente nell'insert into del db (per ora il campo è text ma andrà messo date)
-
-
         $query_places = "INSERT INTO tagged_places(place_id, city, country, street, tag_date) VALUES('$single_place_id','$city', '$country', '$street', '$tag_date')";
         $db->query($query_places);
 
