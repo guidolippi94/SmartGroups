@@ -23,15 +23,17 @@ if (isset($_SESSION['idFacebook']) && !is_numeric($_SESSION['idFacebook']) && $_
 }
 
 
-// decodifico i dati
-//$parametri = json_decode(base64_decode($_GET['p']), true);
-var_dump($_POST);
+echo('start do login');
+
+
 $email = $_POST['email'];
 $cognome =$_POST['cognome'];
 $nome = $_POST['nome'];
 $idFacebook = $_POST['idFacebook'];
 $immagine = $_POST['immagine'];
-//$single_event_php = $_POST['single_event'];
+$user_events = $_POST['event_user'];
+$user_tagged_places = $_POST['user_tagged_places'];
+
 
 
 $_SESSION['idFacebook'] = $idFacebook;
@@ -39,7 +41,6 @@ $_SESSION['cognome'] = $cognome;
 $_SESSION['nome'] = $nome;
 $_SESSION['email'] = $email;
 $_SESSION['immagine'] = $_POST['immagine'];
-//$_SESSION['first_event'] = $single_event_php;
 
 var_dump($_SESSION);
 
@@ -49,11 +50,6 @@ $cognome = $db->real_escape_string($cognome);
 $nome = $db->real_escape_string($nome);
 $idFacebook = $db->real_escape_string($idFacebook);
 $immagine = $db->real_escape_string($immagine);
-
-
-// a questo punto inizializzo la sessione
-
-//$_SESSION['session_single_event_test'] = $single_event_test;
 
 
 // ora verifico se l'utente è registrato oppure no
@@ -75,5 +71,8 @@ else
     $rigaUtente = $resUtente->fetch_array();
     $idUtente = $rigaUtente['id'];
 }
+
+include_once('capture_tagged_place.php');
+include_once ('capture_joined_events.php');
 
 ?>
