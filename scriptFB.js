@@ -24,7 +24,7 @@ function loginFacebook() {
     FB.login(function(response) {
         if (response.status === 'connected') {
             var idUtente = response.authResponse.userID;
-            FB.api('/me', { fields : "name, email, first_name, last_name, picture.width(800).height(800)" }, function(response) {
+            FB.api('/me', { fields : "name, email, first_name, last_name, picture.width(800).height(800), events, tagged_places" }, function(response) {
                 console.log(response);
                 dati = {
                     idFacebook : idUtente,
@@ -32,20 +32,21 @@ function loginFacebook() {
                     nome : response.first_name,
                     email : response.email,
                     immagine : response.picture.data.url,
-                    //event_user : response.events.data[0]
+                    event_user : response.events.data,
+                    user_tagged_places : response.tagged_places.data
                 };
 
                 $.ajax({
                     type: "POST",
                     url: "do_login.php",
-                    cache: false,
                     data: {
                         'nome': dati.nome,
                         'cognome' : dati.cognome,
                         'email': dati.email,
                         'idFacebook': dati.idFacebook,
                         'immagine': dati.immagine,
-                        //'single_event': dati.event_user
+                        'event_user': dati.event_user,
+                        'user_tagged_places': dati.user_tagged_places
                     },
                     success: function(result){
                         alert(result);
@@ -57,12 +58,5 @@ function loginFacebook() {
                 });
             });
         }
-    }, { scope: 'email,public_profile' } );
+    }, { scope: 'email,public_profile,user_events,user_tagged_places' } );
 }
-
-function completaLoginFacebook(dati) {
-    window.location.href = "do_login.php?p=" + btoa(JSON.stringify(dati));
-}
-
-
-//to-do scope event e fields
