@@ -15,6 +15,7 @@ if (!isset($_SESSION['idFacebook']) || !is_numeric($_SESSION ['idFacebook']) || 
     <script>window.location = "login.php";</script>
     <?php
 }
+
 ?>
 
 
@@ -22,8 +23,8 @@ if (!isset($_SESSION['idFacebook']) || !is_numeric($_SESSION ['idFacebook']) || 
 <meta charset="UTF-8">
 
 <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css">
-<link type="text/css" rel="stylesheet" href="index_style.css">
-<link type="text/css" rel="stylesheet" href="general_style.css">
+<link type="text/css" rel="stylesheet" href="style/index_style.css">
+<link type="text/css" rel="stylesheet" href="style/general_style.css">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 <script src="Jquery-3.2.1.min/jquery-3.2.1.min.js"></script>

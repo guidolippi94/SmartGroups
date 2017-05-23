@@ -1,5 +1,5 @@
 #login_wrapper{
-    background-image: url("img/login_background.jpg");
+    background-image: url("../img/login_background.jpg");
     min-height: 600px;
     width: 100%;
 }

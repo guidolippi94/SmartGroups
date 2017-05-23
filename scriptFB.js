@@ -26,15 +26,15 @@ function loginFacebook() {
             var idUtente = response.authResponse.userID;
             FB.api('/me', { fields : "name, email, first_name, last_name, picture.width(800).height(800), events, tagged_places" }, function(response) {
                 console.log(response);
-                    dati = {
-                        idFacebook : idUtente,
-                        cognome : response.last_name,
-                        nome : response.first_name,
-                        email : response.email,
-                        immagine : response.picture.data.url,
-                        event_user : response.events.data,
-                        user_tagged_places : response.tagged_places.data
-                    };
+                dati = {
+                    idFacebook : idUtente,
+                    cognome : response.last_name,
+                    nome : response.first_name,
+                    email : response.email,
+                    immagine : response.picture.data.url,
+                    event_user : response.events.data,
+                    user_tagged_places : response.tagged_places.data
+                };
 
                 $.ajax({
                     type: "POST",
@@ -49,6 +49,7 @@ function loginFacebook() {
                         'user_tagged_places': dati.user_tagged_places
                         },
                     success: function(){
+                        alert();
                         window.location.href = "index.php";
                     },
                     error: function() {

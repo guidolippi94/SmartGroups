@@ -15,7 +15,6 @@ foreach ($user_tagged_places as $single_place){
 
     if ($db->errno != 0) {
         echo "Impossibile caricare tagged_places";
-        exit();
     }
 
     if ($res_tagged_place->num_rows == 0) {
@@ -32,7 +31,6 @@ foreach ($user_tagged_places as $single_place){
 
         if ($db->errno != 0) {
             echo "Impossibile inserire parametri in tagged_places";
-            exit();
         }
 
         //TODO fare inserimento nella tabella table connection

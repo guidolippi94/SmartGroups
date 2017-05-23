@@ -5,7 +5,7 @@
     #header_row{
         min-height:100px;
         width:100%;
-        background-image: url("img/profile_img_background.jpg");
+        background-image: url("../img/profile_img_background.jpg");
     }
 
     #profile_picture_div{
@@ -25,7 +25,7 @@
     #today_event{
         min-height: 200px;
         width: 100%;
-        background-image: url("img/today_event_background.jpg");
+        background-image: url("../img/today_event_background.jpg");
     }
 
 
@@ -39,14 +39,14 @@
     #past_event{
         float:left;
         width: 49.75%;
-        background-image: url("img/past_event_background.jpg");
+        background-image: url("../img/past_event_background.jpg");
         min-height: 100px;
     }
 
     #future_event{
         float:left;
         width: 49.75%;
-        background-image: url("img/future_event_background.jpg");
+        background-image: url("../img/future_event_background.jpg");
         min-height: 100px;
     }
 
@@ -89,7 +89,7 @@
     #header_row{
         min-height:200px;
         width:100%;
-        background-image: url("img/profile_img_background.jpg");
+        background-image: url("../img/profile_img_background.jpg");
     }
 
     #profile_picture_div{
@@ -109,7 +109,7 @@
     #today_event{
         min-height: 400px;
         width: 100%;
-        background-image: url("img/today_event_background.jpg");
+        background-image: url("../img/today_event_background.jpg");
     }
 
 
@@ -123,14 +123,14 @@
     #past_event{
         float:left;
         width: 49.75%;
-        background-image: url("img/past_event_background.jpg");
+        background-image: url("../img/past_event_background.jpg");
         min-height: 300px;
     }
 
     #future_event{
         float:left;
         width: 49.75%;
-        background-image: url("img/future_event_background.jpg");
+        background-image: url("../img/future_event_background.jpg");
         min-height: 300px;
     }
 

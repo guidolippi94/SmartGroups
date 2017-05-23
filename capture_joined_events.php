@@ -5,8 +5,11 @@
  * Date: 20/05/2017
  * Time: 17:06
  */
+$count = 0;
+
 foreach ($user_events as $single_event){
 
+    $count ++;
     $single_event_id = $single_event['id'];
     $query_event = "SELECT * FROM joined_events WHERE event_id = '$single_event_id'";
 
@@ -14,7 +17,6 @@ foreach ($user_events as $single_event){
 
     if ($db->errno != 0) {
         echo "Impossibile caricare joined_event";
-        exit();
     }
 
     if ($res_single_event->num_rows == 0) {
@@ -35,7 +37,7 @@ foreach ($user_events as $single_event){
 
         if ($db->errno != 0) {
             echo "Impossibile inserire parametri in joined_event";
-            exit();
+            echo $count;
         }
 
         //TODO fare inserimento nella tabella table connection
@@ -45,19 +47,18 @@ foreach ($user_events as $single_event){
 
         if ($db->errno != 0) {
             echo "Impossibile inserire parametri in table_connection";
-            exit();
         }
 
 
     } else {
         //TODO fare solamente inserimento nella tabella table connection, poichè il luogo è già registrato e va asseganto all'utente
 
-        $query_idF_event = "SELECT * FROM table_connection WHERE idfacebook = '$idFacebook' AND joined_events = '$single_event_id'";
+        $query_idF_event = "SELECT * FROM table_connection WHERE (id_facebook = '$idFacebook' AND joined_events = '$single_event_id')";
         $res_idF_event = $db->query($query_idF_event);
 
         if ($db->errno != 0) {
-            echo "Impossibile caricare table_connection";
-            exit();
+            echo "Impossibile caricare table_connection ";
+            echo $count;
         }
 
         if($res_idF_event->num_rows == 0) {
@@ -68,7 +69,6 @@ foreach ($user_events as $single_event){
 
             if ($db->errno != 0) {
                 echo "Impossibile inserire parametri in table_connection";
-                exit();
             }
         }
     }
