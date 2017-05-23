@@ -8,12 +8,12 @@
 
 // avvio la sessione
 session_start();
-var_dump($_SESSION);
+//var_dump($_SESSION);
 // verifico di aver fatto il login
 if (isset($_SESSION['idFacebook']) && is_numeric($_SESSION['idFacebook']) && $_SESSION['idFacebook'] != 0){
     ?>
     <script>
-        window.location.href = ("index.php");
+       window.location.href = ("index.php");
     </script>
 <?php
 }
@@ -23,9 +23,9 @@ if (isset($_SESSION['idFacebook']) && is_numeric($_SESSION['idFacebook']) && $_S
 
     <meta charset="UTF-8">
     <link type="text/css" rel="stylesheet" href="img">
-    <link type="text/css" rel="stylesheet" href="index_style.css">
-    <link type="text/css" rel="stylesheet" href="login_style.css">
-    <link type="text/css" rel="stylesheet" href="general_style.css">
+    <link type="text/css" rel="stylesheet" href="style/index_style.css">
+    <link type="text/css" rel="stylesheet" href="style/login_style.css">
+    <link type="text/css" rel="stylesheet" href="style/general_style.css">
 
 
     <link type="text/css" rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap-theme.css">
@@ -43,9 +43,9 @@ if (isset($_SESSION['idFacebook']) && is_numeric($_SESSION['idFacebook']) && $_S
 <body>
 <div class="wrapper, parallasse" id="login_wrapper">
 
-    <a onclick="loginFacebook()" class="btn btn-social btn-lg btn-facebook" id="login_button_facebook">
+    <button onclick="loginFacebook()" class="btn btn-social btn-lg btn-facebook" id="login_button_facebook">
         <span class="fa fa-facebook"></span> Accedi a Facebook
-    </a>
+    </button>
 
 </div>
 

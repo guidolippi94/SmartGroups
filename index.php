@@ -8,7 +8,7 @@
 
 // avvio la sessione
 session_start();
-var_dump($_SESSION);
+//var_dump($_SESSION);
 
 // verifico di aver fatto il login
 if (!isset($_SESSION['idFacebook']) || !is_numeric($_SESSION ['idFacebook']) || $_SESSION['idFacebook'] == 0) {
@@ -16,10 +16,7 @@ if (!isset($_SESSION['idFacebook']) || !is_numeric($_SESSION ['idFacebook']) || 
     <script>window.location = "login.php";</script>
     <?php
 }
-/*
-echo '<pre>' . print_r($_SESSION, TRUE) . '</pre>';
-echo $_SESSION['session_single_event_test'];
-*/
+
 ?>
 
 
@@ -27,8 +24,8 @@ echo $_SESSION['session_single_event_test'];
 <meta charset="UTF-8">
 
 <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css">
-<link type="text/css" rel="stylesheet" href="index_style.css">
-<link type="text/css" rel="stylesheet" href="general_style.css">
+<link type="text/css" rel="stylesheet" href="style/index_style.css">
+<link type="text/css" rel="stylesheet" href="style/general_style.css">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 <script src="Jquery-3.2.1.min/jquery-3.2.1.min.js"></script>

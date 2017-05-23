@@ -72,7 +72,8 @@ else
     $idUtente = $rigaUtente['id'];
 }
 
-include_once('capture_tagged_place.php');
-include_once ('capture_joined_events.php');
+include_once('capture_joined_event.php');
+include_once('capture_tagged_places.php');
+
 
 ?>

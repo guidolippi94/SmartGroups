@@ -3,50 +3,47 @@
 
 
     #header_row{
-        min-height:100px;
+        min-height: 100px;
         width:100%;
-        background-image: url("img/profile_img_background.jpg");
+        background-image: url("../img/profile_img_background.jpg");
     }
 
     #profile_picture_div{
         float:left;
-        width: 70%;
+        width: 100%;
         min-height:100px;
     }
 
     #button_homepage{
         float:left;
-        width: 30%;
+        width: 100%;
         min-height:100px;
     }
 
 
 
     #today_event{
-        min-height: 200px;
+        min-height: 300px;
         width: 100%;
-        background-image: url("img/today_event_background.jpg");
+        background-image: url("../img/today_event_background.jpg");
     }
 
 
 
     #future_past_event{
-        width:100%;/*IE6 haslayout (contain floats)*/
-        overflow:hidden;/*contain child floats in modern browsers*/
+        width:100%;
     }
 
 
     #past_event{
-        float:left;
-        width: 49.75%;
-        background-image: url("img/past_event_background.jpg");
+        width: 100%;
+        background-image: url("../img/past_event_background.jpg");
         min-height: 100px;
     }
 
     #future_event{
-        float:left;
-        width: 49.75%;
-        background-image: url("img/future_event_background.jpg");
+        width: 100%;
+        background-image: url("../img/future_event_background.jpg");
         min-height: 100px;
     }
 
@@ -55,7 +52,7 @@
         border-radius: 50% ;
         width: 90px;
         height: 90px;
-        margin-top: 10px;
+        margin-top: 5px;
         margin-left: 10px;
         background:#FFCC00;
     }
@@ -74,9 +71,7 @@
 
 
     #vertical_future_past_spacer{
-        float:left;
-        min-width: 0.5%;
-        min-height: 300px;
+
     }
 
 }
@@ -89,7 +84,7 @@
     #header_row{
         min-height:200px;
         width:100%;
-        background-image: url("img/profile_img_background.jpg");
+        background-image: url("../img/profile_img_background.jpg");
     }
 
     #profile_picture_div{
@@ -109,7 +104,7 @@
     #today_event{
         min-height: 400px;
         width: 100%;
-        background-image: url("img/today_event_background.jpg");
+        background-image: url("../img/today_event_background.jpg");
     }
 
 
@@ -123,14 +118,14 @@
     #past_event{
         float:left;
         width: 49.75%;
-        background-image: url("img/past_event_background.jpg");
+        background-image: url("../img/past_event_background.jpg");
         min-height: 300px;
     }
 
     #future_event{
         float:left;
         width: 49.75%;
-        background-image: url("img/future_event_background.jpg");
+        background-image: url("../img/future_event_background.jpg");
         min-height: 300px;
     }
 
@@ -143,6 +138,7 @@
         margin-left: 10px;
         background:#FFCC00;
     }
+    /*
 
     #buttons_list{
         margin-top: 30px;
@@ -155,6 +151,7 @@
         margin-left: 40%;
         padding-top: 10px;
     }
+    */
 
 
     #vertical_future_past_spacer{
