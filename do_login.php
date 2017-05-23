@@ -1,3 +1,4 @@
+
 <?php
 /**
  * Created by PhpStorm.
@@ -8,38 +9,40 @@
 
 // avvio la sessione
 session_start();
-
+var_dump($_SESSION);
+include('config.php');
 // verifico di aver fatto il login
-if (isset($_SESSION['idFacebook']) && !is_numeric($_SESSION['idFacebook']) && $_SESSION['idFaceook'] != 0){
+if (isset($_SESSION['idFacebook']) && !is_numeric($_SESSION['idFacebook']) && $_SESSION['idFacebook'] != 0){
     ?>
     <script>
-        window.location = "index.php";
+        alert("stai già dentro");
+        window.location.href = "index.php";
     </script>
 <?php
 
 }
 
-include_once('config.php');
+
+echo('start do login');
+
 
 $email = $_POST['email'];
 $cognome =$_POST['cognome'];
 $nome = $_POST['nome'];
 $idFacebook = $_POST['idFacebook'];
 $immagine = $_POST['immagine'];
-
 $user_events = $_POST['event_user'];
 $user_tagged_places = $_POST['user_tagged_places'];
 
 
-// a questo punto inizializzo la sessione
+
 $_SESSION['idFacebook'] = $idFacebook;
 $_SESSION['cognome'] = $cognome;
 $_SESSION['nome'] = $nome;
 $_SESSION['email'] = $email;
-$_SESSION['immagine'] = $immagine;
+$_SESSION['immagine'] = $_POST['immagine'];
 
-
-$_SESSION['single__event'] = $user_events[9]['place']['name'];
+var_dump($_SESSION);
 
 // tutti i parametri devono essere formattati per evitare attacchi di tipo SQL injection
 $email = $db->real_escape_string($email);
@@ -47,6 +50,7 @@ $cognome = $db->real_escape_string($cognome);
 $nome = $db->real_escape_string($nome);
 $idFacebook = $db->real_escape_string($idFacebook);
 $immagine = $db->real_escape_string($immagine);
+
 
 // ora verifico se l'utente è registrato oppure no
 $query = "SELECT * FROM utenti WHERE email = '$email' AND id_facebook = '$idFacebook'";
@@ -56,7 +60,7 @@ if ($db->errno != 0) { echo "Impossibile caricare gli utenti"; exit(); }
 if ($resUtente->num_rows == 0)
 {
     // in questo caso l'utente non è registrato, lo registro quindi
-    $query = "INSERT INTO utenti(email, cognome, nome, id_facebook, immagine) VALUES('$email', '$cognome', '$nome', '$idFacebook','$immagine')";
+    $query = "INSERT INTO utenti(email, cognome, nome, id_facebook, immagine) VALUES ('$email', '$cognome', '$nome', '$idFacebook','$immagine')";
     $db->query($query);
     if ($db->errno != 0) { echo "Impossibile registrare il nuovo utente"; exit(); }
 
@@ -68,9 +72,8 @@ else
     $idUtente = $rigaUtente['id'];
 }
 
-
-include_once('capture_joined_events.php');
-include_once('capture_tagged_place.php');
+include_once('capture_joined_event.php');
+include_once('capture_tagged_places.php');
 
 
 ?>

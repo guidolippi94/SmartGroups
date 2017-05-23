@@ -8,11 +8,12 @@
 
 // avvio la sessione
 session_start();
+//var_dump($_SESSION);
 // verifico di aver fatto il login
 if (isset($_SESSION['idFacebook']) && is_numeric($_SESSION['idFacebook']) && $_SESSION['idFacebook'] != 0){
     ?>
     <script>
-        window.location.href = ("index.php");
+       window.location.href = ("index.php");
     </script>
 <?php
 }
@@ -42,13 +43,9 @@ if (isset($_SESSION['idFacebook']) && is_numeric($_SESSION['idFacebook']) && $_S
 <body>
 <div class="wrapper, parallasse" id="login_wrapper">
 
-    <a onclick="loginFacebook()" class="btn btn-social btn-lg btn-facebook" id="login_button_facebook">
+    <button onclick="loginFacebook()" class="btn btn-social btn-lg btn-facebook" id="login_button_facebook">
         <span class="fa fa-facebook"></span> Accedi a Facebook
-    </a>
-<script>
-
-</script>
-
+    </button>
 
 </div>
 

@@ -47,9 +47,9 @@ function loginFacebook() {
                         'immagine': dati.immagine,
                         'event_user': dati.event_user,
                         'user_tagged_places': dati.user_tagged_places
-                        },
-                    success: function(){
-                        alert();
+                    },
+                    success: function(result){
+                        alert(result);
                         window.location.href = "index.php";
                     },
                     error: function() {
