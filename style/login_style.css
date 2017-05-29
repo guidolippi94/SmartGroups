@@ -1,0 +1,8 @@
+#login_wrapper{
+    background-image: url("/img/login_background.jpg");
+    min-height: 600px;
+}
+
+#login_button_facebook{
+    margin: 0 auto;
+}

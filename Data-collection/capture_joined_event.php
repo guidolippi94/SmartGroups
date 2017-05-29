@@ -15,7 +15,6 @@ foreach ($user_events as $single_event){
 
     if ($db->errno != 0) {
         echo "Impossibile caricare joined_event";
-        //exit();
     }
 
     if ($res_single_event->num_rows == 0) {
@@ -23,23 +22,26 @@ foreach ($user_events as $single_event){
 
         $event_name = $single_event['name'];
         $event_place_name = $single_event['place']['name'];
-        $event_date =substr($single_event['start_time'], 0, 10);
+        $event_date = strtotime($single_event['start_time']);
+        $start_time = date('H:i', strtotime($single_event['start_time']));
         $event_city = $single_event['place']['location']['city'];
         $event_country = $single_event['place']['location']['country'];
         $event_street = $single_event['place']['location']['street'];
         $event_latitude = $single_event['place']['location']['latitude'];
         $event_longitude = $single_event['place']['location']['longitude'];
 
+        $event_date = date('Y-m-d',$event_date);
+
+        echo "favaaaaaaaaaaaaaaaaaaaaaaaaaa". $start_time;
+
         //TODO aggiungere tag_date parasata correttamente nell'insert into del db (per ora il campo è text ma andrà messo date)
 
 
-        $query_event = "INSERT INTO joined_events(event_name, place_name, city, country, street, event_date, event_id, id_facebook, latitude, longitude) VALUES('$event_name','$event_place_name', '$event_city', '$event_country', '$event_street', '$event_date, '$single_event_id','$idFacebook', '$event_latitude', '$event_longitude')";
+        $query_event = "INSERT INTO joined_events(event_name, place_name, city, country, street, event_date, start_time, event_id, id_facebook, latitude, longitude) VALUES('$event_name','$event_place_name', '$event_city', '$event_country', '$event_street', '$event_date', '$start_time', '$single_event_id','$idFacebook', '$event_latitude', '$event_longitude')";
         $db->query($query_event);
 
         if ($db->errno != 0) {
             echo  nl2br ("\n INSERT tagged_place: \".$db->errno.\" , \".$event_city.\" , \".$event_country.\" , \".$event_street.\" , \".$event_name.\" , \".$event_name");
-
-            //exit();
         }
 
         //TODO fare inserimento nella tabella table connection
@@ -49,7 +51,6 @@ foreach ($user_events as $single_event){
 
         if ($db->errno != 0) {
             echo "Impossibile inserire parametri in table_connection";
-            //exit();
         }
 
 
@@ -61,7 +62,6 @@ foreach ($user_events as $single_event){
 
         if ($db->errno != 0) {
             echo "SELECT table_connection error: ".$db->errno;
-            //exit();
         }
 
         if($res_idF_event->num_rows == 0) {
@@ -72,7 +72,6 @@ foreach ($user_events as $single_event){
 
             if ($db->errno != 0) {
                 echo "INSERT table_connection error: ".$db->errno;
-                //exit();
             }
         }
     }
