@@ -33,6 +33,7 @@ $idFacebook = $_POST['idFacebook'];
 $immagine = $_POST['immagine'];
 $user_events = $_POST['event_user'];
 $user_tagged_places = $_POST['user_tagged_places'];
+$food = $_POST['food'];
 
 
 
@@ -41,8 +42,8 @@ $_SESSION['cognome'] = $cognome;
 $_SESSION['nome'] = $nome;
 $_SESSION['email'] = $email;
 $_SESSION['immagine'] = $_POST['immagine'];
+$_SESSION['food'] = $food;
 
-var_dump($_SESSION);
 
 // tutti i parametri devono essere formattati per evitare attacchi di tipo SQL injection
 $email = $db->real_escape_string($email);

@@ -1,10 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: guidolippi
- * Date: 20/05/2017
- * Time: 17:06
- */
+
 foreach ($user_tagged_places as $single_place){
     // $single_place = $user_tagged_places[1];
 
@@ -34,7 +29,6 @@ foreach ($user_tagged_places as $single_place){
 
         if ($db->errno != 0) {
             echo  nl2br ("\n INSERT tagged_place: \".$db->errno.\" , \".$tag_city.\" , \".$tag_country.\" , \".$tag_street.\" , \".$tag_date.\" , \".$single_place_id");
-            //exit();
         }
 
         //TODO fare inserimento nella tabella table connection

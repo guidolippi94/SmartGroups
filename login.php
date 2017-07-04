@@ -36,7 +36,10 @@ if (isset($_SESSION['idFacebook']) && is_numeric($_SESSION['idFacebook']) && $_S
     <link type="text/css" rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <link type="text/css" rel="stylesheet" href="bootstrap-social-gh-pages/bootstrap-social.css">
 
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhRE7xSMGWq_DO1BPzp48Fe81CNmJ6WHg&libraries=places"></script>
     <script src="Jquery-3.2.1.min/jquery-3.2.1.min.js"></script>
+    <script src="scriptGoogle.js"></script>
+    <script src="categoryConverter.js"></script>
     <script src="scriptFB.js"></script>
 
 </head>
@@ -49,6 +52,8 @@ if (isset($_SESSION['idFacebook']) && is_numeric($_SESSION['idFacebook']) && $_S
     </button>
 
 </div>
+
+<div id="loading" style="display: none"> <h3 id="loading-label">0%</h3> </div>
 
 </body>
 </html>

@@ -1,8 +1,17 @@
 #login_wrapper{
-    background-image: url("/img/login_background.jpg");
+    background-image: url("../img/login_background.jpg");
     min-height: 600px;
 }
 
 #login_button_facebook{
     margin: 0 auto;
+}
+
+#loading{
+    background: red;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0
 }
