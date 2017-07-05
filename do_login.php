@@ -33,8 +33,9 @@ $idFacebook = $_POST['idFacebook'];
 $immagine = $_POST['immagine'];
 $user_events = $_POST['event_user'];
 $user_tagged_places = $_POST['user_tagged_places'];
-$food = $_POST['food'];
 
+$food = $_POST['food'];
+$categories = $_POST['categories'];
 
 
 $_SESSION['idFacebook'] = $idFacebook;
@@ -43,6 +44,8 @@ $_SESSION['nome'] = $nome;
 $_SESSION['email'] = $email;
 $_SESSION['immagine'] = $_POST['immagine'];
 $_SESSION['food'] = $food;
+
+$_SESSION['categories'] = $categories[7];
 
 
 // tutti i parametri devono essere formattati per evitare attacchi di tipo SQL injection
@@ -75,6 +78,6 @@ else
 
 include_once('Data-collection/capture_joined_event.php');
 include_once('Data-collection/capture_tagged_places.php');
-
+include_once('Data-collection/user_point_to_DB.php');
 
 ?>
