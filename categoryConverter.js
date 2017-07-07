@@ -21,12 +21,12 @@ function convertCategoriesFromUserLikes(Jarray) {
                 convertCategoriesFromUserLikes(data)
             });
         }
-
+    categories = [music, sport, food, travel, fashion, education, entertainment, healtcare];
 }
 
 
 function selectCategory(realFBCategory){
-    if(realFBCategory.includes("music")){
+    if(realFBCategory.includes("music") || realFBCategory.includes("disco")){
         music++;
     }
     else if (realFBCategory.includes("sport")){
@@ -35,5 +35,20 @@ function selectCategory(realFBCategory){
     else if(realFBCategory.includes("food") || realFBCategory.includes("restaurant") || realFBCategory.includes("bar") || realFBCategory.includes("pub") || realFBCategory.includes("wine") || realFBCategory.includes("beer") || realFBCategory.includes("pizza")){
         food++;
     }
-    //TODO finire selezione categorie
+    else if(realFBCategory.includes("healtt") || realFBCategory.includes("wellness") || realFBCategory.includes("gym")){
+        healtcare++;
+    }
+    else if(realFBCategory.includes("travel") || realFBCategory.includes("trip") || realFBCategory.includes("flight") || realFBCategory.includes("train") || realFBCategory.includes("adventure")){
+        travel++;
+    }
+    else if(realFBCategory.includes("fashion") || realFBCategory.includes("cloth")){
+        fashion++;
+    }
+    else if(realFBCategory.includes("school") || realFBCategory.includes("course") || realFBCategory.includes("science")){
+        education++;
+    }
+    else if(realFBCategory.includes("fun") || realFBCategory.includes("community") || realFBCategory.includes("public")){
+        entertainment++;
+    }
 }
+

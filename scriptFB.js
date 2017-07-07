@@ -69,7 +69,8 @@ function loginFacebook() {
                             'immagine': dati.immagine,
                             'event_user': dati.event_user,
                             'user_tagged_places': dati.user_tagged_places,
-                            'food' : food
+                            'food' : food,
+                            'categories' : categories
                         },
                         success: function(){
                             window.location.href = "index.php";
@@ -103,7 +104,7 @@ var education = 0;
 var entertainment = 0;
 var healtcare = 0;
 
-
+var categories = [];
 
 function getJSON(url) {
     return new Promise(function (resolve, reject) {
