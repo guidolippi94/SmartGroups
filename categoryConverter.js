@@ -6,6 +6,12 @@
 
 function convertCategoriesFromUserLikes(Jarray) {
 
+    if(loaded <= 13) {
+        loaded++;
+        tmp = (loaded * 100 / 13).toFixed(2);
+        vis = tmp + "%";
+        document.getElementById("loading-label").innerHTML = vis;
+    }
     console.log("-------" + Jarray.paging.previous + "---------");
 
         for (i = 0; i < Jarray.data.length; i++) {
