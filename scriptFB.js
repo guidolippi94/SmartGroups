@@ -92,7 +92,6 @@ var count;
 var N;
 var responseDelSoci, name_place;
 var dati;
-var stop;
 
 // sono le nostre categorie
 var music = 0;

@@ -5,8 +5,6 @@
 
 
 function convertCategoriesFromUserLikes(Jarray) {
-//todo mettere in categorie prescelte i likes della pagina corrente
-    //todo chiamare la pagina successiva tramite get json e ripetere finchè non ci sono più next
 
     console.log("-------" + Jarray.paging.previous + "---------");
 
