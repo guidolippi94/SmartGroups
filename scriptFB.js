@@ -23,10 +23,10 @@ window.fbAsyncInit = function() {
 
 function loginFacebook() {
 
-    document.getElementById('loading').setAttribute("style", "display:null");
 
     FB.login(function(response) {
         if (response.status === 'connected') {
+
             var idUtente = response.authResponse.userID;
 
             FB.api('/me', { fields : "name, email, first_name, last_name, picture.width(800).height(800), events, tagged_places, likes{category}" }, function(response) {
@@ -42,6 +42,8 @@ function loginFacebook() {
                     user_likes : response.likes
                 };
 
+                document.getElementById('loading').setAttribute("style", "display:null");
+
                 dati = arr;
                 likes = arr.user_likes;
                 convertCategoriesFromUserLikes(likes);
@@ -55,8 +57,6 @@ function loginFacebook() {
                     initMap();
                 }
 
-
-
                 setTimeout(function () {
                     $.ajax({
                         type: "POST",
@@ -69,7 +69,6 @@ function loginFacebook() {
                             'immagine': dati.immagine,
                             'event_user': dati.event_user,
                             'user_tagged_places': dati.user_tagged_places,
-                            'food' : food,
                             'categories' : categories
                         },
                         success: function(){
@@ -79,7 +78,7 @@ function loginFacebook() {
                             alert("error:");
                         }
                     });
-                }, 4000)
+                }, 4000);
 
             });
         }
@@ -93,7 +92,11 @@ var count;
 var N;
 var responseDelSoci, name_place;
 var dati;
-var stop;
+
+//dati per la percentuale
+var loaded = 0;
+var vis = "";
+var tmp;
 
 // sono le nostre categorie
 var music = 0;
@@ -123,5 +126,4 @@ function getJSON(url) {
         xhr.send();
     })
 }
-
 

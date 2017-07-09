@@ -28,6 +28,7 @@ if (isset($_SESSION['idFacebook']) && is_numeric($_SESSION['idFacebook']) && $_S
     <link type="text/css" rel="stylesheet" href="style/general_style.css">
 
 
+
     <link type="text/css" rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap-theme.css">
     <link type="text/css" rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap-theme.min.css">
     <link type="text/css" rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css">
@@ -53,7 +54,10 @@ if (isset($_SESSION['idFacebook']) && is_numeric($_SESSION['idFacebook']) && $_S
 
 </div>
 
-<div id="loading" style="display: none"> <h3 id="loading-label">0%</h3> </div>
+<div id="loading" style="display: none">
+    <h3 id="loading-label">0%</h3>
+    <div id="circle-loader"></div>
+</div>
 
 </body>
 </html>

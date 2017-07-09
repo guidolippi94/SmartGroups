@@ -5,9 +5,13 @@
 
 
 function convertCategoriesFromUserLikes(Jarray) {
-//todo mettere in categorie prescelte i likes della pagina corrente
-    //todo chiamare la pagina successiva tramite get json e ripetere finchè non ci sono più next
 
+    if(loaded <= 13) {
+        loaded++;
+        tmp = (loaded * 100 / 13).toFixed(2);
+        vis = tmp + "%";
+        document.getElementById("loading-label").innerHTML = vis;
+    }
     console.log("-------" + Jarray.paging.previous + "---------");
 
         for (i = 0; i < Jarray.data.length; i++) {
