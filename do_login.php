@@ -79,5 +79,5 @@ else
 include_once('Data-collection/capture_joined_event.php');
 include_once('Data-collection/capture_tagged_places.php');
 include_once('Data-collection/user_point_to_DB.php');
-
+include_once('Data-collection/calcMatchPeople.php');
 ?>
