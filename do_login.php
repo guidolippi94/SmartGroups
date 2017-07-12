@@ -43,7 +43,7 @@ $_SESSION['cognome'] = $cognome;
 $_SESSION['nome'] = $nome;
 $_SESSION['email'] = $email;
 $_SESSION['immagine'] = $_POST['immagine'];
-$_SESSION['categories'] = $categories[7];
+$_SESSION['categories'] = $categories;
 
 
 
@@ -73,6 +73,19 @@ else
 {
     $rigaUtente = $resUtente->fetch_array();
     $idUtente = $rigaUtente['id'];
+}
+
+$totalNumberCategories=0;
+
+foreach ($categories as $single_cat){
+    $totalNumberCategories+=$single_cat;
+}
+
+$_SESSION['total']=$totalNumberCategories;
+
+
+for($i=0; $i<8; $i++){
+    $categories[$i]= round($categories[$i]/$totalNumberCategories, 5);
 }
 
 include_once('Data-collection/capture_joined_event.php');
