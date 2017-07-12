@@ -58,7 +58,7 @@ function loginFacebook() {
                 }
 
 
-                /*setTimeout(function () {
+                setTimeout(function () {
                     $.ajax({
                         type: "POST",
                         url: "do_login.php",
@@ -79,7 +79,7 @@ function loginFacebook() {
                             alert("error:");
                         }
                     });
-                }, 4000);*/
+                }, 4000);
 
             });
         }
