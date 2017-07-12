@@ -49,7 +49,7 @@ if (!isset($_SESSION['idFacebook']) || !is_numeric($_SESSION ['idFacebook']) || 
 
 <?php //echo var_dump($_SESSION); ?>
 <div class="wrapper">
-
+<!--
 <div id='cssmenu'>
     <ul>
         <li><a href='index.php'>Home</a></li>
@@ -73,7 +73,7 @@ if (!isset($_SESSION['idFacebook']) || !is_numeric($_SESSION ['idFacebook']) || 
         <li><button  onclick="logout_script()">Logout</button></li>
     </ul>
 </div>
-
+-->
 
 
 

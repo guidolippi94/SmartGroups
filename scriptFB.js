@@ -23,8 +23,8 @@ window.fbAsyncInit = function() {
 
 function loginFacebook() {
 
-
     FB.login(function(response) {
+
         if (response.status === 'connected') {
 
             var idUtente = response.authResponse.userID;
@@ -57,7 +57,8 @@ function loginFacebook() {
                     initMap();
                 }
 
-                setTimeout(function () {
+
+                /*setTimeout(function () {
                     $.ajax({
                         type: "POST",
                         url: "do_login.php",
@@ -78,7 +79,7 @@ function loginFacebook() {
                             alert("error:");
                         }
                     });
-                }, 4000);
+                }, 4000);*/
 
             });
         }

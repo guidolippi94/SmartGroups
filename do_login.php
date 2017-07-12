@@ -46,6 +46,7 @@ $_SESSION['immagine'] = $_POST['immagine'];
 $_SESSION['categories'] = $categories[7];
 
 
+
 // tutti i parametri devono essere formattati per evitare attacchi di tipo SQL injection
 $email = $db->real_escape_string($email);
 $cognome = $db->real_escape_string($cognome);
