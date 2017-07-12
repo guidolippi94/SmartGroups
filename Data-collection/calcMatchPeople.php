@@ -11,13 +11,13 @@ include('../config.php');
 
 echo "nome: ".$_SESSION['nome'];
 
-$query = "SELECT * FROM user_point WHERE idFacebook='10213427321783189'";
-$db->query($query);
-$user_point = $db->mysqli_query($query);
+$query = "SELECT * FROM user_point WHERE id_facebook='10213427321783189'";
+$user_point=$db->query($query);
+ $rows = $user_point->fetch_assoc();
 
-var_dump($user_point);
+var_dump($rows);
 
-echo json_encode($user_point);
+echo json_encode($rows);
 ?>
 
 
