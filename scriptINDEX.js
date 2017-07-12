@@ -3,8 +3,7 @@
  */
 
 function click_settings() {
-    alert("It works");
-
+    window.location.href="Data-collection/calcMatchPeople.php";
 }
 
 function click_notify() {
