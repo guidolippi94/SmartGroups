@@ -47,7 +47,7 @@ if (!isset($_SESSION['idFacebook']) || !is_numeric($_SESSION ['idFacebook']) || 
 
 <body>
 
-<?php //echo var_dump($_SESSION); ?>
+<?php echo var_dump($_SESSION); ?>
 <div class="wrapper">
 
 <div id='cssmenu'>
