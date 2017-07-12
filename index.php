@@ -23,10 +23,23 @@ if (!isset($_SESSION['idFacebook']) || !is_numeric($_SESSION ['idFacebook']) || 
 <html>
 <meta charset="UTF-8">
 
-<link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css">
+<link type="text/css" rel="stylesheet" href="materialize/css/materialize.css">
 <link type="text/css" rel="stylesheet" href="style/index_style.css">
 <link type="text/css" rel="stylesheet" href="style/general_style.css">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style/responsiveMenu.css">
+<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+<script src="menuAnimation.js"></script>
+
+
+
+
 
 <script src="Jquery-3.2.1.min/jquery-3.2.1.min.js"></script>
 <script src="scriptINDEX.js"></script>
@@ -34,9 +47,36 @@ if (!isset($_SESSION['idFacebook']) || !is_numeric($_SESSION ['idFacebook']) || 
 
 <body>
 
-<?php echo var_dump($_SESSION); ?>
-
+<?php //echo var_dump($_SESSION); ?>
 <div class="wrapper">
+
+<div id='cssmenu'>
+    <ul>
+        <li><a href='index.php'>Home</a></li>
+        <li class='active'><a href='#'>Products</a>
+            <ul>
+                <li><a href='#'>Product 1</a>
+                    <ul>
+                        <li><a href='#'>Sub Product</a></li>
+                        <li><a href='#'>Sub Product</a></li>
+                    </ul>
+                </li>
+                <li><a href='#'>Product 2</a>
+                    <ul>
+                        <li><a href='#'>Sub Product</a></li>
+                        <li><a href='#'>Sub Product</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><button  onclick="click_notify()">Notify</button></li>
+        <li><button  onclick="logout_script()">Logout</button></li>
+    </ul>
+</div>
+
+
+
+
 
     <div class="row_homepage, parallasse" id="header_row">
 

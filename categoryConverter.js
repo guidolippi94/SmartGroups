@@ -6,7 +6,7 @@
 
 function convertCategoriesFromUserLikes(Jarray) {
 
-    if(loaded <= 13) {
+    if(loaded < 13) {
         loaded++;
         tmp = (loaded * 100 / 13).toFixed(2);
         vis = tmp + "%";
