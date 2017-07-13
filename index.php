@@ -47,7 +47,7 @@ if (!isset($_SESSION['idFacebook']) || !is_numeric($_SESSION ['idFacebook']) || 
 
 <body>
 
-<?php echo var_dump($_SESSION); ?>
+<?php //echo var_dump($_SESSION); ?>
 <div class="wrapper">
 <!--
 <div id='cssmenu'>
@@ -85,6 +85,8 @@ if (!isset($_SESSION['idFacebook']) || !is_numeric($_SESSION ['idFacebook']) || 
         </div>
 
         <div id="button_homepage">
+            <h5 style="color: greenyellow; align-content: center">Grazie di aver effettuato il login, presto sarà disponibile una versione malfunzionante ma completa.</h5>
+
             <ul id="buttons_list">
                 <li id="settings_button"><button onclick="click_settings()" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">settings</i></button></li>
                 <li id="notify_button"><button  onclick="click_notify()" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add_alert</i></button></li>
@@ -96,7 +98,6 @@ if (!isset($_SESSION['idFacebook']) || !is_numeric($_SESSION ['idFacebook']) || 
     <div class="spacer"></div>
 
     <div class="row_homepage, parallasse" id="today_event">
-
     </div>
 
     <div class="spacer"></div>
