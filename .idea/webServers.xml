@@ -2,7 +2,7 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="a1208889-9e24-44d1-a737-c3944ddc4c4c" name="Jesus_fablab" url="http://localhost:8080/SmartGroups">
+      <webServer id="a1208889-9e24-44d1-a737-c3944ddc4c4c" name="Jesus_fablab" url="localhost">
         <fileTransfer host="79.28.189.230" port="21" rootFolder="/var/www/smartgroups" username="ppm" password="dfdadfdadfc7df98df9adf9bdf9d">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
