@@ -19,106 +19,56 @@ if (!isset($_SESSION['idFacebook']) || !is_numeric($_SESSION ['idFacebook']) || 
 
 ?>
 
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<html>
-<meta charset="UTF-8">
-
-<link type="text/css" rel="stylesheet" href="materialize/css/materialize.css">
-<link type="text/css" rel="stylesheet" href="style/index_style.css">
-<link type="text/css" rel="stylesheet" href="style/general_style.css">
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-
-
-
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="style/responsiveMenu.css">
-<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-<script src="menuAnimation.js"></script>
-
-
-
-
-
-<script src="Jquery-3.2.1.min/jquery-3.2.1.min.js"></script>
-<script src="scriptINDEX.js"></script>
-
-
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" type="text/css" href="style/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="style/demo.css" />
+    <link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="style/index_style.css" />
+    <script src="js/snap.svg-min.js"></script>
+    <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
 <body>
-
-<?php //echo var_dump($_SESSION); ?>
-<div class="wrapper">
-<!--
-<div id='cssmenu'>
-    <ul>
-        <li><a href='index.php'>Home</a></li>
-        <li class='active'><a href='#'>Products</a>
-            <ul>
-                <li><a href='#'>Product 1</a>
-                    <ul>
-                        <li><a href='#'>Sub Product</a></li>
-                        <li><a href='#'>Sub Product</a></li>
-                    </ul>
-                </li>
-                <li><a href='#'>Product 2</a>
-                    <ul>
-                        <li><a href='#'>Sub Product</a></li>
-                        <li><a href='#'>Sub Product</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </li>
-        <li><button  onclick="click_notify()">Notify</button></li>
-        <li><button  onclick="logout_script()">Logout</button></li>
-    </ul>
-</div>
--->
-
-
-
-
-    <div class="row_homepage, parallasse" id="header_row">
-
-        <div id="profile_picture_div">
-            <img id="pic_profile" src="<?php echo $_SESSION['immagine'] ?>" >
+<div class="container">
+    <div class="menu-wrap">
+        <nav class="menu">
+            <div class="icon-list">
+                <a href="#"><i class="fa fa-fw fa-star-o"></i><span>Favorites</span></a>
+                <a href="#"><i class="fa fa-fw fa-bell-o"></i><span>Alerts</span></a>
+                <a href="#"><i class="fa fa-fw fa-envelope-o"></i><span>Messages</span></a>
+                <a href="#"><i class="fa fa-fw fa-comment-o"></i><span>Comments</span></a>
+                <a href="#"><i class="fa fa-fw fa-bar-chart-o"></i><span>Analytics</span></a>
+                <a href="#"><i class="fa fa-fw fa-newspaper-o"></i><span>Reading List</span></a>
+            </div>
+        </nav>
+        <button class="close-button" id="close-button">Close Menu</button>
+        <div class="morph-shape" id="morph-shape" data-morph-open="M-1,0h101c0,0,0-1,0,395c0,404,0,405,0,405H-1V0z">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 800" preserveAspectRatio="none">
+                <path d="M-1,0h101c0,0-97.833,153.603-97.833,396.167C2.167,627.579,100,800,100,800H-1V0z"/>
+            </svg>
         </div>
-
-        <div id="button_homepage">
-            <h5 style="color: greenyellow; align-content: center">Grazie di aver effettuato il login, presto sarà disponibile una versione malfunzionante ma completa.</h5>
-
-            <ul id="buttons_list">
-                <li id="settings_button"><button onclick="click_settings()" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">settings</i></button></li>
-                <li id="notify_button"><button  onclick="click_notify()" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add_alert</i></button></li>
-                <li id="logout_button"><button  onclick="logout_script()" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">cloud</i></button></li>
-            </ul>
+    </div>
+    <button class="menu-button" id="open-button">Open Menu</button>
+    <div class="content-wrap">
+        <div class="content">
+            cazzzoooo <br> cazzo <br>
+            cazzzoooo <br> cazzo <br>
+            cazzzoooo <br> cazzo <br>               <!-- i cazzi son di prova e preciso va sopra il pulsante -->
+            cazzzoooo <br> cazzo <br>
+            cazzzoooo <br> cazzo <br>
         </div>
     </div>
 
-    <div class="spacer"></div>
-
-    <div class="row_homepage, parallasse" id="today_event">
-    </div>
-
-    <div class="spacer"></div>
-
-
-    <div class="row_homepage" id="future_past_event">
-        <div class="parallasse" id="past_event">
-
-        </div>
-
-        <div id="vertical_future_past_spacer"></div>
-
-        <div class="parallasse" id="future_event">
-
-        </div>
-
-    </div>
-
-</div>
-
-
-
+</div><!-- /container -->
+<script src="js/classie.js"></script>
+<script src="js/main3.js"></script>
 </body>
 </html>
