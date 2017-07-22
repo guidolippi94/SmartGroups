@@ -45,7 +45,7 @@ if (!isset($_SESSION['idFacebook']) || !is_numeric($_SESSION ['idFacebook']) || 
                 <a href="#"><i class="fa fa-fw fa-bell-o"></i><span>Alerts</span></a>
                 <a href="#"><i class="fa fa-fw fa-envelope-o"></i><span>Messages</span></a>
                 <a href="#"><i class="fa fa-fw fa-comment-o"></i><span>Comments</span></a>
-                <a href="#"><i class="fa fa-fw fa-bar-chart-o"></i><span>Analytics</span></a>
+                <a href="http://localhost/SmartG/logout.php"><i class="fa fa-fw fa-bar-chart-o"></i><span>Logout</span></a>
                 <a href="#"><i class="fa fa-fw fa-newspaper-o"></i><span>Reading List</span></a>
             </div>
         </nav>
