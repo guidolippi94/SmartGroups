@@ -40,13 +40,18 @@ if (!isset($_SESSION['idFacebook']) || !is_numeric($_SESSION ['idFacebook']) || 
 <div class="container">
     <div class="menu-wrap">
         <nav class="menu">
+            <div class="profile">
+                <img id="pic_profile" src="<?php echo $_SESSION['immagine'] ?>">
+                <span id="nome-cognome"> <?php echo $_SESSION['nome']; echo " "; echo $_SESSION['cognome'] ?> </span>
+            </div>
+
             <div class="icon-list">
-                <a href="#"><i class="fa fa-fw fa-star-o"></i><span>Favorites</span></a>
-                <a href="#"><i class="fa fa-fw fa-bell-o"></i><span>Alerts</span></a>
-                <a href="#"><i class="fa fa-fw fa-envelope-o"></i><span>Messages</span></a>
-                <a href="#"><i class="fa fa-fw fa-comment-o"></i><span>Comments</span></a>
-                <a href="http://localhost/SmartG/logout.php"><i class="fa fa-fw fa-bar-chart-o"></i><span>Logout</span></a>
-                <a href="#"><i class="fa fa-fw fa-newspaper-o"></i><span>Reading List</span></a>
+                <a href="#"><i class="fa fa-fw fa-star-o" id="icon"></i><span>Favorites</span></a>
+                <a href="#"><i class="fa fa-fw fa-bell-o" id="icon"></i><span>Alerts</span></a>
+                <a href="#"><i class="fa fa-fw fa-envelope-o" id="icon"></i><span>Messages</span></a>
+                <a href="#"><i class="fa fa-fw fa-comment-o" id="icon"></i><span>Comments</span></a>
+                <a href="http://localhost/SmartG/logout.php"><i class="fa fa-fw fa-bar-chart-o" id="icon"></i><span>Logout</span></a>
+                <a href="#"><i class="fa fa-fw fa-newspaper-o" id="icon"></i><span>Reading List</span></a>
             </div>
         </nav>
         <button class="close-button" id="close-button">Close Menu</button>
