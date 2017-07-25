@@ -42,7 +42,7 @@ if (!isset($_SESSION['idFacebook']) || !is_numeric($_SESSION ['idFacebook']) || 
         <nav class="menu">
             <div class="profile">
                 <img id="pic_profile" src="<?php echo $_SESSION['immagine'] ?>">
-                <span id="nome-cognome"> <?php echo $_SESSION['nome']; echo " "; echo $_SESSION['cognome'] ?> </span>
+                <span id="nome-cognome"> <br> <?php echo $_SESSION['nome']; echo " "; echo $_SESSION['cognome'] ?> </span>
             </div>
 
             <div class="icon-list">
@@ -61,8 +61,14 @@ if (!isset($_SESSION['idFacebook']) || !is_numeric($_SESSION ['idFacebook']) || 
             </svg>
         </div>
     </div>
-    <button class="menu-button" id="open-button">Open Menu</button>
+    <button class="menu-button" id="open-button"></button>
     <div class="content-wrap">
+        <div class="top-site">
+            <div style="width:100%; height: 14px"></div>
+            <div class="top-site-end">
+                <p> <b>SMART GROUPS </b></p>
+            </div>
+        </div>
         <div class="content">
             cazzzoooo <br> cazzo <br>
             cazzzoooo <br> cazzo <br>

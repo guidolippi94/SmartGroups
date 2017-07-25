@@ -39,6 +39,25 @@ body,
     transition: transform 0.3s;
 }
 
+.top-site{
+    height: 75px;
+}
+
+.top-site-end{
+    width: 228px;
+    height: 75px;
+    position: absolute;
+    right: 15px;
+}
+.top-site-end p{
+    text-align: right;
+    font-size: 27px;
+    border-left: 5px solid #b84343;
+    border-top: 5px solid #e78686;
+    padding-right: 3px;
+    background: rgb(135, 162, 238);
+}
+
 .content {
     position: relative;
     background: #b4bad2;
