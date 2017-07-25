@@ -15,32 +15,6 @@ $query = "SELECT * FROM user_point WHERE id_facebook='$idF'";
 $user_point=$db->query($query);
 $currentPerson = $user_point->fetch_assoc();
 
-
-$matchArray = array();
-
-
-$queryDBUsersPoint = "SELECT id_facebook, music, sport, food, travel, fashion, education, entertainment, healtcare FROM user_point";
-$result=$db->query($queryDBUsersPoint);
-
-$personFromDB = [];
-while($row = $result->fetch_assoc()){
-    $personFromDB[]=$row;
-   echo "Row print : ";
-    var_dump($row);
-}
-
-
-foreach ($personFromDB as $item){
-    if($currentPerson['id_facebook'] != $item['id_facebook']){
-        array_push($matchArray, personMatchDistance($currentPerson, $item));
-    }
-}
-
-$_SESSION['calculated_distance'] = $matchArray;
-
-var_dump($matchArray);
-
-
 function personMatchDistance($currentPerson, $personFromDB){
     $total=0;
     $total += pow($currentPerson['music']-$personFromDB['music'], 2);
@@ -56,6 +30,31 @@ function personMatchDistance($currentPerson, $personFromDB){
 
     return $total;
 }
+
+
+$matchArray = array();
+
+
+$queryDBUsersPoint = "SELECT id_facebook, music, sport, food, travel, fashion, education, entertainment, healtcare FROM user_point";
+$result=$db->query($queryDBUsersPoint);
+
+$personFromDB = [];
+while($row = $result->fetch_assoc()){
+    $personFromDB[]=$row;
+/*    echo "Row print : ";
+    var_dump($row);*/
+}
+
+
+foreach ($personFromDB as $item){
+    if($currentPerson['id_facebook'] != $item['id_facebook']){
+        array_push($matchArray, personMatchDistance($currentPerson, $item));
+    }
+}
+
+$_SESSION['calculated_distance'] = $matchArray;
+
+var_dump($matchArray);
 
 ?>
 
