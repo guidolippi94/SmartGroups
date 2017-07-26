@@ -17,6 +17,9 @@ if (!isset($_SESSION['idFacebook']) || !is_numeric($_SESSION ['idFacebook']) || 
     <?php
 }
 
+
+
+
 ?>
 
 <!DOCTYPE html>
@@ -32,6 +35,7 @@ if (!isset($_SESSION['idFacebook']) || !is_numeric($_SESSION ['idFacebook']) || 
     <link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" type="text/css" href="style/index_style.css" />
     <script src="js/snap.svg-min.js"></script>
+    <script src="Jquery-3.2.1.min/jquery-3.2.1.min.js"></script>
     <!--[if IE]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -69,16 +73,11 @@ if (!isset($_SESSION['idFacebook']) || !is_numeric($_SESSION ['idFacebook']) || 
                 <p> <b>SMART GROUPS </b></p>
             </div>
         </div>
-        <div class="content">
-            cazzzoooo <br> cazzo <br>
-            cazzzoooo <br> cazzo <br>
-            cazzzoooo <br> cazzo <br>               <!-- i cazzi son di prova e preciso va sopra il pulsante -->
-            cazzzoooo <br> cazzo <br>
-            cazzzoooo <br> cazzo <br>
-        </div>
+        <div class="today-event" id="today"></div>
     </div>
 
 </div><!-- /container -->
+<script src="scriptINDEX.js"></script>
 <script src="js/classie.js"></script>
 <script src="js/main3.js"></script>
 </body>
