@@ -52,7 +52,7 @@ body {font-family: Verdana,sans-serif;}
 .days li {
     list-style-type: none;
     display: inline-block;
-    width: 13.6%;
+    width: 14.2%;
     text-align: center;
     margin-bottom: 5px;
     font-size:12px;
@@ -65,16 +65,20 @@ body {font-family: Verdana,sans-serif;}
     color: white !important
 }
 
+
 /* Add media queries for smaller screens */
 @media screen and (max-width:720px) {
-    .weekdays li, .days li {width: 13.1%;}
+    .weekdays li {width: 13.1%;}
+    .days li {width: 14%;}
 }
 
 @media screen and (max-width: 420px) {
-    .weekdays li, .days li {width: 12.5%;}
+    .weekdays li {width: 12.5%;}
+    .days li {width: 13.7%;}
     .days li .active {padding: 2px;}
 }
 
 @media screen and (max-width: 290px) {
-    .weekdays li, .days li {width: 12.2%;}
+    .weekdays li{width: 12.2%;}
+    .days li {width: 14.2%;}
 }
