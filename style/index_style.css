@@ -26,6 +26,7 @@ body,
 
 .container {
     background: #1abc9c;
+    height: inherit;
 }
 
 .menu-wrap a {
@@ -51,8 +52,7 @@ body,
 .top-site-end{
     width: 245px;
     height: 75px;
-    position: absolute;
-    right: 0px;
+    float: right;
 }
 .top-site-end p{
     text-align: right;

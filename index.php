@@ -30,15 +30,16 @@ include ('Data-collection/query_events.php');
 <html lang="en" class="no-js">
 <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="../favicon.ico"/>
     <link rel="stylesheet" type="text/css" href="style/normalize.css" />
     <link rel="stylesheet" type="text/css" href="style/demo.css" />
     <link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" type="text/css" href="style/index_style.css" />
     <link rel="stylesheet" type="text/css" href="style/calendar-style.css" />
+    <link rel="stylesheet" type="text/css" href="style/event-table.css" />
 
     <script src="js/snap.svg-min.js"></script>
     <script src="Jquery-3.2.1.min/jquery-3.2.1.min.js"></script>
@@ -61,7 +62,7 @@ include ('Data-collection/query_events.php');
                 <a href="#"><i class="fa fa-fw fa-star-o" id="icon"></i><span>Favorites</span></a>
                 <a href="#"><i class="fa fa-fw fa-bell-o" id="icon"></i><span>Notifiche</span></a>
                 <a href="#"><i class="fa fa-fw fa-envelope-o" id="icon"></i><span>Messages</span></a>
-                <a href="#"><i class="fa fa-fw fa-comment-o" id="icon"></i><span>Comments</span></a>
+                <a href="#"><i class="fa fa-fw fa-comment-o" id="icon"></i><span class="show-events" id="close-button">All Events</span></a>
                 <a href="http://localhost/SmartG/logout.php"><i class="fa fa-fw fa-undo" id="icon"></i><span>Logout</span></a>
                 <a href="#"><i class="fa fa-fw fa-newspaper-o" id="icon"></i><span>Reading List</span></a>
             </div>
@@ -105,12 +106,39 @@ include ('Data-collection/query_events.php');
                 <ul class="days" id="days">
                 </ul>
             </div>
+            <h2 style="color: white">Tuoi Eventi del Mese</h2>
+            <?php for($i=0; $i< count($resEvents); $i++){
+                if(date('Y-m') == substr($resEvents[$i][2],0,7)){?>
+            <div class="informations-event">
+
+                <span> <?php echo $resEvents[$i][0];?> </br></span>
+                <p> <?php echo $resEvents[$i][1];?> </br></p>
+                <p> <?php echo substr($resEvents[$i][2],0,10);?> </br></p>
+                <p> <?php echo substr($resEvents[$i][3],0,5);?> </br></p>
+                <p> <?php echo $resEvents[$i][4];?> </br></p></br><?php
+                }}?>
+            </div>
         </div>
+
 
     </div>
 </div><!-- /container -->
 
+<div id="all-events">
+    <span> All Events </span>
+    <div class="all-events">
+        <?php for($i=0; $i< count($resEvents); $i++){?>
+        <div><span> <?php echo $resEvents[$i][0];?> </br></span></div>
+        <div><span> <?php echo $resEvents[$i][1];?> </br></span></div>
+        <div><span> <?php echo substr($resEvents[$i][2],0,10);?> </br></span></div>
+        <div><span> <?php echo substr($resEvents[$i][3],0,5);?> </br></span></div>
+        <div id="last"><span> <?php echo $resEvents[$i][4];?> </br></span></div><?php
+        }?>
+    </div>
+</div>
 
+
+<script src="js/events.js"></script>
 <script src="js/calendar.js"></script>
 <script src="js/classie.js"></script>
 <script src="js/main3.js"></script>
