@@ -1,6 +1,5 @@
 #all-events{
     max-height: 97%;
-    text-align: center;
     position: absolute;
     color: black;
     top: 2%;
@@ -18,8 +17,8 @@ div .all-events{
     border-right: 3px dashed #8c8c8c;
 }
 
-div .all-events div{
-    background-color: rgba(106,64,64,1);
+div .all-events div {
+    background-color: #8c8c8c;
 }
 
 div .all-events span{

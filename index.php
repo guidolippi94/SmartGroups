@@ -10,7 +10,6 @@
 session_start();
 //var_dump($_SESSION);
 
-$id_facebook = $_SESSION['idFacebook'];
 
 
 // verifico di aver fatto il login
@@ -20,9 +19,11 @@ if (!isset($_SESSION['idFacebook']) || !is_numeric($_SESSION['idFacebook']) || $
     <?php
 }
 
+$id_facebook = $_SESSION['idFacebook'];
 include ('Data-collection/query_events.php');
 
-
+$d = new DateTime("NOW");
+$d->setDate(2016,11,11);
 
 ?>
 
@@ -62,7 +63,7 @@ include ('Data-collection/query_events.php');
                 <a href="#"><i class="fa fa-fw fa-star-o" id="icon"></i><span>Favorites</span></a>
                 <a href="#"><i class="fa fa-fw fa-bell-o" id="icon"></i><span>Notifiche</span></a>
                 <a href="#"><i class="fa fa-fw fa-envelope-o" id="icon"></i><span>Messages</span></a>
-                <a href="#"><i class="fa fa-fw fa-comment-o" id="icon"></i><span class="show-events" id="close-button">All Events</span></a>
+                <a href="#"><i class="fa fa-fw fa-calendar-check-o" id="icon"></i><span class="show-events" id="close-button">All Events</span></a>
                 <a href="http://localhost/SmartG/logout.php"><i class="fa fa-fw fa-undo" id="icon"></i><span>Logout</span></a>
                 <a href="#"><i class="fa fa-fw fa-newspaper-o" id="icon"></i><span>Reading List</span></a>
             </div>
@@ -108,7 +109,7 @@ include ('Data-collection/query_events.php');
             </div>
             <h2 style="color: white">Tuoi Eventi del Mese</h2>
             <?php for($i=0; $i< count($resEvents); $i++){
-                if(date('Y-m') == substr($resEvents[$i][2],0,7)){?>
+                if($d->format('Y-m') == substr($resEvents[$i][2],0,7)){?>
             <div class="informations-event">
 
                 <span> <?php echo $resEvents[$i][0];?> </br></span>
@@ -128,7 +129,7 @@ include ('Data-collection/query_events.php');
     <span> All Events </span>
     <div class="all-events">
         <?php for($i=0; $i< count($resEvents); $i++){?>
-        <div><span> <?php echo $resEvents[$i][0];?> </br></span></div>
+        <div><span style="color: darkred"> <?php echo $resEvents[$i][0];?> </br></span></div>
         <div><span> <?php echo $resEvents[$i][1];?> </br></span></div>
         <div><span> <?php echo substr($resEvents[$i][2],0,10);?> </br></span></div>
         <div><span> <?php echo substr($resEvents[$i][3],0,5);?> </br></span></div>
