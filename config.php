@@ -8,9 +8,9 @@
 
 // avvio una connessione con il database MySQL
 $dbServer = "localhost";
-$dbUser = "root";
-$dbPassword = "";
-$dbName = "test";
+$dbUser = "testppm";
+$dbPassword = "ppm2017";
+$dbName = "testppm";
 
 
 $db = new mysqli($dbServer, $dbUser, $dbPassword, $dbName);

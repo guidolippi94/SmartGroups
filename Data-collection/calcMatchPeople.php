@@ -48,7 +48,11 @@ while($row = $result->fetch_assoc()){
 
 foreach ($personFromDB as $item){
     if($currentPerson['id_facebook'] != $item['id_facebook']){
-        array_push($matchArray, personMatchDistance($currentPerson, $item));
+        $idFbDistanceObj = new stdClass();
+        $idFbDistanceObj->idFb=$item['id_facebook'];
+        $idFbDistanceObj->distance=personMatchDistance($currentPerson, $item);
+
+        array_push($matchArray, $idFbDistanceObj);
     }
 }
 
