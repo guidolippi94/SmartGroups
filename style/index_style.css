@@ -1,3 +1,20 @@
+#icon{
+    font-size: 20px;
+}
+
+#pic_profile {
+    border-radius: 50% ;
+    width: 70px;
+    height: 70px;
+    background:#FFCC00;
+}
+
+#nome-cognome{
+    text-emphasis-color: black;
+    text-shadow: 0 1px black, 1px 0 black
+}
+
+
 html,
 body,
 .container,
@@ -8,11 +25,12 @@ body,
 }
 
 .container {
-    background: #373a47;
+    background: #1abc9c;
+    height: inherit;
 }
 
 .menu-wrap a {
-    color: #b8b7ad;
+    /* color: #b8b7ad; */      <!-- Questo comando colora le scritte -->
 }
 
 .menu-wrap a:hover,
@@ -27,32 +45,31 @@ body,
     transition: transform 0.3s;
 }
 
-.content {
-    position: relative;
-    background: #b4bad2;
+.top-site{
+    height: 75px;
 }
 
-.content::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.3);
-    content: '';
-    opacity: 0;
-    -webkit-transition: opacity 0.3s, -webkit-transform 0s 0.3s;
-    transition: opacity 0.3s, transform 0s 0.3s;
-    -webkit-transform: translate3d(100%,0,0);
-    transform: translate3d(100%,0,0);
+.top-site-end{
+    width: 245px;
+    height: 75px;
+    float: right;
+}
+.top-site-end p{
+    text-align: right;
+    font-size: 26px;
+    border-left: 5px solid #ff0;
+    border-top: 5px solid #ffcc00;
+    border-radius: 3%;
+    padding-right: 5px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    /* background: rgb(180, 186, 210); */
 }
 
 /* Menu Button */
 .menu-button {
     position: fixed;
     z-index: 1000;
-    margin: 1em;
+    margin: 0.75em;
     padding: 0;
     width: 2.5em;
     height: 2.25em;
@@ -127,31 +144,44 @@ body,
 }
 
 .menu {
-    background: #373a47;
+    background: aliceblue;
     width: calc(100% - 120px);
     height: 100%;
     padding: 2em 1em;
 }
 
+.profile{
+    display: inline-block;
+    padding: 8px 10px;
+    width: 100%;
+    text-align: center;
+}
+
+
 .icon-list {
     width: 280px;
+    line-height: 20px;
 }
 
 .icon-list a {
     display: block;
     padding: 0.8em;
 }
+.icon-list div {
+    display: block;
+    padding: 0.8em;
+}
 
 .icon-list a i {
-    opacity: 0.5;
+    opacity: 0.8;
 }
 
 .icon-list a span {
-    margin-left: 10px;
+    margin-left: 12px;
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 1px;
-    font-size: 0.75em;
+    font-size: 0.87em;
 }
 
 /* Morph Shape */
@@ -161,7 +191,7 @@ body,
     height: 100%;
     top: 0;
     right: 0;
-    fill: #373a47;
+    fill: aliceblue;
     z-index: 1000;
 }
 
@@ -182,6 +212,6 @@ body,
     opacity: 1;
     -webkit-transition: opacity 0.3s;
     transition: opacity 0.3s;
-    -webkit-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
 }

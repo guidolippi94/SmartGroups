@@ -29,22 +29,17 @@ foreach ($user_events as $single_event){
         $event_street = $single_event['place']['location']['street'];
         $event_latitude = $single_event['place']['location']['latitude'];
         $event_longitude = $single_event['place']['location']['longitude'];
+        $event_rsvp_status = $single_event['rsvp_status'];
 
         $event_date = date('Y-m-d',$event_date);
 
-        echo "favaaaaaaaaaaaaaaaaaaaaaaaaaa". $start_time;
 
-        //TODO aggiungere tag_date parasata correttamente nell'insert into del db (per ora il campo è text ma andrà messo date)
-
-
-        $query_event = "INSERT INTO joined_events(event_name, place_name, city, country, street, event_date, start_time, event_id, id_facebook, latitude, longitude) VALUES('$event_name','$event_place_name', '$event_city', '$event_country', '$event_street', '$event_date', '$start_time', '$single_event_id','$idFacebook', '$event_latitude', '$event_longitude')";
+        $query_event = "INSERT INTO joined_events(event_name, place_name, city, country, street, event_date, start_time, event_id, id_facebook, latitude, longitude, rspv_status) VALUES('$event_name','$event_place_name', '$event_city', '$event_country', '$event_street', '$event_date', '$start_time', '$single_event_id','$idFacebook', '$event_latitude', '$event_longitude', '$event_rsvp_status')";
         $db->query($query_event);
 
         if ($db->errno != 0) {
             echo  nl2br ("\n INSERT tagged_place: \".$db->errno.\" , \".$event_city.\" , \".$event_country.\" , \".$event_street.\" , \".$event_name.\" , \".$event_name");
         }
-
-        //TODO fare inserimento nella tabella table connection
 
         $query_join_event = "INSERT INTO table_connection(id_facebook, joined_events) VALUES ('$idFacebook', '$single_event_id')";
         $db->query($query_join_event);

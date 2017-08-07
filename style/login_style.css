@@ -1,11 +1,13 @@
 #login_wrapper{
     background-image: url("../img/login_background.jpg");
-    position: relative;
     min-height: 600px;
 }
 
 #login_button_facebook{
-    margin: 0 auto;
+    height: 58%;
+    width: 63%;
+    border-radius: 36px;
+    text-align: center;
 }
 
 #loading{
@@ -22,6 +24,34 @@
     margin-bottom: 20%;
     margin-left: 45%;
 }
+#logo-FB{
+    line-height: 115px;
+    width: 92px;
+    font-size: 3.8em;
+}
+
+.fb-paragraph{
+    margin-top: 9.5px;
+    font-size: 180%;
+    margin-left: 37px
+}
+
+.login-container {
+    line-height:200px;
+}
+
+.outer {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+.middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/* Caricamento */
 
 #circle-loader {
 

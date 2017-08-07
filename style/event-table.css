@@ -1,0 +1,52 @@
+#all-events{
+    max-height: 97%;
+    position: absolute;
+    color: black;
+    top: 2%;
+    left: 14%;
+    max-width: 71%;
+    width: 90%;
+    overflow: auto;
+
+}
+
+div .all-events{
+    margin: 0;
+    border-top: 7px groove #1abc9c;
+    border-left: 3px dashed #8c8c8c;
+    border-right: 3px dashed #8c8c8c;
+}
+
+div .all-events div {
+    background-color: #8c8c8c;
+}
+
+div .all-events span{
+    padding-bottom: 2px;
+    max-height: 0px;
+    min-width: 1000%;
+}
+
+#last{
+    margin-bottom: 5px;
+}
+
+
+.informations-event {
+    margin: 0;
+    padding: 10px 0;
+    background-color: rgba(106,64,64,0.36);
+    border-top: 5px groove #1abc9c;
+}
+.informations-event p{
+    padding-bottom: 2px;
+    max-height: 0px;
+    min-width: 1000%;
+}
+
+
+
+@media screen and (max-width:720px){
+
+}
+

@@ -46,12 +46,16 @@ if (isset($_SESSION['idFacebook']) && is_numeric($_SESSION['idFacebook']) && $_S
 </head>
 <body>
 
-<div class="wrapper, parallasse" id="login_wrapper">
-
-    <button onclick="loginFacebook()" class="btn btn-social btn-lg btn-facebook" id="login_button_facebook">
-        <span class="fa fa-facebook"></span> Accedi a Facebook
-    </button>
-
+<div class="parallasse outer" id="login_wrapper" style="background: #fffce1">
+    <div class="middle">
+        <div class="row login-container">
+            <div style="text-align: center; height: 200px">
+                <button onclick="loginFacebook()" class="btn btn-social btn-lg btn-facebook" id="login_button_facebook" >
+                    <span class="fa fa-facebook" id="logo-FB" ></span> <p class="fb-paragraph"> <b>Accedi a Facebook </b></p>
+                </button>
+            </div>
+        </div>
+    </div>
 </div>
 
 <div id="loading" style="display: none">
