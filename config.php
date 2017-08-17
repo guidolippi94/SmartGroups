@@ -8,10 +8,13 @@
 
 // avvio una connessione con il database MySQL
 $dbServer = "localhost";
-$dbUser = "testppm";
-$dbPassword = "ppm2017";
-$dbName = "testppm";
+$dbUser = "smartgroups";
+$dbPassword = "";
+$dbName = "my_smartgroups";
 
 
 $db = new mysqli($dbServer, $dbUser, $dbPassword, $dbName);
-if ($db->connect_errno) { echo "Impossibile collegarsi al database"; exit(); }
+if ($db->connect_errno) {
+    echo "Impossibile collegarsi al database";
+    exit();
+}
