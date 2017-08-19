@@ -51,7 +51,7 @@ if (isset($_SESSION['idFacebook']) && is_numeric($_SESSION['idFacebook']) && $_S
         <div class="row login-container">
             <div style="text-align: center; height: 200px">
                 <button onclick="loginFacebook()" class="btn btn-social btn-lg btn-facebook" id="login_button_facebook" >
-                    <span class="fa fa-facebook" id="logo-FB" ></span> <p class="fb-paragraph"> <b>Accedi a Facebook </b></p>
+                    <span class="fa fa-facebook" id="logo-FB" ></span> <p class="fb-paragraph"> <b>Accedi Con Facebook </b></p>
                 </button>
             </div>
         </div>
