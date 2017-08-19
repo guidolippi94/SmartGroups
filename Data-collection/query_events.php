@@ -6,16 +6,6 @@
  * Time: 12:01
  */
 
-$dbServer = "localhost";
-$dbUser = "root";
-$dbPassword = "";
-$dbName = "test";
-
-
-$db = new mysqli($dbServer, $dbUser, $dbPassword, $dbName);
-if ($db->connect_errno) { echo "Impossibile collegarsi al database"; exit(); }
-
-
 $query =" SELECT joined_events.event_name, joined_events.place_name, joined_events.event_date, joined_events.start_time, joined_events.rspv_status
           FROM joined_events, table_connection
           WHERE joined_events.event_id = table_connection.joined_events AND table_connection.id_facebook = '$id_facebook'";

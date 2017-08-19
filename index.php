@@ -20,10 +20,10 @@ if (!isset($_SESSION['idFacebook']) || !is_numeric($_SESSION['idFacebook']) || $
 }
 
 $id_facebook = $_SESSION['idFacebook'];
+include ('config.php');
 include ('Data-collection/query_events.php');
 
 $d = new DateTime("NOW");
-$d->setDate(2016,11,11);
 
 ?>
 
