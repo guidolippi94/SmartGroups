@@ -20,10 +20,10 @@ if (!isset($_SESSION['idFacebook']) || !is_numeric($_SESSION['idFacebook']) || $
 }
 
 $id_facebook = $_SESSION['idFacebook'];
+include ('config.php');
 include ('Data-collection/query_events.php');
 
 $d = new DateTime("NOW");
-$d->setDate(2016,11,11);
 
 ?>
 
@@ -51,8 +51,6 @@ $d->setDate(2016,11,11);
 <body>
 <div class="container">
 
-    <a href="event_suggestion.php">Event suggest</a>
-    <a href="friend_suggestion.php">Friend Suggest</a>
     <!-- dovrebbe venire fuori quello laterale -->
     <div class="menu-wrap">
         <nav class="menu">
@@ -62,12 +60,12 @@ $d->setDate(2016,11,11);
             </div>
 
             <div class="icon-list">
-                <a href="#"><i class="fa fa-fw fa-star-o" id="icon"></i><span>Favorites</span></a>
+                <!--<a href="#"><i class="fa fa-fw fa-star-o" id="icon"></i><span>Favorites</span></a> -->
                 <a href="#"><i class="fa fa-fw fa-bell-o" id="icon"></i><span>Notifiche</span></a>
-                <a href="#"><i class="fa fa-fw fa-envelope-o" id="icon"></i><span>Messages</span></a>
+                <!-- <a href="#"><i class="fa fa-fw fa-envelope-o" id="icon"></i><span>Messages</span></a> -->
                 <a href="#"><i class="fa fa-fw fa-calendar-check-o" id="icon"></i><span class="show-events" id="close-button">All Events</span></a>
-                <a href="logout.php"><i class="fa fa-fw fa-undo" id="icon"></i><span>Logout</span></a>
-                <a href="#"><i class="fa fa-fw fa-newspaper-o" id="icon"></i><span>Reading List</span></a>
+                <a href="http://localhost/SmartG/logout.php"><i class="fa fa-fw fa-undo" id="icon"></i><span>Logout</span></a>
+                <!--<a href="#"><i class="fa fa-fw fa-newspaper-o" id="icon"></i><span>Reading List</span></a>-->
             </div>
         </nav>
         <button class="close-button" id="close-button">Close Menu</button>

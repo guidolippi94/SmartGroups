@@ -8,9 +8,9 @@
 
 // avvio una connessione con il database MySQL
 $dbServer = "localhost";
-$dbUser = "smartgroups";
+$dbUser = "root";
 $dbPassword = "";
-$dbName = "my_smartgroups";
+$dbName = "test";
 
 
 $db = new mysqli($dbServer, $dbUser, $dbPassword, $dbName);
