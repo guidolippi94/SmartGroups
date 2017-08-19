@@ -1,11 +1,12 @@
 <?php
-/**
+
+ /*
  * Created by PhpStorm.
  * User: aless
  * Date: 26/07/2017
  * Time: 12:01
  */
-
+/*
 $dbServer = "localhost";
 $dbUser = "root";
 $dbPassword = "";
@@ -24,3 +25,4 @@ if ($db->errno != 0) { echo "Impossibile caricare gli eventi, riprovare più tar
 
 $resEvents = $db->query($query);
 $resEvents = $resEvents->fetch_all();
+*/

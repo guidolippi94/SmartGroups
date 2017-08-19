@@ -67,7 +67,6 @@ var_dump($matchArray);
 <body>
 <a href="../logout.php">Logout</a>
 
-<h2> Santo Server </h2>
 </body>
 </html>
 
