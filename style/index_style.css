@@ -228,7 +228,7 @@ body,
     text-align: center;
 }
 
-.suggestedEvent{
+.myEvent{
     border: 2px solid black;
     height: 200px;
     width: 30%;
@@ -272,7 +272,7 @@ body,
     margin-top: 0.5%;
 }
 
-.infoSuggestEvent{
+.infoMyEvent{
     display: inline-block;
 }
 

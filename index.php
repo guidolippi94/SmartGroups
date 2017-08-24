@@ -107,7 +107,14 @@ $d = new DateTime("NOW");
                 </ul>
             </div>
             <h2 class="eventWrapperTitle" style="color: white">Eventi suggeriti</h2>
-            <?php for($i=0; $i< count($_SESSION['suggested_events']); $i++){ ?>
+            <?php
+            $query="SELECT joined_events.event_name FROM joined_events WHERE id_facebook = $id_facebook";
+            $result=$db->query($query);
+            $result=$result->fetch_all();
+
+            foreach ($result as $item) {
+
+             ?>
             <div class="suggestEventWrapper"">
 
 
@@ -115,16 +122,14 @@ $d = new DateTime("NOW");
 
 
 
-                <div class="suggestedEvent">
+                <div class="myEvent">
                     <img id="pic_event" src="<?php echo $_SESSION['immagine'] ?>">
-                    <div class="infoSuggestEvent">
+                    <div class="infoMyEvent">
                     </br><p class="shortEventInfo"> <?php
-                            $event_id= $_SESSION['suggested_events'][$i]['event_id'];
 
-                            $query="SELECT events.name FROM events WHERE id = $event_id";
-                            $result=$db->query($query);
-                            $result=$result->fetch_all();
-                            echo($result[0][0]);
+
+                            var_dump($item[0]);
+                            //echo($result[0][0]);
 
                             ?> </p>
 
