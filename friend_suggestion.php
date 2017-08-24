@@ -36,6 +36,8 @@ foreach ($myEvent as $item){
     array_push($myEventList, $item);
 }
 
+$_SESSION['suggested_events']=$myEventList;
+
 //elenco degli amici interessati ad ogni evento
 
 $friendsOnSingleEvent=array();

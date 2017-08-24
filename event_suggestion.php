@@ -92,7 +92,6 @@ foreach ($eventFromDB as $item){
 //var_dump($eventListCategory3);
 
 
-
 //todo effettuare controllo sulla data dell'evento e rimuoverlo se è già passato
 
 

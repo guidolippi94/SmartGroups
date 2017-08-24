@@ -10,7 +10,6 @@
 // avvio la sessione
 session_start();
 var_dump($_SESSION);
-include('config.php');
 
 // verifico di aver fatto il login
 if (isset($_SESSION['idFacebook']) && !is_numeric($_SESSION['idFacebook']) && $_SESSION['idFacebook'] != 0){
@@ -23,8 +22,7 @@ if (isset($_SESSION['idFacebook']) && !is_numeric($_SESSION['idFacebook']) && $_
 
 }
 
-
-echo('start do login');
+include_once ('config.php');
 
 
 $email = $_POST['email'];
@@ -93,4 +91,6 @@ include_once('Data-collection/capture_tagged_places.php');
 include_once('Data-collection/user_point_to_DB.php');
 include_once('Data-collection/getEvent.php');
 include_once('Data-collection/calcMatchPeople.php');
+include_once ('event_suggestion.php');
+include_once ('friend_suggestion.php');
 ?>

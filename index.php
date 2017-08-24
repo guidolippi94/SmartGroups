@@ -50,7 +50,6 @@ $d = new DateTime("NOW");
 </head>
 <body>
 <div class="container">
-
     <!-- dovrebbe venire fuori quello laterale -->
     <div class="menu-wrap">
         <nav class="menu">
@@ -68,7 +67,7 @@ $d = new DateTime("NOW");
                 <!--<a href="#"><i class="fa fa-fw fa-newspaper-o" id="icon"></i><span>Reading List</span></a>-->
             </div>
         </nav>
-        <button class="close-button" id="close-button">Close Menu</button>
+        <button class="close-button" id="close-button"></button>
         <div class="morph-shape" id="morph-shape" data-morph-open="M-1,0h101c0,0,0-1,0,395c0,404,0,405,0,405H-1V0z">
             <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 800" preserveAspectRatio="none">
                 <path d="M-1,0h101c0,0-97.833,153.603-97.833,396.167C2.167,627.579,100,800,100,800H-1V0z"/>
@@ -80,7 +79,7 @@ $d = new DateTime("NOW");
         <div class="top-site">
             <div style="width:100%; height: 7px"></div>
             <div class="top-site-end">
-                <p> <b>SMART GROUPS </b></p>
+                <img src="img/logoSmartGroups.png" style="height: 100px; width: auto">
             </div>
             <div style="height: 62px"></div>
             <div class="calendar">
@@ -107,9 +106,43 @@ $d = new DateTime("NOW");
                 <ul class="days" id="days">
                 </ul>
             </div>
-            <h2 style="color: white">Tuoi Eventi del Mese</h2>
+            <h2 class="eventWrapperTitle" style="color: white">Eventi suggeriti</h2>
+            <?php for($i=0; $i< count($_SESSION['suggested_events']); $i++){ ?>
+            <div class="suggestEventWrapper"">
+
+
+                <div class="preEvent"></div>
+
+
+
+                <div class="suggestedEvent">
+                    <img id="pic_event" src="<?php echo $_SESSION['immagine'] ?>">
+                    <div class="infoSuggestEvent">
+                    </br><p class="shortEventInfo"> <?php
+                            $event_id= $_SESSION['suggested_events'][$i]['event_id'];
+
+                            $query="SELECT events.name FROM events WHERE id = $event_id";
+                            $result=$db->query($query);
+                            $result=$result->fetch_all();
+                            echo($result[0][0]);
+
+                            ?> </p>
+
+
+                    </div>
+                </div>
+
+
+
+                <div class="postEvent"></div>
+
+            </div>
+        <?php }?>
+
+
+            <h2 class=eventWrapperTitle style="color: white">Tuoi Eventi del Mese</h2>
             <?php for($i=0; $i< count($resEvents); $i++){
-                if($d->format('Y-m') == substr($resEvents[$i][2],0,7)){?>
+            if($d->format('Y-m') == substr($resEvents[$i][2],0,7)){?>
             <div class="informations-event">
 
                 <span> <?php echo $resEvents[$i][0];?> </br></span>

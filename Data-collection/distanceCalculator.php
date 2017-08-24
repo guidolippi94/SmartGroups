@@ -7,7 +7,6 @@
  */
 
 session_start();
-include_once('../config.php');
 
 function calculateDistance($myFacebookId, $friendFacebookId, $databaseConnection){
 

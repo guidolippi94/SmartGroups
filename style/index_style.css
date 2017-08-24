@@ -215,3 +215,68 @@ body,
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
 }
+
+.eventWrapperTitle{
+    text-align: center;
+}
+
+
+.suggestEventWrapper{
+    background-color: rgba(255,255,255,0.5);
+    height:300px;
+    min-width: 100%;
+    text-align: center;
+}
+
+.suggestedEvent{
+    border: 2px solid black;
+    height: 200px;
+    width: 30%;
+    display: inline-block;
+    margin-top: 1%;
+    margin-left: 4%;
+    float: left;
+
+
+
+}
+
+.preEvent{
+    border: 2px solid black;
+    min-height: 200px;
+    width: 30%;
+    display: inline-block;
+    margin-top: 1%;
+    margin-left: 1%;
+    float: left;
+}
+
+.postEvent{
+    border: 2px solid black;
+    min-height: 200px;
+    width: 30%;
+    display: inline-block;
+    margin-top: 1%;
+    margin-right: 1%;
+    float: right;
+
+}
+
+#pic_event {
+    border-radius: 50% ;
+    width: 100px;
+    height: 100px;
+    background:#FFCC00;
+    float: left;
+    margin-left: 40%;
+    margin-top: 0.5%;
+}
+
+.infoSuggestEvent{
+    display: inline-block;
+}
+
+.shortEventInfo{
+    color: black;
+    font-size: small;
+}

@@ -6,8 +6,6 @@
  * Time: 19:12
  */
 
-include('../config.php');
-
 $eventArray = array();
 
 
