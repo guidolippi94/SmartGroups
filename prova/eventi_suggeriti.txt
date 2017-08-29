@@ -1,0 +1,2817 @@
+{
+    "data":
+        {
+            "filters":
+                {
+                    "categoria":
+                        [
+                            
+                            {
+                                "categoria":"Altri eventi",
+                                "categoria_eng":"Other events",
+                                "peso":"14",
+                                "cod_categoria":"14",
+                                "inuso":"1",
+                                "nutente":"1"
+                            },
+                            
+                            {
+                                "categoria":"Aperture straordinarie, visite guidate",
+                                "categoria_eng":"Extraordinary openings, guided tours",
+                                "peso":"8",
+                                "cod_categoria":"5",
+                                "inuso":"1",
+                                "nutente":"1"
+                            },
+                            
+                            {
+                                "categoria":"da valutare",
+                                "categoria_eng":"",
+                                "peso":"0",
+                                "cod_categoria":"99",
+                                "inuso":"0",
+                                "nutente":"1"
+                            },
+                            
+                            {
+                                "categoria":"Estate Fiorentina",
+                                "categoria_eng":"Florentine Summer",
+                                "peso":"15",
+                                "cod_categoria":"101",
+                                "inuso":"0",
+                                "nutente":"9"
+                            },
+                            
+                            {
+                                "categoria":"Fiere, mercati",
+                                "categoria_eng":"Markets, fairs",
+                                "peso":"9",
+                                "cod_categoria":"6",
+                                "inuso":"1",
+                                "nutente":"1"
+                            },
+                            
+                            {
+                                "categoria":"Film festival",
+                                "categoria_eng":"Film festival",
+                                "peso":"5",
+                                "cod_categoria":"4",
+                                "inuso":"1",
+                                "nutente":"1"
+                            },
+                            
+                            {
+                                "categoria":"Mostre",
+                                "categoria_eng":"Exhibitions",
+                                "peso":"12",
+                                "cod_categoria":"11",
+                                "inuso":"1",
+                                "nutente":"1"
+                            },
+                            
+                            {
+                                "categoria":"Musica classica, opera e balletto",
+                                "categoria_eng":"Classical music, opera, ballet",
+                                "peso":"2",
+                                "cod_categoria":"1",
+                                "inuso":"1",
+                                "nutente":"1"
+                            },
+                            
+                            {
+                                "categoria":"Musica rock, jazz, pop, contemporanea",
+                                "categoria_eng":"Rock, jazz, pop, contemporary music",
+                                "peso":"3",
+                                "cod_categoria":"2",
+                                "inuso":"1",
+                                "nutente":"1"
+                            },
+                            
+                            {
+                                "categoria":"News",
+                                "categoria_eng":"News",
+                                "peso":"1",
+                                "cod_categoria":"12",
+                                "inuso":"1",
+                                "nutente":"1"
+                            },
+                            
+                            {
+                                "categoria":"Readings, Conferenze, Convegni",
+                                "categoria_eng":"Readings, literary meetings, conferences",
+                                "peso":"10",
+                                "cod_categoria":"10",
+                                "inuso":"1",
+                                "nutente":"9"
+                            },
+                            
+                            {
+                                "categoria":"Sport",
+                                "categoria_eng":"Sport",
+                                "peso":"7",
+                                "cod_categoria":"9",
+                                "inuso":"1",
+                                "nutente":"1"
+                            },
+                            
+                            {
+                                "categoria":"Teatro",
+                                "categoria_eng":"Theatre",
+                                "peso":"4",
+                                "cod_categoria":"3",
+                                "inuso":"1",
+                                "nutente":"1"
+                            },
+                            
+                            {
+                                "categoria":"Tradizioni popolari",
+                                "categoria_eng":"Folk traditions",
+                                "peso":"11",
+                                "cod_categoria":"7",
+                                "inuso":"1",
+                                "nutente":"1"
+                            },
+                            
+                            {
+                                "categoria":"Walking",
+                                "categoria_eng":"Walking",
+                                "peso":"13",
+                                "cod_categoria":"13",
+                                "inuso":"1",
+                                "nutente":"1"
+                            }
+                        ]
+                }
+        },
+    "rows":
+        [
+            
+            {
+                "gratuito":"0",
+                "decode_gratuito":"No",
+                "indirizzi":"VILLA BARDINI - Costa San Giorgio , 2",
+                "recapito":
+                    [
+                        
+                        {
+                            "recapito":"VILLA BARDINI - Costa San Giorgio , 2",
+                            "civico":"",
+                            "lat":"43.763917",
+                            "lon":"11.255981"
+                        }
+                    ],
+                "civico":"",
+                "orario":"18.15 (apertura giardino ore 17.30)",
+                "data_to":"2017-09-08",
+                "allegato":"",
+                "cod_categoria":"3",
+                "decode_categoria":"Teatro",
+                "info_eng":"",
+                "testo_ita":"di G. Boccaccio, adattato da G. Scardoni; novelle lette da Anna Meacci (3,4,5 Settembre) e David Riondino (6,7,8 Settembre), con accompagnamento di musica dal vivo. Produzione Compagnia Lombardi - Tiezzi. \n",
+                "testo_eng":"",
+                "nreplica":"27220",
+                "decode_categoria_eng":"Theatre",
+                "peso":"1",
+                "bambini":"",
+                "titolo_ita":"\"Decameron\"",
+                "decode_data_to":"08\/09\/2017",
+                "lat":"43.763917",
+                "immagine":"",
+                "nutente":"50",
+                "titolo_eng":"",
+                "wwwsite":"www.lombarditiezzi.it",
+                "ordinamento":1,
+                "info_ita":"055 600218",
+                "prezzo":"5",
+                "orario_eng":"",
+                "cod_evento":"22115",
+                "data_from":"2017-09-03",
+                "lon":"11.255981",
+                "decode_data_from":"03\/09\/2017"
+            },
+            
+            {
+                "gratuito":"0",
+                "decode_gratuito":"No",
+                "indirizzi":"MUSEO DI SAN MARCO - Piazza Di San Marco , 3",
+                "recapito":
+                    [
+                        
+                        {
+                            "recapito":"MUSEO DI SAN MARCO - Piazza Di San Marco , 3",
+                            "civico":"",
+                            "lat":"43.778139",
+                            "lon":"11.259003"
+                        }
+                    ],
+                "civico":"",
+                "orario":"21.15 \"Salve, Flos Tuscae Gentis\" Musica a Firenze ai tempi di Cosimo il Vecchio. Musiche di  Landini, Dufay, Gherardello e anonimi.",
+                "data_to":"2017-09-02",
+                "allegato":"",
+                "cod_categoria":"1",
+                "decode_categoria":"Musica classica, opera e balletto",
+                "info_eng":"055 695000\nhomarme@tin.it",
+                "testo_ita":"L'associazione \"L'Homme Armé\" presenta il festival internazionale di musica rinascimentale a Firenze.",
+                "testo_eng":"Internazional Festival dedicated to the renaissance music in Florence.",
+                "nreplica":"27126",
+                "decode_categoria_eng":"Classical music, opera, ballet",
+                "peso":"1",
+                "bambini":"",
+                "titolo_ita":"\"FloReMus. Rinascimento Musicale a Firenze\"",
+                "decode_data_to":"02\/09\/2017",
+                "lat":"43.778139",
+                "immagine":"",
+                "nutente":"52",
+                "titolo_eng":"\"FloReMus. Rinascimento Musicale a Firenze\"",
+                "wwwsite":"www.hommearme.it",
+                "ordinamento":2,
+                "info_ita":"055 695000\nhomarme@tin.it",
+                "prezzo":"15-10",
+                "orario_eng":"21.15 \"Salve, Flos Tuscae Gentis\" Florentine Music of Cosimo il Vecchio's time. Music by Landini, Dufay, Gherardello. ",
+                "cod_evento":"22085",
+                "data_from":"2017-09-02",
+                "lon":"11.259003",
+                "decode_data_from":"02\/09\/2017"
+            },
+            
+            {
+                "gratuito":"1",
+                "indirizzi":"FORTE BELVEDERE - Via Di San Leonardo ",
+                "recapito":
+                    [
+                        
+                        {
+                            "recapito":"FORTE BELVEDERE - Via Di San Leonardo ",
+                            "civico":"",
+                            "lat":"43.763197",
+                            "lon":"11.25441"
+                        }
+                    ],
+                "civico":"",
+                "orario":"21:00: \"Zootropolis\" di B. Howard, R. Moore e J. Bush.",
+                "data_to":"2017-08-29",
+                "allegato":"",
+                "cod_categoria":"4",
+                "decode_categoria":"Film festival",
+                "info_eng":"",
+                "testo_ita":"Rassegna cinematografica in collaborazione con Quelli della Compagnia.",
+                "testo_eng":"",
+                "nreplica":"27275",
+                "decode_categoria_eng":"Film festival",
+                "peso":"1",
+                "bambini":"",
+                "titolo_ita":"\"Futuri (im)possibili\"",
+                "decode_data_to":"29\/08\/2017",
+                "lat":"43.763197",
+                "immagine":"",
+                "nutente":"19",
+                "titolo_eng":"",
+                "wwwsite":"estatefiorentina.it\/events\/",
+                "ordinamento":11,
+                "info_ita":"055 217704 - 3383474347 - info@oncevents.com",
+                "prezzo":"",
+                "orario_eng":"",
+                "cod_evento":"22142",
+                "data_from":"2017-08-29",
+                "lon":"11.25441",
+                "decode_data_from":"29\/08\/2017"
+            },
+            
+            {
+                "gratuito":"0",
+                "decode_gratuito":"No",
+                "indirizzi":"OPERA DI FIRENZE- Maggio Musicale Fiorentino - Piazzale Vittorio Gui",
+                "recapito":
+                    [
+                        
+                        {
+                            "recapito":"OPERA DI FIRENZE- Maggio Musicale Fiorentino - Piazzale Vittorio Gui",
+                            "civico":"",
+                            "lat":"43.777786",
+                            "lon":"11.236874"
+                        }
+                    ],
+                "civico":"",
+                "orario":"20.00",
+                "data_to":"2017-09-14",
+                "allegato":"",
+                "cod_categoria":"1",
+                "decode_categoria":"Musica classica, opera e balletto",
+                "info_eng":"055 2779309",
+                "testo_ita":"Opera di G. Puccini. Direttore: F. I. Ciampa. Orchestra e Coro del Maggio Musicale Fiorentino. ",
+                "testo_eng":"Opera by G. Puccini. Conductor: F. I. Ciampa. Maggio Musicale Fiorentino Orchestra and Choir . ",
+                "nreplica":"27503",
+                "decode_categoria_eng":"Classical music, opera, ballet",
+                "peso":"1",
+                "bambini":"",
+                "titolo_ita":"\"La Bohème\"",
+                "decode_data_to":"14\/09\/2017",
+                "lat":"43.777786",
+                "immagine":"",
+                "nutente":"50",
+                "titolo_eng":"\"La Bohème\"",
+                "wwwsite":"www.operadifirenze.it",
+                "ordinamento":13,
+                "info_ita":"055 2779309",
+                "prezzo":"80-10",
+                "orario_eng":"20.00",
+                "cod_evento":"22245",
+                "data_from":"2017-09-14",
+                "lon":"11.236874",
+                "decode_data_from":"14\/09\/2017"
+            },
+            
+            {
+                "gratuito":"1",
+                "indirizzi":"FORTE BELVEDERE - Via Di San Leonardo ",
+                "recapito":
+                    [
+                        
+                        {
+                            "recapito":"FORTE BELVEDERE - Via Di San Leonardo ",
+                            "civico":"",
+                            "lat":"43.763197",
+                            "lon":"11.25441"
+                        }
+                    ],
+                "civico":"",
+                "orario":"20.30",
+                "data_to":"2017-09-09",
+                "allegato":"",
+                "cod_categoria":"3",
+                "decode_categoria":"Teatro",
+                "info_eng":"055 217704 - 338 3474347",
+                "testo_ita":"Spettacolo teatrale tratto dal l'opera di Niccolò Machiavelli a cura di Compagnia delle Seggiole ",
+                "testo_eng":"",
+                "nreplica":"27462",
+                "decode_categoria_eng":"Theatre",
+                "peso":"1",
+                "bambini":"",
+                "titolo_ita":"\"La Mandragora\"",
+                "decode_data_to":"09\/09\/2017",
+                "lat":"43.763197",
+                "immagine":"",
+                "nutente":"7",
+                "titolo_eng":"",
+                "wwwsite":"www.estatefiorentina.it",
+                "ordinamento":16,
+                "info_ita":"055 217704 - 338 3474347",
+                "prezzo":"",
+                "orario_eng":"20.30",
+                "cod_evento":"22216",
+                "data_from":"2017-09-09",
+                "lon":"11.25441",
+                "decode_data_from":"09\/09\/2017"
+            },
+            
+            {
+                "gratuito":"1",
+                "indirizzi":"FORTE BELVEDERE - Via Di San Leonardo ",
+                "recapito":
+                    [
+                        
+                        {
+                            "recapito":"FORTE BELVEDERE - Via Di San Leonardo ",
+                            "civico":"",
+                            "lat":"43.763197",
+                            "lon":"11.25441"
+                        }
+                    ],
+                "civico":"",
+                "orario":"20.00",
+                "data_to":"2017-09-12",
+                "allegato":"",
+                "cod_categoria":"3",
+                "decode_categoria":"Teatro",
+                "info_eng":"055 217704 - 338 3474347",
+                "testo_ita":"conferenzaa cura del Prof. Guido Risaliti in collaborazione con l'Osservatorio Astrofisico di Arcetri - Inaf.\nA seguire osservazioni del cielo con i telescopi.",
+                "testo_eng":"",
+                "nreplica":"27463",
+                "decode_categoria_eng":"Theatre",
+                "peso":"1",
+                "bambini":"",
+                "titolo_ita":"\"Luce e Vento dai Buchi Neri",
+                "decode_data_to":"12\/09\/2017",
+                "lat":"43.763197",
+                "immagine":"",
+                "nutente":"7",
+                "titolo_eng":"",
+                "wwwsite":"www.estatefiorentina.it",
+                "ordinamento":17,
+                "info_ita":"055 217704 - 338 3474347",
+                "prezzo":"",
+                "orario_eng":"20.00",
+                "cod_evento":"22217",
+                "data_from":"2017-09-12",
+                "lon":"11.25441",
+                "decode_data_from":"12\/09\/2017"
+            },
+            
+            {
+                "gratuito":"0",
+                "decode_gratuito":"No",
+                "indirizzi":"OPERA DI FIRENZE- Maggio Musicale Fiorentino - Piazzale Vittorio Gui",
+                "recapito":
+                    [
+                        
+                        {
+                            "recapito":"OPERA DI FIRENZE- Maggio Musicale Fiorentino - Piazzale Vittorio Gui",
+                            "civico":"",
+                            "lat":"43.777786",
+                            "lon":"11.236874"
+                        }
+                    ],
+                "civico":"",
+                "orario":"20.00",
+                "data_to":"2017-09-08",
+                "allegato":"",
+                "cod_categoria":"1",
+                "decode_categoria":"Musica classica, opera e balletto",
+                "info_eng":"055 2779309",
+                "testo_ita":"Opera di G. Puccini. Direttore: F. Pasqualetti. Orchestra e Coro del Maggio Musicale Fiorentino. ",
+                "testo_eng":"Opera by G. Puccini. Conductor: F. Pasqualetti. Maggio Musicale Fiorentino Orchestra and Choir. ",
+                "nreplica":"27499",
+                "decode_categoria_eng":"Classical music, opera, ballet",
+                "peso":"1",
+                "bambini":"",
+                "titolo_ita":"\"Madame Butterfly\"",
+                "decode_data_to":"08\/09\/2017",
+                "lat":"43.777786",
+                "immagine":"",
+                "nutente":"50",
+                "titolo_eng":"\"Madame Butterfly\"",
+                "wwwsite":"www.operadifirenze.it",
+                "ordinamento":18,
+                "info_ita":"055 2779309",
+                "prezzo":"80-10",
+                "orario_eng":"20.00",
+                "cod_evento":"22244",
+                "data_from":"2017-09-08",
+                "lon":"11.236874",
+                "decode_data_from":"08\/09\/2017"
+            },
+            
+            {
+                "gratuito":"1",
+                "indirizzi":"FORTE BELVEDERE - Via Di San Leonardo ",
+                "recapito":
+                    [
+                        
+                        {
+                            "recapito":"FORTE BELVEDERE - Via Di San Leonardo ",
+                            "civico":"",
+                            "lat":"43.763197",
+                            "lon":"11.25441"
+                        }
+                    ],
+                "civico":"",
+                "orario":"20.00",
+                "data_to":"2017-09-06",
+                "allegato":"",
+                "cod_categoria":"2",
+                "decode_categoria":"Musica rock, jazz, pop, contemporanea",
+                "info_eng":"055 217704 - 338 3474347",
+                "testo_ita":"Le colonne sonore dei film come \"La vita è bella\", \"Nuovo cinema paradiso\", \"Il pianista sull'Oceano\" e molti altri, a cura di Orchestra da Camera Fiorentina",
+                "testo_eng":"Soundracks of famous films like \"La vita è bella\", \"Nuovo cinema paradiso\", \"Il pianista sull'Oceano and many others performed by Orchestra da Camera Fiorentina",
+                "nreplica":"27461",
+                "decode_categoria_eng":"Rock, jazz, pop, contemporary music",
+                "peso":"1",
+                "bambini":"",
+                "titolo_ita":"\"Musica dal grande schermo\"",
+                "decode_data_to":"06\/09\/2017",
+                "lat":"43.763197",
+                "immagine":"",
+                "nutente":"7",
+                "titolo_eng":"\"Music from the big screen\"",
+                "wwwsite":"www.estatefiorentina.it",
+                "ordinamento":22,
+                "info_ita":"055 217704 - 338 3474347",
+                "prezzo":"",
+                "orario_eng":"20.00",
+                "cod_evento":"22214",
+                "data_from":"2017-09-06",
+                "lon":"11.25441",
+                "decode_data_from":"06\/09\/2017"
+            },
+            
+            {
+                "gratuito":"0",
+                "decode_gratuito":"No",
+                "indirizzi":"Area di San Salvi - Via Di San Salvi ",
+                "recapito":
+                    [
+                        
+                        {
+                            "recapito":"Area di San Salvi - Via Di San Salvi ",
+                            "civico":"",
+                            "lat":"43.770265",
+                            "lon":"11.285274"
+                        }
+                    ],
+                "civico":"",
+                "orario":"21:30",
+                "data_to":"2017-08-25",
+                "allegato":"",
+                "cod_categoria":"3",
+                "decode_categoria":"Teatro",
+                "info_eng":"",
+                "testo_ita":"di e con Sissi Abbondanza. Compagnia Chille de la Balanza.\n",
+                "testo_eng":"",
+                "nreplica":"27250",
+                "decode_categoria_eng":"Theatre",
+                "peso":"1",
+                "bambini":"",
+                "titolo_ita":"\"Non si raccontano barzellette sui matti\"",
+                "decode_data_to":"25\/08\/2017",
+                "lat":"43.770265",
+                "immagine":"",
+                "nutente":"19",
+                "titolo_eng":"",
+                "wwwsite":"www.chille.it",
+                "ordinamento":23,
+                "info_ita":"Info e prenotazioni: 055 6236195; 335 6270739; info@chille.it.",
+                "prezzo":"10",
+                "orario_eng":"",
+                "cod_evento":"22131",
+                "data_from":"2017-08-22",
+                "lon":"11.285274",
+                "decode_data_from":"22\/08\/2017"
+            },
+            
+            {
+                "gratuito":"0",
+                "decode_gratuito":"No",
+                "indirizzi":"OPERA DI FIRENZE- Maggio Musicale Fiorentino - Piazzale Vittorio Gui",
+                "recapito":
+                    [
+                        
+                        {
+                            "recapito":"OPERA DI FIRENZE- Maggio Musicale Fiorentino - Piazzale Vittorio Gui",
+                            "civico":"",
+                            "lat":"43.777786",
+                            "lon":"11.236874"
+                        }
+                    ],
+                "civico":"",
+                "orario":"20.00",
+                "data_to":"2017-09-22",
+                "allegato":"",
+                "cod_categoria":"1",
+                "decode_categoria":"Musica classica, opera e balletto",
+                "info_eng":"055 2779309",
+                "testo_ita":"Opera di G. Puccini. Direttore: V. Galli. Orchestra e Coro del Maggio Musicale Fiorentino. ",
+                "testo_eng":"Opera by G. Puccini. Conductor: V. Galli. Maggio Musicale Fiorentino Orchestra and Choir . ",
+                "nreplica":"27508",
+                "decode_categoria_eng":"Classical music, opera, ballet",
+                "peso":"1",
+                "bambini":"",
+                "titolo_ita":"\"Tosca\"",
+                "decode_data_to":"22\/09\/2017",
+                "lat":"43.777786",
+                "immagine":"",
+                "nutente":"50",
+                "titolo_eng":"\"Tosca\"",
+                "wwwsite":"www.operadifirenze.it",
+                "ordinamento":24,
+                "info_ita":"055 2779309",
+                "prezzo":"80-10",
+                "orario_eng":"20.00",
+                "cod_evento":"22246",
+                "data_from":"2017-09-22",
+                "lon":"11.236874",
+                "decode_data_from":"22\/09\/2017"
+            },
+            
+            {
+                "gratuito":"0",
+                "decode_gratuito":"No",
+                "indirizzi":"Area di San Salvi - Via Di San Salvi ",
+                "recapito":
+                    [
+                        
+                        {
+                            "recapito":"Area di San Salvi - Via Di San Salvi ",
+                            "civico":"",
+                            "lat":"43.770265",
+                            "lon":"11.285274"
+                        }
+                    ],
+                "civico":"",
+                "orario":"21:30",
+                "data_to":"2017-08-30",
+                "allegato":"",
+                "cod_categoria":"2",
+                "decode_categoria":"Musica rock, jazz, pop, contemporanea",
+                "info_eng":"",
+                "testo_ita":"Massimiliano Larocca canta Dino Campana.",
+                "testo_eng":"",
+                "nreplica":"27251",
+                "decode_categoria_eng":"Rock, jazz, pop, contemporary music",
+                "peso":"1",
+                "bambini":"",
+                "titolo_ita":"\"Un mistero di sogni avverati\"",
+                "decode_data_to":"30\/08\/2017",
+                "lat":"43.770265",
+                "immagine":"",
+                "nutente":"19",
+                "titolo_eng":"",
+                "wwwsite":"www.chille.it",
+                "ordinamento":26,
+                "info_ita":"Info e prenotazioni: 055 6236195; 335 6270739; info@chille.it.",
+                "prezzo":"10",
+                "orario_eng":"",
+                "cod_evento":"22132",
+                "data_from":"2017-08-30",
+                "lon":"11.285274",
+                "decode_data_from":"30\/08\/2017"
+            },
+            
+            {
+                "gratuito":"0",
+                "decode_gratuito":"No",
+                "indirizzi":"SALA DEGLI ELEMENTI - PALAZZO VECCHIO - Piazza Della Signoria ",
+                "recapito":
+                    [
+                        
+                        {
+                            "recapito":"SALA DEGLI ELEMENTI - PALAZZO VECCHIO - Piazza Della Signoria ",
+                            "civico":"",
+                            "lat":"43.769257",
+                            "lon":"11.255943"
+                        }
+                    ],
+                "civico":"",
+                "orario":"13.00; 13.45; 14.30; 15.15; 16.00",
+                "data_to":"2017-09-18",
+                "allegato":"",
+                "cod_categoria":"5",
+                "decode_categoria":"Aperture straordinarie, visite guidate",
+                "info_eng":"",
+                "testo_ita":"Ciclo di visite guidate in cantiere della durata di 30 minuti ciascuna, alla scoperta del restauro in corso nella Sala degli Elementi di Palazzo Vecchio. Con la collaborazione dell'Associazione MUS.E e dell'associazione ATI.",
+                "testo_eng":"",
+                "nreplica":"26516",
+                "decode_categoria_eng":"Extraordinary openings, guided tours",
+                "peso":"1",
+                "bambini":"",
+                "titolo_ita":"\"Visite in cantiere: il restauro della Sala degli Elementi\"",
+                "decode_data_to":"18\/09\/2017",
+                "lat":"43.769257",
+                "immagine":"",
+                "nutente":"98",
+                "titolo_eng":"",
+                "wwwsite":"",
+                "ordinamento":27,
+                "info_ita":"Prenotazione obbligatoria allo 055 2768224 o 055 2768558; info@muse.comune.fi.it",
+                "prezzo":"14-10",
+                "orario_eng":"",
+                "cod_evento":"21608",
+                "data_from":"2017-09-18",
+                "lon":"11.255943",
+                "decode_data_from":"18\/09\/2017"
+            },
+            
+            {
+                "gratuito":"0",
+                "decode_gratuito":"No",
+                "indirizzi":"MUSEO SALVATORE FERRAGAMO - Piazza Di Santa Trinita , 2",
+                "recapito":
+                    [
+                        
+                        {
+                            "recapito":"MUSEO SALVATORE FERRAGAMO - Piazza Di Santa Trinita , 2",
+                            "civico":"",
+                            "lat":"43.769847",
+                            "lon":"11.251058"
+                        }
+                    ],
+                "civico":"",
+                "orario":"Tutti i giorni 10.00 - 19.30",
+                "data_to":"2018-05-02",
+                "allegato":"",
+                "cod_categoria":"11",
+                "decode_categoria":"Mostre",
+                "info_eng":"055 3562846",
+                "testo_ita":"Nel 2017 ricorrono novant’anni dal ritorno di Salvatore Ferragamo in Italia, nel 1927, dopo dodici anni trascorsi negli Stati Uniti. La mostra ricrea l'atmosfera culturale dell'Italia e di Firenze in quel preciso periodo storico, ospitando dipinti e plastiche della produzione italiana : dai quadri di Colacicchi, Ottone Rosai, Balla, Maccari e Depero alle sculture di Thayat alle ceramiche di Giò Ponti, ma anche  manufatti artigianali di origine sarda. romana, del Triveneto e arti applicate dell' l'Istituto d' Arte. ",
+                "testo_eng":"In 2017 falls the 90th anniversary from Ferragamo's return to Italy (1927), after 12 years in the Usa. The exhibit recreate the culturel environment of Italy and Florence in that period, showing paintings and plastic objects produced in Italy: from the painting by Colacicchi, Ottone Rosai, Balla, Maccari and Depero to sculptures by Thayat to the ceramics by Gio Ponti, and even artistic manifactured from Sardinia, Rome and North-east of Italy, as well as applied arts of the Istituto d'arte. ",
+                "nreplica":"26322",
+                "decode_categoria_eng":"Exhibitions",
+                "peso":"1",
+                "bambini":"",
+                "titolo_ita":"1927 - Il ritorno in Italia - Salvatore Ferragamo e la cultura visiva del Novecento ",
+                "decode_data_to":"02\/05\/2018",
+                "lat":"43.769847",
+                "immagine":"images\/ALLEGATO\/21826_Ferragamo_1927.jpg",
+                "nutente":"7",
+                "titolo_eng":"1927 - Return to Italy  - Salvatore Ferragamo and visual culture during XXth century",
+                "wwwsite":"www.museoferragamo.com",
+                "ordinamento":28,
+                "info_ita":"055 3562846",
+                "prezzo":"6",
+                "orario_eng":"Every day: 10.00 - 19.30",
+                "cod_evento":"21826",
+                "data_from":"2017-05-19",
+                "lon":"11.251058",
+                "decode_data_from":"19\/05\/2017"
+            },
+            
+            {
+                "gratuito":"0",
+                "decode_gratuito":"No",
+                "indirizzi":"GALLERIA DELL'ACCADEMIA - Via Ricasoli , 58",
+                "recapito":
+                    [
+                        
+                        {
+                            "recapito":"GALLERIA DELL'ACCADEMIA - Via Ricasoli , 58",
+                            "civico":"",
+                            "lat":"43.776782",
+                            "lon":"11.258586"
+                        }
+                    ],
+                "civico":"",
+                "orario":"8:15 - 22:00",
+                "data_to":"2017-08-31",
+                "allegato":"",
+                "cod_categoria":"5",
+                "decode_categoria":"Aperture straordinarie, visite guidate",
+                "info_eng":"055 294883",
+                "testo_ita":"Il giovedì sera  la Galleria dell'Accademia prolungherà il suo orario di apertura fino alle 22",
+                "testo_eng":"Every thursday night Galleria dell' Accademia will pospone its opening till 10 pm",
+                "nreplica":"27183",
+                "decode_categoria_eng":"Extraordinary openings, guided tours",
+                "peso":"1",
+                "bambini":"",
+                "titolo_ita":"Apertura serale straordinaria alla Galleria dell'Accademia",
+                "decode_data_to":"31\/08\/2017",
+                "lat":"43.776782",
+                "immagine":"images\/ALLEGATO\/21973_david.jpg",
+                "nutente":"19",
+                "titolo_eng":"Galleria dell'Accademia extraordinary Night Opening ",
+                "wwwsite":"http:\/\/galleriaaccademiafirenze.beniculturali.it\/",
+                "ordinamento":29,
+                "info_ita":"055 294883",
+                "prezzo":"8,00 ",
+                "orario_eng":"8:15 - 22:00",
+                "cod_evento":"21973",
+                "data_from":"2017-08-31",
+                "lon":"11.258586",
+                "decode_data_from":"31\/08\/2017"
+            },
+            
+            {
+                "gratuito":"0",
+                "decode_gratuito":"No",
+                "indirizzi":"BALUARDO DI SAN GIORGIO - Via di Belvedere 2",
+                "recapito":
+                    [
+                        
+                        {
+                            "recapito":"BALUARDO DI SAN GIORGIO - Via di Belvedere 2",
+                            "civico":"",
+                            "lat":"43.762937",
+                            "lon":"11.258284"
+                        }
+                    ],
+                "civico":"",
+                "orario":"16 - 19",
+                "data_to":"2017-09-16",
+                "allegato":"",
+                "cod_categoria":"5",
+                "decode_categoria":"Aperture straordinarie, visite guidate",
+                "info_eng":"Reservation required 055 2768224 \/2768558",
+                "testo_ita":"Visite guidate in italiano (Inglese e altre lingue su richiesta min 10 pax) ogni 30 minuti. \nIn caso di pioggia la visita è annullata. ",
+                "testo_eng":"Guided tours in Italian (English and other languages on request min 10 persons) every 30 minutes\nIn case of rain the visit won't take place. ",
+                "nreplica":"26612",
+                "decode_categoria_eng":"Extraordinary openings, guided tours",
+                "peso":"1",
+                "bambini":"1",
+                "titolo_ita":"Baluardo a San Giorgio",
+                "decode_data_to":"16\/09\/2017",
+                "lat":"43.762937",
+                "immagine":"",
+                "nutente":"7",
+                "titolo_eng":"Baluardo a San Giorgio",
+                "wwwsite":"www.musefirenze.it",
+                "ordinamento":31,
+                "info_ita":"Prenotazione obbligatoria 055 2768224 \/ 2768558",
+                "prezzo":"4 ",
+                "orario_eng":"16 - 19",
+                "cod_evento":"21932",
+                "data_from":"2017-09-16",
+                "lon":"11.258284",
+                "decode_data_from":"16\/09\/2017"
+            },
+            
+            {
+                "gratuito":"1",
+                "indirizzi":"Bibliotecanova  - Via Chiusi ",
+                "recapito":
+                    [
+                        
+                        {
+                            "recapito":"Bibliotecanova  - Via Chiusi ",
+                            "civico":"",
+                            "lat":"43.780322",
+                            "lon":"11.196316"
+                        }
+                    ],
+                "civico":"",
+                "orario":"9.30 - 11.30",
+                "data_to":"2017-09-19",
+                "allegato":"",
+                "cod_categoria":"13",
+                "decode_categoria":"Walking",
+                "info_eng":"",
+                "testo_ita":"Passeggiate per promuovere l'attività fisica all'aria aperta all'insegna della cultura e della riscoperta del territorio.\nITINERARIO: BiblioteCaNova Isolotto - Via Gubbio - Via delle Isole - Parco dell'Argingrosso - Passerella Viadotto dell'Indiano - Piazzale dell'Indiano - Viale G. Washington - Passerella sull'Arno - Lungarno dei Pioppi - Via dell'Isolotto - Via Gubbio - BiblioteCaNova Isolotto\nLUNGHEZZA: 6 km. (2 ore)\nDIFFICOLTA': facile\nRITROVO: ore 9",
+                "testo_eng":"",
+                "nreplica":"24608",
+                "decode_categoria_eng":"Walking",
+                "peso":"1",
+                "bambini":"1",
+                "titolo_ita":"Bibliopassi - Il nuovo Parco dell'Argingrosso",
+                "decode_data_to":"19\/09\/2017",
+                "lat":"43.780322",
+                "immagine":"",
+                "nutente":"4",
+                "titolo_eng":"",
+                "wwwsite":"",
+                "ordinamento":32,
+                "info_ita":"055 700420 lun-mar-gio 9-12\/15.30-18.30 segreteria.cral@comune.fi.it",
+                "prezzo":"",
+                "orario_eng":"",
+                "cod_evento":"21199",
+                "data_from":"2017-09-19",
+                "lon":"11.196316",
+                "decode_data_from":"19\/09\/2017"
+            },
+            
+            {
+                "gratuito":"0",
+                "decode_gratuito":"No",
+                "indirizzi":"Palazzo Corsini - Lungarno Corsini ",
+                "recapito":
+                    [
+                        
+                        {
+                            "recapito":"Palazzo Corsini - Lungarno Corsini ",
+                            "civico":"",
+                            "lat":"43.770357",
+                            "lon":"11.248888"
+                        }
+                    ],
+                "civico":"",
+                "orario":"-",
+                "data_to":"2017-10-01",
+                "allegato":"",
+                "cod_categoria":"6",
+                "decode_categoria":"Fiere, mercati",
+                "info_eng":"",
+                "testo_ita":"Trentesima edizione della più importante mostra-mercato del settore a Firenze",
+                "testo_eng":"30th edition of the most important antiques fair of Florence",
+                "nreplica":"23239",
+                "decode_categoria_eng":"Markets, fairs",
+                "peso":"1",
+                "bambini":"",
+                "titolo_ita":"Biennale internazionale dell'Antiquariato",
+                "decode_data_to":"01\/10\/2017",
+                "lat":"43.770357",
+                "immagine":"images\/ALLEGATO\/20662_biennale.jpg",
+                "nutente":"9",
+                "titolo_eng":"Florence international biennial antiques fair",
+                "wwwsite":"www.biaf.it\/index.php?lang=en",
+                "ordinamento":33,
+                "info_ita":"",
+                "prezzo":"",
+                "orario_eng":"-",
+                "cod_evento":"20662",
+                "data_from":"2017-09-23",
+                "lon":"11.248888",
+                "decode_data_from":"23\/09\/2017"
+            },
+            
+            {
+                "gratuito":"0",
+                "decode_gratuito":"No",
+                "indirizzi":"MUSEO DI STORIA NATURALE - SEZIONE DI ZOOLOGIA \"LA SPECOLA\" - Via Romana , 17",
+                "recapito":
+                    [
+                        
+                        {
+                            "recapito":"MUSEO DI STORIA NATURALE - SEZIONE DI ZOOLOGIA \"LA SPECOLA\" - Via Romana , 17",
+                            "civico":"",
+                            "lat":"43.764626",
+                            "lon":"11.247132"
+                        }
+                    ],
+                "civico":"",
+                "orario":"10.30 - 17.30; Lunedì chiuso ",
+                "data_to":"2017-09-24",
+                "allegato":"",
+                "cod_categoria":"11",
+                "decode_categoria":"Mostre",
+                "info_eng":"055 2756444",
+                "testo_ita":"Circa 90 opere dell’artista italo-americana Arianna Fioratti Loreto, un’originale raccolta zoologica su carta  - disegni a penna e inchiostro - che include ritratti di svariate specie animali e che dialogheranno con la ricca collezione del più antico museo scientifico d’Europa,",
+                "testo_eng":"A series of 90 works of art by the Italian-American artist Arianna Fioratti Loreto, an original collection of ink drawings that includes portraits of various species of animals in a dialogue with the rich collection of the most ancient science museum of Europe.",
+                "nreplica":"27027",
+                "decode_categoria_eng":"Exhibitions",
+                "peso":"1",
+                "bambini":"",
+                "titolo_ita":"Biophilia",
+                "decode_data_to":"24\/09\/2017",
+                "lat":"43.764626",
+                "immagine":"images\/ALLEGATO\/22065_biophilia_500.jpg",
+                "nutente":"7",
+                "titolo_eng":"Biophilia",
+                "wwwsite":"http:\/\/www.msn.unifi.it",
+                "ordinamento":34,
+                "info_ita":"055 2756444",
+                "prezzo":"6- 3 (incluso useo \/ including museum) ",
+                "orario_eng":"10.30 - 17.30;closed on Monday ",
+                "cod_evento":"22065",
+                "data_from":"2017-04-07",
+                "lon":"11.247132",
+                "decode_data_from":"07\/04\/2017"
+            },
+            
+            {
+                "gratuito":"1",
+                "indirizzi":"PALAZZO VECCHIO -Arengario - Piazza Della Signoria ",
+                "recapito":
+                    [
+                        
+                        {
+                            "recapito":"PALAZZO VECCHIO -Arengario - Piazza Della Signoria ",
+                            "civico":"",
+                            "lat":"43.769257",
+                            "lon":"11.255943"
+                        }
+                    ],
+                "civico":"",
+                "orario":"9 - 10 - 11 - 12 -13",
+                "data_to":"2017-09-03",
+                "allegato":"",
+                "cod_categoria":"7",
+                "decode_categoria":"Tradizioni popolari",
+                "info_eng":"Tel. 0552625135-2625136-2625132 - servizio.sport@comune.fi.it  ",
+                "testo_ita":"Rivive questa antica pratica militare, risalente all'assedio del 1529 da parte delle truppe imperiali di Carlo V. La cerimonia, accompagnata dal Corteo Storico della Repubblica Fiorentina, si svolgerà sull'Arengario di Palazzo Vecchio.  Dalle 9 alle 13 ogni ora. Consulta il programma allegato per i dettagli.",
+                "testo_eng":"An event in remembrance of a military practise (dating back to the Siege in 1529 by the troups of Emperor Charles V). The Historical Parade of the Florentine Republic will take part to this ceremony held in front of Palazzo Vecchio. Every hour from 9am 1pm.",
+                "nreplica":"27412",
+                "decode_categoria_eng":"Folk traditions",
+                "peso":"1",
+                "bambini":"1",
+                "titolo_ita":"Cambio della Guardia a Palazzo Vecchio ",
+                "decode_data_to":"03\/09\/2017",
+                "lat":"43.769257",
+                "immagine":"images\/ALLEGATO\/22179_22148_cambioguardia1.jpg",
+                "nutente":"52",
+                "titolo_eng":"Changing of the Guard at Palazzo Vecchio ",
+                "wwwsite":"www.comune.fi.it",
+                "ordinamento":35,
+                "info_ita":"Tel. 0552625135-2625136-2625132 - servizio.sport@comune.fi.it  ",
+                "prezzo":"",
+                "orario_eng":"9am 10am 11am 12 am 1pm",
+                "cod_evento":"22179",
+                "data_from":"2017-09-03",
+                "lon":"11.255943",
+                "decode_data_from":"03\/09\/2017"
+            },
+            
+            {
+                "gratuito":"0",
+                "decode_gratuito":"No",
+                "indirizzi":"CAPPELLA BRANCACCI - Piazza Del Carmine , 14 - FONDAZIONE SALVATORE ROMANO - Piazza Santo Spirito , 29",
+                "recapito":
+                    [
+                        
+                        {
+                            "recapito":"CAPPELLA BRANCACCI - Piazza Del Carmine , 14",
+                            "civico":"",
+                            "lat":"43.768264",
+                            "lon":"11.243829"
+                        },
+                        
+                        {
+                            "recapito":"FONDAZIONE SALVATORE ROMANO - Piazza Santo Spirito , 29",
+                            "civico":"",
+                            "lat":"43.766984",
+                            "lon":"11.247603"
+                        }
+                    ],
+                "civico":"",
+                "orario":"chiusa",
+                "data_to":"2017-09-02",
+                "allegato":"",
+                "cod_categoria":"12",
+                "decode_categoria":"News",
+                "info_eng":"",
+                "testo_ita":"Causa cerimonia religiosa i due siti saranno chiusi l'intera giornata.",
+                "testo_eng":"Due to a religious ceremony, the two museums will be closed all day.",
+                "nreplica":"27384",
+                "decode_categoria_eng":"News",
+                "peso":"1",
+                "bambini":"",
+                "titolo_ita":"Cappella Brancacci e Fondazione Romano - chiusura",
+                "decode_data_to":"02\/09\/2017",
+                "lat":"43.768264",
+                "immagine":"",
+                "nutente":"4",
+                "titolo_eng":"Cappella Brancacci and Fondazione Romano - closed",
+                "wwwsite":"www.museicivicifiorentini.comune.fi.it",
+                "ordinamento":36,
+                "info_ita":"",
+                "prezzo":"",
+                "orario_eng":"closed",
+                "cod_evento":"22171",
+                "data_from":"2017-09-02",
+                "lon":"11.243829",
+                "decode_data_from":"02\/09\/2017"
+            },
+            
+            {
+                "gratuito":"1",
+                "indirizzi":"CENACOLO DEL FULIGNO - Via Faenza , 42",
+                "recapito":
+                    [
+                        
+                        {
+                            "recapito":"CENACOLO DEL FULIGNO - Via Faenza , 42",
+                            "civico":"",
+                            "lat":"43.777271",
+                            "lon":"11.251331"
+                        }
+                    ],
+                "civico":"",
+                "orario":"8.30-12.30",
+                "data_to":"2017-08-29",
+                "allegato":"",
+                "cod_categoria":"5",
+                "decode_categoria":"Aperture straordinarie, visite guidate",
+                "info_eng":"",
+                "testo_ita":"",
+                "testo_eng":"",
+                "nreplica":"27339",
+                "decode_categoria_eng":"Extraordinary openings, guided tours",
+                "peso":"1",
+                "bambini":"",
+                "titolo_ita":"Cenacolo del Fuligno - apertura straordinaria",
+                "decode_data_to":"29\/08\/2017",
+                "lat":"43.777271",
+                "immagine":"",
+                "nutente":"50",
+                "titolo_eng":"Fuligno' s Last Supper - extraordinary opening  ",
+                "wwwsite":"www.beniculturali.it",
+                "ordinamento":38,
+                "info_ita":"",
+                "prezzo":"",
+                "orario_eng":"8.30-12.30",
+                "cod_evento":"22163",
+                "data_from":"2017-08-29",
+                "lon":"11.251331",
+                "decode_data_from":"29\/08\/2017"
+            },
+            
+            {
+                "gratuito":"1",
+                "indirizzi":"CENACOLO DI OGNISSANTI - Borgo Ognissanti , 42",
+                "recapito":
+                    [
+                        
+                        {
+                            "recapito":"CENACOLO DI OGNISSANTI - Borgo Ognissanti , 42",
+                            "civico":"",
+                            "lat":"43.77254",
+                            "lon":"11.245631"
+                        }
+                    ],
+                "civico":"",
+                "orario":"20.00-23.00",
+                "data_to":"2017-09-15",
+                "allegato":"",
+                "cod_categoria":"5",
+                "decode_categoria":"Aperture straordinarie, visite guidate",
+                "info_eng":"",
+                "testo_ita":"Apertura straordinaria",
+                "testo_eng":"Extra-opening",
+                "nreplica":"27332",
+                "decode_categoria_eng":"Extraordinary openings, guided tours",
+                "peso":"1",
+                "bambini":"",
+                "titolo_ita":"Cenacolo del Ghirlandaio - apertura serale",
+                "decode_data_to":"15\/09\/2017",
+                "lat":"43.77254",
+                "immagine":"",
+                "nutente":"50",
+                "titolo_eng":"Ghirlandaio's Last Supper - night opening",
+                "wwwsite":"www.beniculturali.it",
+                "ordinamento":41,
+                "info_ita":"",
+                "prezzo":"",
+                "orario_eng":"20.00-23.00",
+                "cod_evento":"22158",
+                "data_from":"2017-09-15",
+                "lon":"11.245631",
+                "decode_data_from":"15\/09\/2017"
+            },
+            
+            {
+                "gratuito":"1",
+                "indirizzi":"CENACOLO DI ANDREA DEL SARTO - Via Di San Salvi , 16",
+                "recapito":
+                    [
+                        
+                        {
+                            "recapito":"CENACOLO DI ANDREA DEL SARTO - Via Di San Salvi , 16",
+                            "civico":"",
+                            "lat":"43.771658",
+                            "lon":"11.28579"
+                        }
+                    ],
+                "civico":"",
+                "orario":"20.00-23.00",
+                "data_to":"2017-08-25",
+                "allegato":"",
+                "cod_categoria":"5",
+                "decode_categoria":"Aperture straordinarie, visite guidate",
+                "info_eng":"",
+                "testo_ita":"Apertura straordinaria",
+                "testo_eng":"Extra-opening",
+                "nreplica":"27336",
+                "decode_categoria_eng":"Extraordinary openings, guided tours",
+                "peso":"1",
+                "bambini":"",
+                "titolo_ita":"Cenacolo di Andrea del Sarto - apertura serale ",
+                "decode_data_to":"25\/08\/2017",
+                "lat":"43.771658",
+                "immagine":"",
+                "nutente":"50",
+                "titolo_eng":"Andrea del Sarto' s Last Supper - night opening ",
+                "wwwsite":"www.beniculturali.it",
+                "ordinamento":42,
+                "info_ita":"",
+                "prezzo":"",
+                "orario_eng":"20.00-23.00",
+                "cod_evento":"22162",
+                "data_from":"2017-08-25",
+                "lon":"11.28579",
+                "decode_data_from":"25\/08\/2017"
+            },
+            
+            {
+                "gratuito":"1",
+                "indirizzi":"MUSEO NOVECENTO - Piazza Di Santa Maria Novella , 10",
+                "recapito":
+                    [
+                        
+                        {
+                            "recapito":"MUSEO NOVECENTO - Piazza Di Santa Maria Novella , 10",
+                            "civico":"",
+                            "lat":"43.772986",
+                            "lon":"11.249011"
+                        }
+                    ],
+                "civico":"",
+                "orario":"20.45:\"The age of shadows\" di Kim Jee Woon (Kor 2016)",
+                "data_to":"2017-08-27",
+                "allegato":"",
+                "cod_categoria":"4",
+                "decode_categoria":"Film festival",
+                "info_eng":"055 216832 - Free entrance till places are available. The entrance doesn't include the entrance to the Museum.",
+                "testo_ita":"Una rassegna di capolavori internazionali, ma inediti in Italia, a cura Rive Gauche -  ArteCinema\nTutti i film son in lingua originale con sottotitoli in Italiano",
+                "testo_eng":"A film festival dedicated to interational  art films -  but unpublished in Italy - by Rive Gauche -  ArteCinema\nAll films are in original sound with Italian subtitles",
+                "nreplica":"27306",
+                "decode_categoria_eng":"Film festival",
+                "peso":"1",
+                "bambini":"",
+                "titolo_ita":"Ciak Novecento  - Inediti d'autore",
+                "decode_data_to":"27\/08\/2017",
+                "lat":"43.772986",
+                "immagine":"",
+                "nutente":"52",
+                "titolo_eng":"Ciak Novecento - Unpublished art films",
+                "wwwsite":"www.museonovecento.it",
+                "ordinamento":44,
+                "info_ita":"055 216832 - Ingresso gratuito fino a esaurimento posti - L'ingresso alla proiezione del film non include l'ingresso al museo. ",
+                "prezzo":"",
+                "orario_eng":"20.45:\"The age of shadows\" by Kim Jee Woon (Kor 2016)",
+                "cod_evento":"22045",
+                "data_from":"2017-08-27",
+                "lon":"11.249011",
+                "decode_data_from":"27\/08\/2017"
+            },
+            
+            {
+                "gratuito":"0",
+                "decode_gratuito":"No",
+                "indirizzi":"Auditorium di Santo Stefano al Ponte - Piazza Santo Stefano ",
+                "recapito":
+                    [
+                        
+                        {
+                            "recapito":"Auditorium di Santo Stefano al Ponte - Piazza Santo Stefano ",
+                            "civico":"",
+                            "lat":"43.768648",
+                            "lon":"11.254027"
+                        }
+                    ],
+                "civico":"",
+                "orario":"21.00 : Concerto pianoforte e clarinetto. Musica di Bach, Verdi e Respighi. Direttore B.Ilacqua",
+                "data_to":"2017-09-04",
+                "allegato":"",
+                "cod_categoria":"1",
+                "decode_categoria":"Musica classica, opera e balletto",
+                "info_eng":"055783374 - 330855047",
+                "testo_ita":"Concerti di Toscana Classica realizzati all'interno di musei e chiese di assoluto prestigio.",
+                "testo_eng":"Concerts by Toscana Classica hosted in the beautiful museums and churches of Florence.",
+                "nreplica":"27045",
+                "decode_categoria_eng":"Classical music, opera, ballet",
+                "peso":"1",
+                "bambini":"",
+                "titolo_ita":"Concerts in Florence ",
+                "decode_data_to":"04\/09\/2017",
+                "lat":"43.768648",
+                "immagine":"",
+                "nutente":"2",
+                "titolo_eng":"Concerts in Florence",
+                "wwwsite":"www.toscanaclassica.com",
+                "ordinamento":48,
+                "info_ita":"055783374 - 330855047",
+                "prezzo":"15-12",
+                "orario_eng":"21.00: Clarinet and Piano Concert. Music by Bach, Verdi and Respighi. Conductor B.Ilacqua",
+                "cod_evento":"21845",
+                "data_from":"2017-09-03",
+                "lon":"11.254027",
+                "decode_data_from":"03\/09\/2017"
+            },
+            
+            {
+                "gratuito":"0",
+                "decode_gratuito":"No",
+                "indirizzi":"GALLERIA DELLO SPEDALE DEGLI INNOCENTI - Piazza Della Santissima Annunziata , 12",
+                "recapito":
+                    [
+                        
+                        {
+                            "recapito":"GALLERIA DELLO SPEDALE DEGLI INNOCENTI - Piazza Della Santissima Annunziata , 12",
+                            "civico":"",
+                            "lat":"43.776348",
+                            "lon":"11.260971"
+                        }
+                    ],
+                "civico":"",
+                "orario":"19.30 - 20.30 - 21.30  (tre repliche)",
+                "data_to":"2017-09-03",
+                "allegato":"",
+                "cod_categoria":"3",
+                "decode_categoria":"Teatro",
+                "info_eng":"",
+                "testo_ita":"Viaggio teatrale itinerante all'interno dell' Istituto degli Innocenti. A cura di Compagnia delle Seggiole - Testo e regia di Giovanni Micoli ",
+                "testo_eng":"",
+                "nreplica":"26326",
+                "decode_categoria_eng":"Theatre",
+                "peso":"1",
+                "bambini":"",
+                "titolo_ita":"Donna Innocente",
+                "decode_data_to":"03\/09\/2017",
+                "lat":"43.776348",
+                "immagine":"images\/ALLEGATO\/21830_donna.jpg",
+                "nutente":"7",
+                "titolo_eng":"",
+                "wwwsite":"www.istitutodeglinnocenti.it",
+                "ordinamento":51,
+                "info_ita":"Prenotazione obbligatoria 333 2284784 - Gruppi max 50 persone. Per i possessori del biglietto dello spettacolo il biglietto di ingresso al Museo con tariffa ridotta. ",
+                "prezzo":"15 -12",
+                "orario_eng":"",
+                "cod_evento":"21830",
+                "data_from":"2017-09-02",
+                "lon":"11.260971",
+                "decode_data_from":"02\/09\/2017"
+            },
+            
+            {
+                "gratuito":"1",
+                "indirizzi":"Giardino dell'Orticoltura - Via Vittorio Emanuele Ii ",
+                "recapito":
+                    [
+                        
+                        {
+                            "recapito":"Giardino dell'Orticoltura - Via Vittorio Emanuele Ii ",
+                            "civico":"",
+                            "lat":"43.786446",
+                            "lon":"11.261054"
+                        }
+                    ],
+                "civico":"",
+                "orario":"10.00-24.00",
+                "data_to":"2017-09-14",
+                "allegato":"",
+                "cod_categoria":"14",
+                "decode_categoria":"Altri eventi",
+                "info_eng":"",
+                "testo_ita":"Cartellone estivo del Giardino dell'Orticoltura, inserito tra gli eventi del Comune di Firenze. Ogni giorno attività diverse e per tutte le fasce di età.",
+                "testo_eng":"Summer events everyday for adults and children.",
+                "nreplica":"26171",
+                "decode_categoria_eng":"Other events",
+                "peso":"1",
+                "bambini":"",
+                "titolo_ita":"Estate Fiorentina del Giardino dell'Artecultura",
+                "decode_data_to":"14\/09\/2017",
+                "lat":"43.786446",
+                "immagine":"",
+                "nutente":"4",
+                "titolo_eng":"Summer at the Artecultura garden ",
+                "wwwsite":"www.giardinoartecultura.it|facebook.com\/giardinoartecultura2",
+                "ordinamento":52,
+                "info_ita":"",
+                "prezzo":"",
+                "orario_eng":"10.00-24.00",
+                "cod_evento":"21640",
+                "data_from":"2017-05-25",
+                "lon":"11.261054",
+                "decode_data_from":"25\/05\/2017"
+            },
+            
+            {
+                "gratuito":"0",
+                "decode_gratuito":"No",
+                "indirizzi":"Mandela Forum - Viale Pasquale Paoli ",
+                "recapito":
+                    [
+                        
+                        {
+                            "recapito":"Mandela Forum - Viale Pasquale Paoli ",
+                            "civico":"",
+                            "lat":"43.779488",
+                            "lon":"11.282823"
+                        }
+                    ],
+                "civico":"",
+                "orario":"",
+                "data_to":"2017-09-23",
+                "allegato":"",
+                "cod_categoria":"14",
+                "decode_categoria":"Altri eventi",
+                "info_eng":"",
+                "testo_ita":"",
+                "testo_eng":"",
+                "nreplica":"25547",
+                "decode_categoria_eng":"Other events",
+                "peso":"1",
+                "bambini":"",
+                "titolo_ita":"Festival delle Religioni",
+                "decode_data_to":"23\/09\/2017",
+                "lat":"43.779488",
+                "immagine":"",
+                "nutente":"9",
+                "titolo_eng":"",
+                "wwwsite":"www.festivaldellereligioni.it",
+                "ordinamento":53,
+                "info_ita":"",
+                "prezzo":"",
+                "orario_eng":"",
+                "cod_evento":"21567",
+                "data_from":"2017-09-19",
+                "lon":"11.282823",
+                "decode_data_from":"19\/09\/2017"
+            },
+            
+            {
+                "gratuito":"1",
+                "indirizzi":"Piazza della Santissima Annunziata",
+                "recapito":
+                    [
+                        
+                        {
+                            "recapito":"Piazza della Santissima Annunziata",
+                            "civico":"",
+                            "lat":"43.776336",
+                            "lon":"11.260237"
+                        }
+                    ],
+                "civico":"",
+                "orario":"9.00 - 19.00",
+                "data_to":"2017-09-03",
+                "allegato":"",
+                "cod_categoria":"6",
+                "decode_categoria":"Fiere, mercati",
+                "info_eng":"",
+                "testo_ita":"",
+                "testo_eng":"",
+                "nreplica":"27436",
+                "decode_categoria_eng":"Markets, fairs",
+                "peso":"1",
+                "bambini":"",
+                "titolo_ita":"Fierucola",
+                "decode_data_to":"03\/09\/2017",
+                "lat":"43.776336",
+                "immagine":"",
+                "nutente":"52",
+                "titolo_eng":"Fierucola",
+                "wwwsite":"www.lafierucola.org",
+                "ordinamento":54,
+                "info_ita":"",
+                "prezzo":"",
+                "orario_eng":"9.00 - 19.00",
+                "cod_evento":"21233",
+                "data_from":"2017-09-02",
+                "lon":"11.260237",
+                "decode_data_from":"02\/09\/2017"
+            },
+            
+            {
+                "gratuito":"0",
+                "decode_gratuito":"No",
+                "indirizzi":"STADIO COMUNALE A. FRANCHI - Viale Manfredo Fanti ",
+                "recapito":
+                    [
+                        
+                        {
+                            "recapito":"STADIO COMUNALE A. FRANCHI - Viale Manfredo Fanti ",
+                            "civico":"",
+                            "lat":"43.780526",
+                            "lon":"11.281113"
+                        }
+                    ],
+                "civico":"",
+                "orario":"20.45",
+                "data_to":"2017-08-27",
+                "allegato":"",
+                "cod_categoria":"9",
+                "decode_categoria":"Sport",
+                "info_eng":"it.violachannel.tv\/",
+                "testo_ita":"Campionato Italiano Seria A TIM 2017 -2018",
+                "testo_eng":"Italian Football First League 2017 -2018",
+                "nreplica":"27522",
+                "decode_categoria_eng":"Sport",
+                "peso":"1",
+                "bambini":"",
+                "titolo_ita":"Fiorentina - Sampdoria",
+                "decode_data_to":"27\/08\/2017",
+                "lat":"43.780526",
+                "immagine":"images\/ALLEGATO\/22256_download.jpg",
+                "nutente":"45",
+                "titolo_eng":"A.C.F.FIORENTINA - SAMPDORIA",
+                "wwwsite":"it.violachannel.tv\/",
+                "ordinamento":55,
+                "info_ita":"it.violachannel.tv\/",
+                "prezzo":"vedi sito",
+                "orario_eng":"",
+                "cod_evento":"22256",
+                "data_from":"2017-08-27",
+                "lon":"11.281113",
+                "decode_data_from":"27\/08\/2017"
+            },
+            
+            {
+                "gratuito":"1",
+                "indirizzi":"Torre di San Niccolò - Piazza Giuseppe Poggi ",
+                "recapito":
+                    [
+                        
+                        {
+                            "recapito":"Torre di San Niccolò - Piazza Giuseppe Poggi ",
+                            "civico":"",
+                            "lat":"43.764466",
+                            "lon":"11.264881"
+                        }
+                    ],
+                "civico":"",
+                "orario":"spettacolo d'inaugurazione, Danza verticale della compagnia \"CafèLulè\" e concerto di solo Piano di B. Zulfikarpasic.",
+                "data_to":"2017-09-13",
+                "allegato":"",
+                "cod_categoria":"2",
+                "decode_categoria":"Musica rock, jazz, pop, contemporanea",
+                "info_eng":"",
+                "testo_ita":"5 giorni, 50 concerti, 150 artisti. Le Performance si terranno su una zattera galleggiante sull'Arno. Tra i musicisti di ci saranno anche Gianluca Petrella, Giovanni Falzone, Ngueyn Le, Francesco Bearzatti, Philippe Garcia, Roberto Gatto, Gavino Murgia, Bojan Zulfikarpasic.",
+                "testo_eng":"5 days, 50 concerts,150 musicians. The performances will take place on a floating platform on the Arno river. The most famous artist are: Gianluca Petrella, Giovanni Falzone, Ngueyn Le, Francesco Bearzatti, Philippe Garcia, Roberto Gatto, Gavino Murgia, Bojan Zulfikarpasic.\n",
+                "nreplica":"27435",
+                "decode_categoria_eng":"Rock, jazz, pop, contemporary music",
+                "peso":"1",
+                "bambini":"",
+                "titolo_ita":"Firenze Jazz Fringe Festival",
+                "decode_data_to":"13\/09\/2017",
+                "lat":"43.764466",
+                "immagine":"",
+                "nutente":"52",
+                "titolo_eng":"Firenze Jazz Fringe Festival",
+                "wwwsite":"estatefiorentina.it",
+                "ordinamento":56,
+                "info_ita":"",
+                "prezzo":"",
+                "orario_eng":"Opening show: vertical performing dance show by CafèLulè company and  solopiano concert by B. Zulfikarpasic.",
+                "cod_evento":"22193",
+                "data_from":"2017-09-13",
+                "lon":"11.264881",
+                "decode_data_from":"13\/09\/2017"
+            },
+            
+            {
+                "gratuito":"0",
+                "decode_gratuito":"No",
+                "indirizzi":"GALLERIA DELL'ACCADEMIA - Via Ricasoli , 58",
+                "recapito":
+                    [
+                        
+                        {
+                            "recapito":"GALLERIA DELL'ACCADEMIA - Via Ricasoli , 58",
+                            "civico":"",
+                            "lat":"43.776782",
+                            "lon":"11.258586"
+                        }
+                    ],
+                "civico":"",
+                "orario":"8.15 - 22.00",
+                "data_to":"2017-09-07",
+                "allegato":"",
+                "cod_categoria":"5",
+                "decode_categoria":"Aperture straordinarie, visite guidate",
+                "info_eng":"055 294883",
+                "testo_ita":"apertura straordinaria serale della galleria il giovedì sera con prolungamento orario dalle 19 alle 22",
+                "testo_eng":"night Thurstday later opening till 10pm ",
+                "nreplica":"27458",
+                "decode_categoria_eng":"Extraordinary openings, guided tours",
+                "peso":"1",
+                "bambini":"",
+                "titolo_ita":"Galleria dell'Accademia - Apertura serale ",
+                "decode_data_to":"07\/09\/2017",
+                "lat":"43.776782",
+                "immagine":"",
+                "nutente":"7",
+                "titolo_eng":"Galleria dell'Accademia - Night opening",
+                "wwwsite":"www.galleriaaccademiafirenze.beniculturali.it",
+                "ordinamento":57,
+                "info_ita":"055 294883",
+                "prezzo":"8",
+                "orario_eng":"8.15 - 22.00",
+                "cod_evento":"22213",
+                "data_from":"2017-09-07",
+                "lon":"11.258586",
+                "decode_data_from":"07\/09\/2017"
+            },
+            
+            {
+                "gratuito":"0",
+                "decode_gratuito":"No",
+                "indirizzi":"Piazzale Michelangiolo",
+                "recapito":
+                    [
+                        
+                        {
+                            "recapito":"Piazzale Michelangiolo",
+                            "civico":"",
+                            "lat":"43.762486",
+                            "lon":"11.264852"
+                        }
+                    ],
+                "civico":"",
+                "orario":"14.00-20.00",
+                "data_to":"2017-09-14",
+                "allegato":"",
+                "cod_categoria":"6",
+                "decode_categoria":"Fiere, mercati",
+                "info_eng":"",
+                "testo_ita":"Finale del tour europeo. Il biglietto con validità giornaliera consente di assaggiare, votare il proprio gusto preferito e partecipare agli eventi.",
+                "testo_eng":"Final of the European tour; event that gives the opportunity of tasting new flavours, vote own favourite one, take part of the events.",
+                "nreplica":"27295",
+                "decode_categoria_eng":"Markets, fairs",
+                "peso":"1",
+                "bambini":"1",
+                "titolo_ita":"Gelato Festival - Finale europea ",
+                "decode_data_to":"14\/09\/2017",
+                "lat":"43.762486",
+                "immagine":"images\/ALLEGATO\/22145_GelatoFestivalFinale_2017_700x420.jpg",
+                "nutente":"50",
+                "titolo_eng":"Ice Cream Festival - European final",
+                "wwwsite":"www.gelatofestival.it",
+                "ordinamento":58,
+                "info_ita":"",
+                "prezzo":"12-5",
+                "orario_eng":"14.00-20.00",
+                "cod_evento":"22145",
+                "data_from":"2017-09-14",
+                "lon":"11.264852",
+                "decode_data_from":"14\/09\/2017"
+            },
+            
+            {
+                "gratuito":"1",
+                "indirizzi":"VILLA MEDICEA DI CASTELLO - Via Di Castello , 47",
+                "recapito":
+                    [
+                        
+                        {
+                            "recapito":"VILLA MEDICEA DI CASTELLO - Via Di Castello , 47",
+                            "civico":"",
+                            "lat":"43.820764",
+                            "lon":"11.225985"
+                        }
+                    ],
+                "civico":"",
+                "orario":"13.00-17.00",
+                "data_to":"2017-09-08",
+                "allegato":"",
+                "cod_categoria":"5",
+                "decode_categoria":"Aperture straordinarie, visite guidate",
+                "info_eng":"",
+                "testo_ita":"",
+                "testo_eng":"",
+                "nreplica":"27371",
+                "decode_categoria_eng":"Extraordinary openings, guided tours",
+                "peso":"1",
+                "bambini":"1",
+                "titolo_ita":"Giardino della Villa di Castello - apertura straordinaria",
+                "decode_data_to":"08\/09\/2017",
+                "lat":"43.820764",
+                "immagine":"",
+                "nutente":"50",
+                "titolo_eng":"Garden of the Castello Medici Villa - extraordinary opening   ",
+                "wwwsite":"www.beniculturali.it",
+                "ordinamento":61,
+                "info_ita":"",
+                "prezzo":"",
+                "orario_eng":"13.00-17.00",
+                "cod_evento":"22167",
+                "data_from":"2017-09-08",
+                "lon":"11.225985",
+                "decode_data_from":"08\/09\/2017"
+            },
+            
+            {
+                "gratuito":"0",
+                "decode_gratuito":"No",
+                "indirizzi":"MUSEO STEFANO BARDINI - Via Dei Renai , 37",
+                "recapito":
+                    [
+                        
+                        {
+                            "recapito":"MUSEO STEFANO BARDINI - Via Dei Renai , 37",
+                            "civico":"",
+                            "lat":"43.765084",
+                            "lon":"11.258439"
+                        }
+                    ],
+                "civico":"",
+                "orario":"Venerdì - Lunedì: 11.00 - 17.00; chiuso da martedì a giovedì e 15\/08",
+                "data_to":"2017-10-23",
+                "allegato":"",
+                "cod_categoria":"11",
+                "decode_categoria":"Mostre",
+                "info_eng":"055 2768224",
+                "testo_ita":"Uno dei protagonisti del panorama artistico contemporaneo in mostra al Museo di Stefano Bardini, celeberrimo antiquario e collezionista d’arte del XIX e XX secolo. ",
+                "testo_eng":"one of the most genial and sophisticated artists of his generation on display at Museo Stefano Bardini, , important art dealer and eclectic collector between the end of the nineteenth and early twentieth century.",
+                "nreplica":"25966",
+                "decode_categoria_eng":"Exhibitions",
+                "peso":"1",
+                "bambini":"",
+                "titolo_ita":"Glenn Brown - Piaceri sconosciuti ",
+                "decode_data_to":"23\/10\/2017",
+                "lat":"43.765084",
+                "immagine":"images\/ALLEGATO\/21717_browns.jpg",
+                "nutente":"7",
+                "titolo_eng":"Glenn Brown - Unknown pleasures",
+                "wwwsite":"www.musefirenze.it",
+                "ordinamento":63,
+                "info_ita":"055 2768224",
+                "prezzo":"6 - 4,50 ",
+                "orario_eng":"Friday- Monday: 11.00 - 17.00; closed from Tuesday to Thursday and 15\/08",
+                "cod_evento":"21717",
+                "data_from":"2017-06-10",
+                "lon":"11.258439",
+                "decode_data_from":"10\/06\/2017"
+            },
+            
+            {
+                "gratuito":"0",
+                "decode_gratuito":"No",
+                "indirizzi":"GIARDINO DI BOBOLI - Piazza Dei Pitti , 1",
+                "recapito":
+                    [
+                        
+                        {
+                            "recapito":"GIARDINO DI BOBOLI - Piazza Dei Pitti , 1",
+                            "civico":"",
+                            "lat":"43.765274",
+                            "lon":"11.249968"
+                        }
+                    ],
+                "civico":"",
+                "orario":"8.15  - 19.30 fino al 31\/08; 8.15 -18.30 dal 01\/09 al 28\/10; 8.15 -17.30 il 29\/10",
+                "data_to":"2017-10-29",
+                "allegato":"",
+                "cod_categoria":"11",
+                "decode_categoria":"Mostre",
+                "info_eng":"055 294883 ",
+                "testo_ita":" Le sculture monumentali, in acciaio inox, del celebre scultore Helidon Xhixha esplorano l’idea di caos e ordine rendendo omaggio al modo in cui questi concetti sono stati affrontati nei secoli, in filosofia e nelle arti, ma anche nel mondo naturale.",
+                "testo_eng":"The inox monumental sculptures by the famous artist Helidon Xhixha explore \"caos and order\" making tribute to philosophy, art and nature. ",
+                "nreplica":"26675",
+                "decode_categoria_eng":"Exhibitions",
+                "peso":"1",
+                "bambini":"",
+                "titolo_ita":"Helidon Xhixha - In ordine sparso",
+                "decode_data_to":"29\/10\/2017",
+                "lat":"43.765274",
+                "immagine":"images\/ALLEGATO\/21956_xhixha.jpg",
+                "nutente":"7",
+                "titolo_eng":"Helidon Xhixha - In random order",
+                "wwwsite":"www.gallerieuffizimostre.it",
+                "ordinamento":64,
+                "info_ita":"055 294883 ",
+                "prezzo":"10,00  (incluso \/ including Giardino  Boboli, Giardino Bardini, Museo delle Porcellne)",
+                "orario_eng":"8.15  - 19.30 untill 31\/08; 8.15 -18.30 from 01\/09 to 28\/10; 8.15 -17.30 on  29\/10",
+                "cod_evento":"21956",
+                "data_from":"2017-06-27",
+                "lon":"11.249968",
+                "decode_data_from":"27\/06\/2017"
+            },
+            
+            {
+                "gratuito":"0",
+                "decode_gratuito":"No",
+                "indirizzi":"CENACOLO - Piazza di Santa Croce",
+                "recapito":
+                    [
+                        
+                        {
+                            "recapito":"CENACOLO - Piazza di Santa Croce",
+                            "civico":"",
+                            "lat":"43.768695",
+                            "lon":"11.261229"
+                        }
+                    ],
+                "civico":"",
+                "orario":"21.00: \"Rossini, Weber, Beethoven\"",
+                "data_to":"2017-09-14",
+                "allegato":"",
+                "cod_categoria":"1",
+                "decode_categoria":"Musica classica, opera e balletto",
+                "info_eng":"Teatro Verdi: 055 212320; Box Office: 055 210804",
+                "testo_ita":"Serie di concerti in collaborazione tra Fondazione ORT e Polo Museale della Toscana.",
+                "testo_eng":"Series of classical music concert by Fondazione ORT and Polo Museale della Toscana.",
+                "nreplica":"26245",
+                "decode_categoria_eng":"Classical music, opera, ballet",
+                "peso":"1",
+                "bambini":"",
+                "titolo_ita":"I concerti d'estate dell'ORT",
+                "decode_data_to":"14\/09\/2017",
+                "lat":"43.768695",
+                "immagine":"",
+                "nutente":"98",
+                "titolo_eng":"Orchestra Toscana Summer Concerts",
+                "wwwsite":"www.orchestradellatoscana.it",
+                "ordinamento":65,
+                "info_ita":"Teatro Verdi: 055 212320; Box Office: 055 210804",
+                "prezzo":"10",
+                "orario_eng":"21.00: \"Rossini, Weber, Beethoven\"",
+                "cod_evento":"21721",
+                "data_from":"2017-09-14",
+                "lon":"11.261229",
+                "decode_data_from":"14\/09\/2017"
+            },
+            
+            {
+                "gratuito":"1",
+                "indirizzi":"Altana del MUSEO NOVECENTO - Piazza Di Santa Maria Novella , 10",
+                "recapito":
+                    [
+                        
+                        {
+                            "recapito":"Altana del MUSEO NOVECENTO - Piazza Di Santa Maria Novella , 10",
+                            "civico":"",
+                            "lat":"43.772986",
+                            "lon":"11.249011"
+                        }
+                    ],
+                "civico":"",
+                "orario":"15:00 \"Mirko Basaldella\"",
+                "data_to":"2017-09-17",
+                "allegato":"",
+                "cod_categoria":"10",
+                "decode_categoria":"Readings, Conferenze, Convegni",
+                "info_eng":"",
+                "testo_ita":"Un calendario d'incontri dedicati ai principali protagonisti del museo. \nLe conferenze sono curate da V. Zucchi e E. Stumpo\nIngresso gratuito con prenotazione obbligatoria ",
+                "testo_eng":"",
+                "nreplica":"23577",
+                "decode_categoria_eng":"Readings, literary meetings, conferences",
+                "peso":"1",
+                "bambini":"",
+                "titolo_ita":"I Grandi Artisti del Novecento italiano",
+                "decode_data_to":"17\/09\/2017",
+                "lat":"43.772986",
+                "immagine":"",
+                "nutente":"52",
+                "titolo_eng":"",
+                "wwwsite":"www.musefirenze.it",
+                "ordinamento":69,
+                "info_ita":"055 2768224\ninfo@muse.comune.fi.it",
+                "prezzo":"non comprende l'ingresso al museo",
+                "orario_eng":"",
+                "cod_evento":"20756",
+                "data_from":"2017-09-17",
+                "lon":"11.249011",
+                "decode_data_from":"17\/09\/2017"
+            },
+            
+            {
+                "gratuito":"0",
+                "decode_gratuito":"No",
+                "indirizzi":"MUSEO ARCHEOLOGICO - GIARDINO - Via della Colonna 38r",
+                "recapito":
+                    [
+                        
+                        {
+                            "recapito":"MUSEO ARCHEOLOGICO - GIARDINO - Via della Colonna 38r",
+                            "civico":"",
+                            "lat":"43.775285",
+                            "lon":"11.263685"
+                        }
+                    ],
+                "civico":"",
+                "orario":"Martedì - venerdì: 8.30 -19.00; lunedì,  sabato e domenica: 8.30 - 14.00; chiuso II, IVa  e V domenica del mese ",
+                "data_to":"2017-09-30",
+                "allegato":"",
+                "cod_categoria":"11",
+                "decode_categoria":"Mostre",
+                "info_eng":"055 23575",
+                "testo_ita":"300 dei 1500 reperti etruschi rinvenuti a Cetamura del Chianti e restaurati dai volontari della Florida State University e del SACI di Firenze  in mostra presso il Museo Archeologico Nazionale. ",
+                "testo_eng":"300 out of 1500 Etruscan evidences found in Cetamura del Chianti and restored by the volonteers of Florida State University and SACI Firenze now on display at Florence Archeological Museum. ",
+                "nreplica":"26321",
+                "decode_categoria_eng":"Exhibitions",
+                "peso":"1",
+                "bambini":"",
+                "titolo_ita":"I pozzi delle meraviglie",
+                "decode_data_to":"30\/09\/2017",
+                "lat":"43.775285",
+                "immagine":"images\/ALLEGATO\/21825_pozzi_meraviglie.jpg",
+                "nutente":"4",
+                "titolo_eng":"The wells of wonders",
+                "wwwsite":"https:\/\/museoarcheologiconazionaledifirenze.wordpress.com\/",
+                "ordinamento":70,
+                "info_ita":"055 23575",
+                "prezzo":"-\/-",
+                "orario_eng":"Tuesday - Friday: 8.30 - 19.00; Monday, Saturday and Sunday 8.30 -14.00; cloed on II, IVth and Vth Sunday of the month  ",
+                "cod_evento":"21825",
+                "data_from":"2017-06-10",
+                "lon":"11.263685",
+                "decode_data_from":"10\/06\/2017"
+            },
+            
+            {
+                "gratuito":"0",
+                "decode_gratuito":"No",
+                "indirizzi":"GALLERIA DEGLI UFFIZI - Piazzale Degli Uffizi , 2",
+                "recapito":
+                    [
+                        
+                        {
+                            "recapito":"GALLERIA DEGLI UFFIZI - Piazzale Degli Uffizi , 2",
+                            "civico":"",
+                            "lat":"43.76841",
+                            "lon":"11.255647"
+                        }
+                    ],
+                "civico":"",
+                "orario":"8.15 -18.50; Lunedì chiuso ",
+                "data_to":"2017-09-24",
+                "allegato":"",
+                "cod_categoria":"11",
+                "decode_categoria":"Mostre",
+                "info_eng":"055 294883",
+                "testo_ita":"\"L'adorazione dei Magi di Leonardo\" torna alla Galleria degli Uffizi dopo 5 anni di restauro, svelando particolari inediti e permettendo di conoscere i segreti della tecnica pittorica del Maestro.",
+                "testo_eng":"\"The adoration of the Magi\" by Leonardo da Vinci (an unfinished masterpiece) is back to the Uffizi Gallery after a delicate restoration",
+                "nreplica":"24621",
+                "decode_categoria_eng":"Exhibitions",
+                "peso":"1",
+                "bambini":"",
+                "titolo_ita":"Il Cosmo magico di Leonardo: l'\"Adorazione dei Magi\" restaurata ",
+                "decode_data_to":"24\/09\/2017",
+                "lat":"43.76841",
+                "immagine":"images\/ALLEGATO\/21216_Il-cosmo-magico-di-Leonardo-l-Adorazione-dei-Magi-restaurata_civita_studies_full.jpg",
+                "nutente":"7",
+                "titolo_eng":"The magic cosmos of Leonardo : \"The adoration of the Magi\" restored",
+                "wwwsite":"www.civita.it\/Sala-stampa\/Il-cosmo-magico-di-Leonardo-l-Adorazione-dei-Magi-restaurata",
+                "ordinamento":71,
+                "info_ita":"",
+                "prezzo":"13 fino \/untill 30\/7; 12,50 dal \/from 01\/08",
+                "orario_eng":"8.15 -18.50; closed on Monday",
+                "cod_evento":"21216",
+                "data_from":"2017-03-28",
+                "lon":"11.255647",
+                "decode_data_from":"28\/03\/2017"
+            },
+            
+            {
+                "gratuito":"0",
+                "decode_gratuito":"No",
+                "indirizzi":"GALLERIA DEL COSTUME - Piazza Dei Pitti , 1",
+                "recapito":
+                    [
+                        
+                        {
+                            "recapito":"GALLERIA DEL COSTUME - Piazza Dei Pitti , 1",
+                            "civico":"",
+                            "lat":"43.765274",
+                            "lon":"11.249968"
+                        }
+                    ],
+                "civico":"",
+                "orario":"8.15 -18.50, Lunedì chiuso",
+                "data_to":"2017-10-22",
+                "allegato":"",
+                "cod_categoria":"11",
+                "decode_categoria":"Mostre",
+                "info_eng":"",
+                "testo_ita":" I capi più pregiati della storia del costume, creati negli anni dalle sartorie più importanti al mondo: circa 200 abiti ed accessori che vanno da metà Ottocento fino ai giorni nostri, oltre a recenti acquisizioni e alcuni capi della collezione di Palazzo Pitti. Non può mancare una selezione di capi delle ultime collezioni di Gucci, Margiela, Bless, Fendi, Armani, Valentino, Prada, Dolce & Gabbana, John Galliano e Lanvin.. \r\n",
+                "testo_eng":"The most prestigious items of the history of costume created during the years by the most famous taylors in the world: two hundred items – clothing and accessories – dating from the mid-nineteenth century to the present as well as the collections of Palazzo Pitti and a selection of items from the collections of Gucci, Margiela, Bless, Fendi, Armani, Valentino, Prada, Dolce & Gabbana, John Galliano and Lanvin.. ",
+                "nreplica":"26461",
+                "decode_categoria_eng":"Exhibitions",
+                "peso":"1",
+                "bambini":"",
+                "titolo_ita":"Il Museo Effimero della Moda",
+                "decode_data_to":"22\/10\/2017",
+                "lat":"43.765274",
+                "immagine":"images\/ALLEGATO\/21860_The-garment,-negative-and-positive-image-of-the-body------001.jpg",
+                "nutente":"7",
+                "titolo_eng":"The Ephemeral Museum of Fashion",
+                "wwwsite":"http:\/\/www.pittimmagine.com\/en\/corporate\/fairs\/uomo\/events\/2017\/museoeffimero.html",
+                "ordinamento":72,
+                "info_ita":"055 294883 ",
+                "prezzo":"13 (incluso museo \/ including museum) ",
+                "orario_eng":"8.15 -18.50,Closed on Monday",
+                "cod_evento":"21860",
+                "data_from":"2017-06-14",
+                "lon":"11.249968",
+                "decode_data_from":"14\/06\/2017"
+            },
+            
+            {
+                "gratuito":"1",
+                "indirizzi":"VILLA BARDINI - Costa San Giorgio , 2",
+                "recapito":
+                    [
+                        
+                        {
+                            "recapito":"VILLA BARDINI - Costa San Giorgio , 2",
+                            "civico":"",
+                            "lat":"43.763917",
+                            "lon":"11.255981"
+                        }
+                    ],
+                "civico":"",
+                "orario":"9.00 e 10.45",
+                "data_to":"2017-09-16",
+                "allegato":"",
+                "cod_categoria":"14",
+                "decode_categoria":"Altri eventi",
+                "info_eng":"",
+                "testo_ita":"A giugno, luglio e settembre laboratori gratuiti per bambini nello splendido giardino di Villa Bardini in occasione dei 25 anni di attività di Fondazione CR Firenze.\nAi bambini partecipanti in omaggio un kit didattico: ”Il Gioco delle meraviglie al Giardino Bardini”, un particolare gioco dell’oca per far conoscere ai bambini dai 6 ai 12 anni i segreti di questo luogo meraviglioso a pochi passi da Firenze.\n\n",
+                "testo_eng":"",
+                "nreplica":"26497",
+                "decode_categoria_eng":"Other events",
+                "peso":"1",
+                "bambini":"",
+                "titolo_ita":"Il “Gioco delle Meraviglie” al giardino di Villa Bardini",
+                "decode_data_to":"16\/09\/2017",
+                "lat":"43.763917",
+                "immagine":"",
+                "nutente":"19",
+                "titolo_eng":"",
+                "wwwsite":"www.fondazionecrfirenze.it",
+                "ordinamento":73,
+                "info_ita":"Laboratori per bambini: ogni giovedì e sabato dal 15 giugno all’8 luglio e dal 2 al 16 settembre\nNavetta gratuita per Villa Bardini: ogni giovedì, sabato e domenica dal 15 giugno all’8 luglio e dal 2 al 17 settembre 2017.\nAttività gratuite su prenotazione fino ad esaurimento dei posti a disposizione. Info e prenotazioni: 055 20066214; villabardini@bardinipeyron.it.",
+                "prezzo":"",
+                "orario_eng":"",
+                "cod_evento":"21890",
+                "data_from":"2017-09-02",
+                "lon":"11.255981",
+                "decode_data_from":"02\/09\/2017"
+            },
+            
+            {
+                "gratuito":"0",
+                "decode_gratuito":"No",
+                "indirizzi":"VILLA BARDINI - Costa San Giorgio , 2",
+                "recapito":
+                    [
+                        
+                        {
+                            "recapito":"VILLA BARDINI - Costa San Giorgio , 2",
+                            "civico":"",
+                            "lat":"43.763917",
+                            "lon":"11.255981"
+                        }
+                    ],
+                "civico":"",
+                "orario":"Martedì - domenica: 10.00 -19.00; Lunedì chiuso ",
+                "data_to":"2018-01-07",
+                "allegato":"",
+                "cod_categoria":"11",
+                "decode_categoria":"Mostre",
+                "info_eng":"055 20066206",
+                "testo_ita":"La mostra raccoglie 62 opere dell'artista,provenienti, da collezioni private e pubbliche di tutta Italia \r\nDopo la formazione a Livorno, seguendo l’ideale artistico e morale di Giovanni Fattori, Lloyd, di origini gallesi, ma livornese di nascita, giunge a Firenze alle soglie del Novecento, diventando un vero e proprio fiorentino d’adozione. Nella mostra si ripercorre il cammino artistico del pittore dagli inizi del Novecento, cui corrisponde la stagione divisionista, negli anni Venti, con una piccola sezione dedicata alle vedute fiorentine degli anni Trenta.",
+                "testo_eng":"The exhibition collects 62 works by artists from private and public collections throughout Italy . After the formation in Livorno, following the artistic and moral ideals of Giovanni Fattori, Lloyd, of Welsh origin, but livornese of birth, arrives in Florence a t the beginning of the twentieth century, becoming  Florentine by adoption . The exhibition follows the painter's artistic journey since the beginning of the twentieth century, which corresponds to the divisionist season in the 1920s with a small section devoted to Florentine views of the 1930s.",
+                "nreplica":"27106",
+                "decode_categoria_eng":"Exhibitions",
+                "peso":"1",
+                "bambini":"",
+                "titolo_ita":"Lloyd: paesaggi toscani del Novecento ",
+                "decode_data_to":"07\/01\/2018",
+                "lat":"43.763917",
+                "immagine":"images\/ALLEGATO\/22076_LLOYD_BARDINI.jpg",
+                "nutente":"7",
+                "titolo_eng":"Lloyd: Tuscan landscapes of the XIXth century",
+                "wwwsite":"www.bardinipeyron.it",
+                "ordinamento":74,
+                "info_ita":"055 20066206",
+                "prezzo":"8 (incluso museo \/  including museum) ",
+                "orario_eng":"Tuesday - Sunday: 10.00 -19.00; closed on Monday",
+                "cod_evento":"22076",
+                "data_from":"2017-07-14",
+                "lon":"11.255981",
+                "decode_data_from":"14\/07\/2017"
+            },
+            
+            {
+                "gratuito":"0",
+                "decode_gratuito":"No",
+                "indirizzi":"Mandela Forum - Viale Pasquale Paoli ",
+                "recapito":
+                    [
+                        
+                        {
+                            "recapito":"Mandela Forum - Viale Pasquale Paoli ",
+                            "civico":"",
+                            "lat":"43.779488",
+                            "lon":"11.282823"
+                        }
+                    ],
+                "civico":"",
+                "orario":"21.00",
+                "data_to":"2017-09-23",
+                "allegato":"",
+                "cod_categoria":"2",
+                "decode_categoria":"Musica rock, jazz, pop, contemporanea",
+                "info_eng":"",
+                "testo_ita":"\"Made In Italy\" Tour 2017.",
+                "testo_eng":"",
+                "nreplica":"27496",
+                "decode_categoria_eng":"Rock, jazz, pop, contemporary music",
+                "peso":"1",
+                "bambini":"",
+                "titolo_ita":"Luciano Ligabue",
+                "decode_data_to":"23\/09\/2017",
+                "lat":"43.779488",
+                "immagine":"",
+                "nutente":"50",
+                "titolo_eng":"",
+                "wwwsite":"www.mandelaforum.it",
+                "ordinamento":75,
+                "info_ita":"055 678841",
+                "prezzo":"81-36",
+                "orario_eng":"",
+                "cod_evento":"22242",
+                "data_from":"2017-09-22",
+                "lon":"11.282823",
+                "decode_data_from":"22\/09\/2017"
+            },
+            
+            {
+                "gratuito":"1",
+                "indirizzi":"MERCATO DELLA LOGGIA DEL \"PORCELLINO\" - Piazza di Mercato Nuovo",
+                "recapito":
+                    [
+                        
+                        {
+                            "recapito":"MERCATO DELLA LOGGIA DEL \"PORCELLINO\" - Piazza di Mercato Nuovo",
+                            "civico":"",
+                            "lat":"43.770003",
+                            "lon":"11.254051"
+                        }
+                    ],
+                "civico":"",
+                "orario":"21.30 \"Musica ai tempi di Jonathan Swift\" (1667-1745) - Gulliver e un viaggio fantastico nella musica della sua epoca. Musiche di Locke, Lully, Corelli, Purcell, Telemann, ecc.",
+                "data_to":"2017-09-01",
+                "allegato":"",
+                "cod_categoria":"2",
+                "decode_categoria":"Musica rock, jazz, pop, contemporanea",
+                "info_eng":"3334338838, 3200214026",
+                "testo_ita":"IX edizione della rassegna che si propone di  animare, anche in orario di chiusura commerciale, i mercati storici mediante una programmazione di alto livello culturale.",
+                "testo_eng":"9th edition of this music event performed in the markets.",
+                "nreplica":"27260",
+                "decode_categoria_eng":"Rock, jazz, pop, contemporary music",
+                "peso":"1",
+                "bambini":"",
+                "titolo_ita":"Mercati storici in Musica",
+                "decode_data_to":"01\/09\/2017",
+                "lat":"43.770003",
+                "immagine":"images\/ALLEGATO\/22137_mercati.jpg",
+                "nutente":"4",
+                "titolo_eng":"Music in the historical markets",
+                "wwwsite":"www.mercatiinmusica.com|www.estatefiorentina.it",
+                "ordinamento":76,
+                "info_ita":"3334338838, 3200214026",
+                "prezzo":"",
+                "orario_eng":"21.30 \"Music in the time of Jonathan Swift\" (1667-1745). Music by Locke, Lully, Corelli, Purcell, Telemann, etc.",
+                "cod_evento":"22137",
+                "data_from":"2017-09-01",
+                "lon":"11.254051",
+                "decode_data_from":"01\/09\/2017"
+            },
+            
+            {
+                "gratuito":"1",
+                "indirizzi":"Piazza dei Ciompi",
+                "recapito":
+                    [
+                        
+                        {
+                            "recapito":"Piazza dei Ciompi",
+                            "civico":"",
+                            "lat":"43.771112",
+                            "lon":"11.265126"
+                        }
+                    ],
+                "civico":"",
+                "orario":"9.00-18.00",
+                "data_to":"2017-08-27",
+                "allegato":"",
+                "cod_categoria":"6",
+                "decode_categoria":"Fiere, mercati",
+                "info_eng":"",
+                "testo_ita":"Antiquariato, modernariato, bigiotteria, stampe, libri, dischi.",
+                "testo_eng":"Antiques, second-hand goods, jewelries, books and records.",
+                "nreplica":"25794",
+                "decode_categoria_eng":"Markets, fairs",
+                "peso":"1",
+                "bambini":"",
+                "titolo_ita":"Mercato delle Pulci - Ciompi Mensile Antiquariato ",
+                "decode_data_to":"27\/08\/2017",
+                "lat":"43.771112",
+                "immagine":"",
+                "nutente":"52",
+                "titolo_eng":"Flea Market ",
+                "wwwsite":"www.comune.fi.it",
+                "ordinamento":79,
+                "info_ita":"",
+                "prezzo":"",
+                "orario_eng":"9.00-18.00",
+                "cod_evento":"18439",
+                "data_from":"2017-08-27",
+                "lon":"11.265126",
+                "decode_data_from":"27\/08\/2017"
+            },
+            
+            {
+                "gratuito":"1",
+                "indirizzi":"Piazza della Santissima Annunziata",
+                "recapito":
+                    [
+                        
+                        {
+                            "recapito":"Piazza della Santissima Annunziata",
+                            "civico":"",
+                            "lat":"43.776344",
+                            "lon":"11.260815"
+                        }
+                    ],
+                "civico":"",
+                "orario":"9 - 20",
+                "data_to":"2017-09-10",
+                "allegato":"",
+                "cod_categoria":"6",
+                "decode_categoria":"Fiere, mercati",
+                "info_eng":"331 7846960",
+                "testo_ita":"L'arte e l'artigianato arrivano in piazza SS.Annunizata a Firenze all'insegna del lavoro fatto a mano.\nOltre venti banchi di artigiani che fanno parte dell'associazione culturale Manodopera.",
+                "testo_eng":"Arts and crafts in Piazza SS. Annunziata with twenty stands of hand - made works by the association Manodopera.",
+                "nreplica":"25504",
+                "decode_categoria_eng":"Markets, fairs",
+                "peso":"1",
+                "bambini":"1",
+                "titolo_ita":"Mercato manodopera",
+                "decode_data_to":"10\/09\/2017",
+                "lat":"43.776344",
+                "immagine":"",
+                "nutente":"6",
+                "titolo_eng":"Handicraft Market",
+                "wwwsite":"http:\/\/www.manodopera-firenze.com\/",
+                "ordinamento":80,
+                "info_ita":"331 7846960",
+                "prezzo":"",
+                "orario_eng":"9 - 20",
+                "cod_evento":"18302",
+                "data_from":"2017-09-09",
+                "lon":"11.260815",
+                "decode_data_from":"09\/09\/2017"
+            },
+            
+            {
+                "gratuito":"0",
+                "decode_gratuito":"No",
+                "indirizzi":"MUSEO DI CASA BUONARROTI - Via Ghibellina , 70",
+                "recapito":
+                    [
+                        
+                        {
+                            "recapito":"MUSEO DI CASA BUONARROTI - Via Ghibellina , 70",
+                            "civico":"",
+                            "lat":"43.769849",
+                            "lon":"11.263607"
+                        }
+                    ],
+                "civico":"",
+                "orario":"10.00 -17.00; Martedì chiuso",
+                "data_to":"2017-10-02",
+                "allegato":"",
+                "cod_categoria":"11",
+                "decode_categoria":"Mostre",
+                "info_eng":"055 241752",
+                "testo_ita":"I progetti di fortificazione michelangiolesche per la protezione della città, databili agli anni 1528-1529 in venti disegni i conservati in Casa Buonarroti.",
+                "testo_eng":"Michelangelo's  fortification projects for the protection of the city, dating from the years 1528-1529 in twenty drawings preserved in Casa Buonarroti.",
+                "nreplica":"26482",
+                "decode_categoria_eng":"Exhibitions",
+                "peso":"1",
+                "bambini":"",
+                "titolo_ita":"Michelangelo e l'assedio di Firenze",
+                "decode_data_to":"02\/10\/2017",
+                "lat":"43.769849",
+                "immagine":"images\/ALLEGATO\/21879_michelangelo_assedio.jpg",
+                "nutente":"7",
+                "titolo_eng":"Michelangelo and the siege of Florence",
+                "wwwsite":"www.casabuonarroti.it",
+                "ordinamento":81,
+                "info_ita":"055 241752",
+                "prezzo":"6,50",
+                "orario_eng":"10.00 -17.00; closed on Tuesday",
+                "cod_evento":"21879",
+                "data_from":"2017-06-21",
+                "lon":"11.263607",
+                "decode_data_from":"21\/06\/2017"
+            },
+            
+            {
+                "gratuito":"1",
+                "indirizzi":"MUSEO ARCHEOLOGICO - Piazza Della Santissima Annunziata ",
+                "recapito":
+                    [
+                        
+                        {
+                            "recapito":"MUSEO ARCHEOLOGICO - Piazza Della Santissima Annunziata ",
+                            "civico":"",
+                            "lat":"43.776571",
+                            "lon":"11.261258"
+                        }
+                    ],
+                "civico":"",
+                "orario":"19.00-22.00",
+                "data_to":"2017-08-30",
+                "allegato":"",
+                "cod_categoria":"5",
+                "decode_categoria":"Aperture straordinarie, visite guidate",
+                "info_eng":"",
+                "testo_ita":"Apertura straordinaria",
+                "testo_eng":"Extra-opening",
+                "nreplica":"27356",
+                "decode_categoria_eng":"Extraordinary openings, guided tours",
+                "peso":"1",
+                "bambini":"1",
+                "titolo_ita":"Museo Archeologico Nazionale - apertura serale ",
+                "decode_data_to":"30\/08\/2017",
+                "lat":"43.776571",
+                "immagine":"",
+                "nutente":"50",
+                "titolo_eng":"Archeological museum - night opening ",
+                "wwwsite":"www.beniculturali.it",
+                "ordinamento":82,
+                "info_ita":"",
+                "prezzo":"4",
+                "orario_eng":"19.00-22.00",
+                "cod_evento":"22165",
+                "data_from":"2017-08-30",
+                "lon":"11.261258",
+                "decode_data_from":"30\/08\/2017"
+            },
+            
+            {
+                "gratuito":"1",
+                "indirizzi":"GALLERIA DELL'ACCADEMIA - Via Ricasoli , 58",
+                "recapito":
+                    [
+                        
+                        {
+                            "recapito":"GALLERIA DELL'ACCADEMIA - Via Ricasoli , 58",
+                            "civico":"",
+                            "lat":"43.776782",
+                            "lon":"11.258586"
+                        }
+                    ],
+                "civico":"",
+                "orario":"20.00: \"Il santo, il mercante e la città\": San Giovanni trionfa su Orgoglio, Avarizia e Vanagloria di Giovanni del Biondo",
+                "data_to":"2017-08-29",
+                "allegato":"",
+                "cod_categoria":"5",
+                "decode_categoria":"Aperture straordinarie, visite guidate",
+                "info_eng":"",
+                "testo_ita":"in occasione delle aperture prolungate del martedì sera, gli operatori dei servizi educativi del museo illustreranno, in lingua italiana, alcuni dei capolavori, degli artisti, delle scuole meno noti al grande pubblico.",
+                "testo_eng":"",
+                "nreplica":"27293",
+                "decode_categoria_eng":"Extraordinary openings, guided tours",
+                "peso":"1",
+                "bambini":"",
+                "titolo_ita":"Non solo David: tesori svelati. Alla scoperta dei capolavori del Museo",
+                "decode_data_to":"29\/08\/2017",
+                "lat":"43.776782",
+                "immagine":"",
+                "nutente":"19",
+                "titolo_eng":"",
+                "wwwsite":"",
+                "ordinamento":87,
+                "info_ita":"055 294883",
+                "prezzo":"",
+                "orario_eng":"",
+                "cod_evento":"21903",
+                "data_from":"2017-08-29",
+                "lon":"11.258586",
+                "decode_data_from":"29\/08\/2017"
+            },
+            
+            {
+                "gratuito":"0",
+                "decode_gratuito":"No",
+                "indirizzi":"OSSERVATORIO ASTRONOMICO DI ARCETRI - Via del Pian dei Giullari, 16",
+                "recapito":
+                    [
+                        
+                        {
+                            "recapito":"OSSERVATORIO ASTRONOMICO DI ARCETRI - Via del Pian dei Giullari",
+                            "civico":"16",
+                            "lat":"43.751454",
+                            "lon":"11.255382"
+                        }
+                    ],
+                "civico":"16",
+                "orario":"21.15 \"Barbara Casini e Roberto Taufic in concerto\"",
+                "data_to":"2017-09-07",
+                "allegato":"",
+                "cod_categoria":"14",
+                "decode_categoria":"Altri eventi",
+                "info_eng":"",
+                "testo_ita":"Apericena al tramonto, spettacoli, musica, conferenze e osservazioni del cielo\nin compagnia degli astronomi di arcetri. Al termine di ogni serata osservazioni del cielo in compagnia degli astronomi.",
+                "testo_eng":"",
+                "nreplica":"27026",
+                "decode_categoria_eng":"Other events",
+                "peso":"1",
+                "bambini":"1",
+                "titolo_ita":"Notti d'estate ad Arcetri ",
+                "decode_data_to":"07\/09\/2017",
+                "lat":"43.751454",
+                "immagine":"images\/ALLEGATO\/19116_arcetri.jpg",
+                "nutente":"19",
+                "titolo_eng":"",
+                "wwwsite":"nottidestate.amicidiarcetri.it| www.estatefiorentina.it",
+                "ordinamento":88,
+                "info_ita":"055 2752280 - Prenotazione obbligatoria",
+                "prezzo":"",
+                "orario_eng":"",
+                "cod_evento":"19116",
+                "data_from":"2017-09-07",
+                "lon":"11.255382",
+                "decode_data_from":"07\/09\/2017"
+            },
+            
+            {
+                "gratuito":"1",
+                "indirizzi":"BASILICA DI SANTA MARIA DEL FIORE (DUOMO) - Piazza Del Duomo ",
+                "recapito":
+                    [
+                        
+                        {
+                            "recapito":"BASILICA DI SANTA MARIA DEL FIORE (DUOMO) - Piazza Del Duomo ",
+                            "civico":"",
+                            "lat":"43.773156",
+                            "lon":"11.255752"
+                        }
+                    ],
+                "civico":"",
+                "orario":"21.15: \"Ildegarda, la sibilla renana\"",
+                "data_to":"2017-09-08",
+                "allegato":"",
+                "cod_categoria":"1",
+                "decode_categoria":"Musica classica, opera e balletto",
+                "info_eng":"055 2302885",
+                "testo_ita":"Torna la celebre Rassegna di musica e arte sacra nella Cattedrale di Santa Maria del Fiore. Il 24 giugno, Concerto solenne in occasione della Festività di San Giovanni Battista, Patrono di Firenze: music by Delibes, Schubert, Gounod",
+                "testo_eng":"Sacred art and music Festival in the Cathedral of Santa Maria del Fiore. On June 24, solemn concert dedicated to St John the Baptist, Patron Saint of Florence: music by Delibes, Schubert, Gounod",
+                "nreplica":"25844",
+                "decode_categoria_eng":"Classical music, opera, ballet",
+                "peso":"1",
+                "bambini":"",
+                "titolo_ita":"O'Flos Colende",
+                "decode_data_to":"08\/09\/2017",
+                "lat":"43.773156",
+                "immagine":"images\/ALLEGATO\/21101_flos.jpg",
+                "nutente":"2",
+                "titolo_eng":"O'Flos Colende",
+                "wwwsite":"bit.ly\/28RgTtV",
+                "ordinamento":89,
+                "info_ita":"055 2302885",
+                "prezzo":"",
+                "orario_eng":"21.15: \"Ildegarda, the renana siblin\"",
+                "cod_evento":"21101",
+                "data_from":"2017-09-08",
+                "lon":"11.255752",
+                "decode_data_from":"08\/09\/2017"
+            },
+            
+            {
+                "gratuito":"1",
+                "indirizzi":"Piazza Santo Spirito",
+                "recapito":
+                    [
+                        
+                        {
+                            "recapito":"Piazza Santo Spirito",
+                            "civico":"",
+                            "lat":"43.766473",
+                            "lon":"11.247526"
+                        }
+                    ],
+                "civico":"",
+                "orario":"9.00 - 20.00",
+                "data_to":"2017-09-10",
+                "allegato":"",
+                "cod_categoria":"6",
+                "decode_categoria":"Fiere, mercati",
+                "info_eng":"392 9699957",
+                "testo_ita":"Artigianato, prodotti tipici, animazione bimbi.",
+                "testo_eng":"Arts and crafts, local products, childern entertainment",
+                "nreplica":"25509",
+                "decode_categoria_eng":"Markets, fairs",
+                "peso":"1",
+                "bambini":"1",
+                "titolo_ita":"Oltrarno in Fiera",
+                "decode_data_to":"10\/09\/2017",
+                "lat":"43.766473",
+                "immagine":"",
+                "nutente":"6",
+                "titolo_eng":"Fair in Oltrarno ",
+                "wwwsite":"www.cislambulanti.it | www.diladdarno.it",
+                "ordinamento":90,
+                "info_ita":"392 9699957",
+                "prezzo":"",
+                "orario_eng":"9.00 - 20.00",
+                "cod_evento":"17855",
+                "data_from":"2017-09-10",
+                "lon":"11.247526",
+                "decode_data_from":"10\/09\/2017"
+            },
+            
+            {
+                "gratuito":"0",
+                "decode_gratuito":"No",
+                "indirizzi":"MUSEO DEGLI ARGENTI  - TESORO DEI GRANDUCHI - Piazza Dei Pitti , 1",
+                "recapito":
+                    [
+                        
+                        {
+                            "recapito":"MUSEO DEGLI ARGENTI  - TESORO DEI GRANDUCHI - Piazza Dei Pitti , 1",
+                            "civico":"",
+                            "lat":"43.765274",
+                            "lon":"11.249968"
+                        }
+                    ],
+                "civico":"",
+                "orario":"8.15 -18.50; Lunedì chiuso ",
+                "data_to":"2017-09-24",
+                "allegato":"",
+                "cod_categoria":"11",
+                "decode_categoria":"Mostre",
+                "info_eng":"055 294883",
+                "testo_ita":"La straordinaria raccolta di piatti d'argento istoriati creata dai principali artisti del XVII e XVIII secolo e donata ai Granduchi dal Cardinale Pallavicini in occasione della Festa di San Giovanni, oggi dispersa, rivive nella riproduzione dei calchi in gesso effettuata dalla Fabbrica Richard Ginori di Doccia fra il 1746 e il 1748 oggi in mostra insieme a recenti realizzazioni in porcellana e d'argento. ",
+                "testo_eng":"The extraordinary collection of silver plates created by the main artists in XVIIth and XVIIIth centuries and donated to the Grand  Dukes from Cardinal Pallavicini on the occasion of St. John's day, now lost but still visible in the reproductions of casts made by the Ginori Doccia factory during the XVIIth century and on display together with recent realizations in porcelain and silver. ",
+                "nreplica":"26680",
+                "decode_categoria_eng":"Exhibitions",
+                "peso":"1",
+                "bambini":"",
+                "titolo_ita":"Omaggio al Granduca: memorie dei piatti d’argento per la festa di San Giovanni",
+                "decode_data_to":"24\/09\/2017",
+                "lat":"43.765274",
+                "immagine":"images\/ALLEGATO\/21961_piatti_del_granduca_MOSTRA.jpg",
+                "nutente":"7",
+                "titolo_eng":"Tribute to the Gran Duke: memories of the silver plates donated to the Grand Dukes for St. John's day. ",
+                "wwwsite":"www.gallerieuffizimostre.it",
+                "ordinamento":91,
+                "info_ita":"055 294883",
+                "prezzo":"",
+                "orario_eng":"8\/.15 -18.50; closed on Monday",
+                "cod_evento":"21961",
+                "data_from":"2017-06-24",
+                "lon":"11.249968",
+                "decode_data_from":"24\/06\/2017"
+            },
+            
+            {
+                "gratuito":"0",
+                "decode_gratuito":"No",
+                "indirizzi":"PORTA ROMANA - Piazzale di Porta Romana",
+                "recapito":
+                    [
+                        
+                        {
+                            "recapito":"PORTA ROMANA - Piazzale di Porta Romana",
+                            "civico":"",
+                            "lat":"43.760439",
+                            "lon":"11.241571"
+                        }
+                    ],
+                "civico":"",
+                "orario":"17-20",
+                "data_to":"2017-08-26",
+                "allegato":"",
+                "cod_categoria":"5",
+                "decode_categoria":"Aperture straordinarie, visite guidate",
+                "info_eng":"Reservation required: 055 2768224- 055 2768558",
+                "testo_ita":"Visite guidate in italiano (inglese e altre lingue a richiesta per min 10 pax) a Porta Romana.  Non saranno effettuate in caso di maltempo. \r\nAppuntamento in via Gusciana all'interno del parcheggio della Calza.",
+                "testo_eng":"Tours in Italian (English and other languages on request min 10 persons) \r\nThe visit won't take place in case of rain. Meeting point: Gusciana street at the Calza Parking",
+                "nreplica":"26606",
+                "decode_categoria_eng":"Extraordinary openings, guided tours",
+                "peso":"1",
+                "bambini":"",
+                "titolo_ita":"Porta Romana ",
+                "decode_data_to":"26\/08\/2017",
+                "lat":"43.760439",
+                "immagine":"images\/ALLEGATO\/19148_porta_romana.jpg",
+                "nutente":"7",
+                "titolo_eng":"Porta Romana ",
+                "wwwsite":"",
+                "ordinamento":92,
+                "info_ita":"Prenotazione obbligatoria 055 2768224 - 055 2768558",
+                "prezzo":"4",
+                "orario_eng":"17-20",
+                "cod_evento":"19148",
+                "data_from":"2017-08-26",
+                "lon":"11.241571",
+                "decode_data_from":"26\/08\/2017"
+            },
+            
+            {
+                "gratuito":"0",
+                "decode_gratuito":"No",
+                "indirizzi":"Giardino dell'Orticoltura - Via Vittorio Emanuele Ii ",
+                "recapito":
+                    [
+                        
+                        {
+                            "recapito":"Giardino dell'Orticoltura - Via Vittorio Emanuele Ii ",
+                            "civico":"",
+                            "lat":"43.786446",
+                            "lon":"11.261054"
+                        }
+                    ],
+                "civico":"",
+                "orario":"16.30: laboratorio, 19.30: sfilata dei bambini - a seguire apericena e  concerto live",
+                "data_to":"2017-09-06",
+                "allegato":"",
+                "cod_categoria":"7",
+                "decode_categoria":"Tradizioni popolari",
+                "info_eng":"",
+                "testo_ita":"Laboratorio e sfilata di rificolone che verranno in seguito illuminate, sfilata dei bambini e, apericena e concerto live.",
+                "testo_eng":"371 3977474",
+                "nreplica":"27464",
+                "decode_categoria_eng":"Folk traditions",
+                "peso":"1",
+                "bambini":"1",
+                "titolo_ita":"Rificolona al Giardino dell'ArteCultura",
+                "decode_data_to":"06\/09\/2017",
+                "lat":"43.786446",
+                "immagine":"",
+                "nutente":"7",
+                "titolo_eng":"",
+                "wwwsite":"giardinoartecultura.it",
+                "ordinamento":94,
+                "info_ita":"",
+                "prezzo":"3 - contributo per il materiale delle rificolone",
+                "orario_eng":"",
+                "cod_evento":"22218",
+                "data_from":"2017-09-06",
+                "lon":"11.261054",
+                "decode_data_from":"06\/09\/2017"
+            },
+            
+            {
+                "gratuito":"0",
+                "decode_gratuito":"No",
+                "indirizzi":"MUSEO STIBBERT - Via Federigo Stibbert , 26",
+                "recapito":
+                    [
+                        
+                        {
+                            "recapito":"MUSEO STIBBERT - Via Federigo Stibbert , 26",
+                            "civico":"",
+                            "lat":"43.791947",
+                            "lon":"11.255355"
+                        }
+                    ],
+                "civico":"",
+                "orario":"Lunedì - mercoledì: 10,00 - 11,00 - 12,00 - 13,00; venerdì - domenica: 10.00 - 11.00 - 12.00 - 13.00, 14.00 -15.00 -16.00, 17.00",
+                "data_to":"2017-09-10",
+                "allegato":"",
+                "cod_categoria":"11",
+                "decode_categoria":"Mostre",
+                "info_eng":"055 486049 ",
+                "testo_ita":"La  mostra espone gli oggetti più rari e inconsueti raccolti da Stibbert per allestire la sezione giapponese a confronto con i moderni robot ideati dai maggiori designers di giocattoli orientali ed americani. ",
+                "testo_eng":"The exhibition features the rarest and unusual objects collected by Stibbert to prepare the Japanese section in comparison with  the modern robot designed by leading designers of Oriental and American toys.\r\n",
+                "nreplica":"25031",
+                "decode_categoria_eng":"Exhibitions",
+                "peso":"1",
+                "bambini":"",
+                "titolo_ita":"Robot Fever - Il Samurai nell'era del Chogokin",
+                "decode_data_to":"10\/09\/2017",
+                "lat":"43.791947",
+                "immagine":"images\/ALLEGATO\/21394_Mostra_Robot_Fever_-_2-2.jpg",
+                "nutente":"7",
+                "titolo_eng":"Robot Fever - Samurai during  Chogokin era",
+                "wwwsite":"www.museostibbert.it",
+                "ordinamento":95,
+                "info_ita":"055 486049 ",
+                "prezzo":"8 (incluso museo\/including museum) ",
+                "orario_eng":"Monday - Wednesday: 10,00 - 11,00 - 12,00 - 13,00; Friday - Sunday: 10.00 - 11.00 - 12.00 - 13.00, 14.00 -15.00 -16.00, 17.00",
+                "cod_evento":"21394",
+                "data_from":"2017-04-14",
+                "lon":"11.255355",
+                "decode_data_from":"14\/04\/2017"
+            },
+            
+            {
+                "gratuito":"0",
+                "decode_gratuito":"No",
+                "indirizzi":"ORTO BOTANICO (\"GIARDINO DEI SEMPLICI\") - Via Pier Antonio Micheli , 3",
+                "recapito":
+                    [
+                        
+                        {
+                            "recapito":"ORTO BOTANICO (\"GIARDINO DEI SEMPLICI\") - Via Pier Antonio Micheli , 3",
+                            "civico":"",
+                            "lat":"43.779411",
+                            "lon":"11.261745"
+                        }
+                    ],
+                "civico":"",
+                "orario":"10.00 - 19.00; mercoledì chiuso",
+                "data_to":"2017-09-24",
+                "allegato":"",
+                "cod_categoria":"11",
+                "decode_categoria":"Mostre",
+                "info_eng":"055 2756444",
+                "testo_ita":"Una mostra personale di Sergio Gagliolo. Le sue opere (dagli anni '60 ad oggi) profondamente ispirate dalla Natura, dialogano in perfetta osmosi con gli ambienti dell'Orto Botanico-\"Giardino dei Semplici\" di Firenze. La mostra e il progetto \"Una passeggiata dall'universo delle piante in mondi paralleli. Botanica Arte Poesia\" è a cura di Elisabeth Vermeer. Particolarmente ricco di eventi collaterali è il programma dell'inaugurazione (vedi link per i dettagli).\n",
+                "testo_eng":"A personal exhibition on Sergio Gagliolo's works, deeply inspired by the Nature. In the ideal environment of the Botanical Garden of Florence",
+                "nreplica":"26170",
+                "decode_categoria_eng":"Exhibitions",
+                "peso":"1",
+                "bambini":"",
+                "titolo_ita":"Rose e foglie, su una linea di silenzio  -  Prorogata al 24 Settembre",
+                "decode_data_to":"24\/09\/2017",
+                "lat":"43.779411",
+                "immagine":"images\/ALLEGATO\/21786_gagliolo2.jpg",
+                "nutente":"52",
+                "titolo_eng":"Roses and leaves, on a line of silence -  Postponed to 24th September",
+                "wwwsite":"www.msn.unifi.it\/event\/sergio-gagliolo\/",
+                "ordinamento":96,
+                "info_ita":"055 2756444",
+                "prezzo":"3 (incluso museo \/ including museum) ",
+                "orario_eng":"10.00 - 19.00; closed on Wednesday",
+                "cod_evento":"21786",
+                "data_from":"2017-06-09",
+                "lon":"11.261745",
+                "decode_data_from":"09\/06\/2017"
+            },
+            
+            {
+                "gratuito":"0",
+                "decode_gratuito":"No",
+                "indirizzi":"BIBLIOTECA MEDICEA LAURENZIANA - Piazza Di San Lorenzo , 9",
+                "recapito":
+                    [
+                        
+                        {
+                            "recapito":"BIBLIOTECA MEDICEA LAURENZIANA - Piazza Di San Lorenzo , 9",
+                            "civico":"",
+                            "lat":"43.774654",
+                            "lon":"11.254536"
+                        }
+                    ],
+                "civico":"",
+                "orario":"Lunedì -venerdì: 9.30 -14.30 , sabato ,  domenica e festivi  chiuso",
+                "data_to":"2017-09-29",
+                "allegato":"",
+                "cod_categoria":"11",
+                "decode_categoria":"Mostre",
+                "info_eng":"055 2937911",
+                "testo_ita":"Il patrimonio bibliografico dell'Ateneo fiorentino in mostra.",
+                "testo_eng":"The bibliographic patrimony of Florence University on display.",
+                "nreplica":"23817",
+                "decode_categoria_eng":"Exhibitions",
+                "peso":"1",
+                "bambini":"",
+                "titolo_ita":"Tesori inesplorati. Le biblioteche dell'Università di Firenze in mostra - Prorogata fino al 29\/09\/2017",
+                "decode_data_to":"29\/09\/2017",
+                "lat":"43.774654",
+                "immagine":"images\/ALLEGATO\/20866_tesori_inesplorati.jpg",
+                "nutente":"7",
+                "titolo_eng":"Unexplored treasures. Florence University Libraries on display - Postponed till 29\/09\/2017",
+                "wwwsite":"www.sba.unifi.it",
+                "ordinamento":97,
+                "info_ita":"055 2937911",
+                "prezzo":"3 inclusa biblioteca\/includin Library -   8,50 biglietto unico inclusa \/ combined ticket Biblioteca + Basilica  ",
+                "orario_eng":"Monday -Friday: 9.30 -13.30; closed on Saturday, Sunday and holidays  ",
+                "cod_evento":"20866",
+                "data_from":"2017-02-15",
+                "lon":"11.254536",
+                "decode_data_from":"15\/02\/2017"
+            },
+            
+            {
+                "gratuito":"0",
+                "decode_gratuito":"No",
+                "indirizzi":"TORRE DELLA ZECCA - Piazza Piave",
+                "recapito":
+                    [
+                        
+                        {
+                            "recapito":"TORRE DELLA ZECCA - Piazza Piave",
+                            "civico":"",
+                            "lat":"43.766753",
+                            "lon":"11.268346"
+                        }
+                    ],
+                "civico":"",
+                "orario":"16.00 - 19.00",
+                "data_to":"2017-09-16",
+                "allegato":"",
+                "cod_categoria":"5",
+                "decode_categoria":"Aperture straordinarie, visite guidate",
+                "info_eng":"Reservation required: 055 2768224- 055 2768558",
+                "testo_ita":"Visite guidate ogni 30 minuti in italiano ( inglese e altre lingue su richiesta min 10 pax ) alla Torre della Zecca.\n Non saranno effettuate in caso di maltempo. ",
+                "testo_eng":"Guided visits in Italian (English and other languages on request min 10 persons) every 30 minutes - \nThe visit won't take place in case of rain.",
+                "nreplica":"26604",
+                "decode_categoria_eng":"Extraordinary openings, guided tours",
+                "peso":"1",
+                "bambini":"1",
+                "titolo_ita":"Torre della Zecca",
+                "decode_data_to":"16\/09\/2017",
+                "lat":"43.766753",
+                "immagine":"images\/ALLEGATO\/19147_zecca-1-480x550.jpg",
+                "nutente":"7",
+                "titolo_eng":"Torre della Zecca",
+                "wwwsite":"www.musefirenze.it",
+                "ordinamento":98,
+                "info_ita":"Prenotazione obbligatoria 055 2768224 - 055 2768558",
+                "prezzo":"4",
+                "orario_eng":"16.00 - 19.00",
+                "cod_evento":"19147",
+                "data_from":"2017-09-16",
+                "lon":"11.268346",
+                "decode_data_from":"16\/09\/2017"
+            },
+            
+            {
+                "gratuito":"0",
+                "decode_gratuito":"No",
+                "indirizzi":"GALLERIA DEGLI UFFIZI - Piazzale Degli Uffizi , 2",
+                "recapito":
+                    [
+                        
+                        {
+                            "recapito":"GALLERIA DEGLI UFFIZI - Piazzale Degli Uffizi , 2",
+                            "civico":"",
+                            "lat":"43.76841",
+                            "lon":"11.255647"
+                        }
+                    ],
+                "civico":"",
+                "orario":"19.00-21.00 \"Colori e forme della femminilità in Musica\" Concerto Jazz - Le Scat Noir",
+                "data_to":"2017-08-29",
+                "allegato":"",
+                "cod_categoria":"5",
+                "decode_categoria":"Aperture straordinarie, visite guidate",
+                "info_eng":"055 294883 ",
+                "testo_ita":"Tutti i martedì sera dal 6 Giugno al 26 Settembre le aperture serali straordinarie della Galleria degli Uffizi  saranno animate da performance live di tutti i generi di arte: musica, danza, teatro, magia. ",
+                "testo_eng":"Every Tuesday night from 6th June to 26th September during extraordinary night openigns of the Uffizi Gallery visitors will be entartained by live art performances of all kinds: music, dance, theatre and magic.",
+                "nreplica":"26892",
+                "decode_categoria_eng":"Extraordinary openings, guided tours",
+                "peso":"1",
+                "bambini":"1",
+                "titolo_ita":"Uffizi Live",
+                "decode_data_to":"29\/08\/2017",
+                "lat":"43.76841",
+                "immagine":"",
+                "nutente":"50",
+                "titolo_eng":"Uffizi Live",
+                "wwwsite":"http:\/\/www.toscana.beniculturali.it\/",
+                "ordinamento":99,
+                "info_ita":"055 294883 ",
+                "prezzo":"12,50",
+                "orario_eng":"19.00-21.00 \"Colori e forme della femminilità in Musica\" Jazz Concert - Le Scat Noir",
+                "cod_evento":"21811",
+                "data_from":"2017-08-29",
+                "lon":"11.255647",
+                "decode_data_from":"29\/08\/2017"
+            }
+        ]
+}
