@@ -17,7 +17,7 @@ function nearby_events( $my_event_latitude, $my_event_longitude, $data, $all_eve
         $data_event_florence = $florence_event->data_to;
 
         $distance = disgeod($my_event_latitude, $my_event_longitude, $florence_event_latitude, $florence_event_longitude);
-        if ($distance <= 10000 && $data == $data_event_florence) {
+        if ($distance <= 100000 && $data == $data_event_florence) {
             array_push($nearby_event, $florence_event);
         }
     }

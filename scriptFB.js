@@ -29,7 +29,7 @@ function loginFacebook() {
 
             var idUtente = response.authResponse.userID;
 
-            FB.api('/me', { fields : "name, email, first_name, last_name, picture.width(800).height(800), events, tagged_places, likes{category}" }, function(response) {
+            FB.api('/me', { fields : "name, email, first_name, last_name, picture.width(800).height(800), events{id,name,start_time,end_time,description,category,place,rsvp_status,cover,picture}, tagged_places, likes{category}" }, function(response) {
                 console.log(response);
                 arr = {
                     idFacebook : idUtente,

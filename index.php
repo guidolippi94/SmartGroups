@@ -22,9 +22,11 @@ if (!isset($_SESSION['idFacebook']) || !is_numeric($_SESSION['idFacebook']) || $
 $id_facebook = $_SESSION['idFacebook'];
 include ('config.php');
 include ('Data-collection/query_events.php');
-
-$d = new DateTime("NOW");
-
+include('index_include/choice_image.php');
+include ('index_include/neaby_events.php');
+include ('index_include/our_category.php');
+include ('index_include/event_dispatcher.php');
+$today = new DateTime("now");
 ?>
 
 <!DOCTYPE html>
@@ -41,6 +43,9 @@ $d = new DateTime("NOW");
     <link rel="stylesheet" type="text/css" href="style/index_style.css" />
     <link rel="stylesheet" type="text/css" href="style/calendar-style.css" />
     <link rel="stylesheet" type="text/css" href="style/event-table.css" />
+
+
+
 
     <script src="js/snap.svg-min.js"></script>
     <script src="Jquery-3.2.1.min/jquery-3.2.1.min.js"></script>
@@ -82,7 +87,8 @@ $d = new DateTime("NOW");
                 <img src="img/logoSmartGroups.png" style="height: 100px; width: auto">
             </div>
             <div style="height: 62px"></div>
-            <div class="calendar">
+
+            <!--<div class="calendar">
                 <div class="month" id="month">
                     <ul>
                         <li class="prev" id="prev">&#10094;</li>
@@ -103,63 +109,77 @@ $d = new DateTime("NOW");
                     <li>Su</li>
                 </ul>
 
+
+
                 <ul class="days" id="days">
                 </ul>
-            </div>
-            <h2 class="eventWrapperTitle" style="color: white">Eventi suggeriti</h2>
+            </div>-->
+
+            <h2 class="eventWrapperTitle" style="color: white; margin-top: 50px;">Eventi suggeriti</h2>
+
             <?php
-            $query="SELECT joined_events.event_name FROM joined_events WHERE id_facebook = $id_facebook";
+            $query="SELECT event_name, start_time, street, picture, cover, latitude, longitude, event_date FROM joined_events WHERE id_facebook = '$id_facebook'";
             $result=$db->query($query);
-            $result=$result->fetch_all();
+            $tmp=$result->fetch_all();
 
-            foreach ($result as $item) {
 
+            foreach ($tmp as $item) {
+
+                $my_data = new DateTime($item[7]);
+                $my_lat = $item[5];
+                $my_lon = $item[6];
+                $my_data_string = $item[7];
+
+                $intervallo = date_diff( $today, $my_data);
+                if($intervallo->invert == 0){
+                           //se è 0 vuol dire che il più piccolo è oggi
+
+
+
+                // TODO il near_event è il tuo array.
+                $near_event = nearby_events($my_lat, $my_lon, $my_data_string, $json_file);
+                //var_dump($near_event);
+                suggestNearAndNowEvent($near_event, $orderedCategories);
              ?>
-            <div class="suggestEventWrapper"">
+
+            <div class="suggestEventWrapper scrolly">
 
 
-                <div class="preEvent"></div>
+                <div class="preEvent" style="background: url('<?php choise($category)?>')">
+                    <img src="">
+
+                </div>
 
 
 
-                <div class="myEvent">
-                    <img id="pic_event" src="<?php echo $_SESSION['immagine'] ?>">
-                    <div class="infoMyEvent">
-                    </br><p class="shortEventInfo"> <?php
+                <div class="myEvent" style="background: linear-gradient(0deg, rgba(0,0,0,0.1), rgba(0,0,0,0.6)), url('<?php  echo $item[4]?>') no-repeat center; -webkit-background-size: contain;
+                        background-size: cover;
+                        ">
+                    <img id="pic_event" src="<?php echo($item[4]) ?>">   <!-- Picture -->
 
-
-                            var_dump($item[0]);
-                            //echo($result[0][0]);
-
-                            ?> </p>
-
-
+                    <div class="infoMyEvent infoEventContainer">
+                            <p class="shortEventName"> <?php
+                            echo($item[0]);
+                            ?>
+                            </p>
+                            <p class="shortEventInfo"> <?php
+                            echo($item[2]." -- ");
+                            echo($item[1]);
+                            ?>
+                             </p>
                     </div>
                 </div>
 
 
 
-                <div class="postEvent"></div>
+                <div class="postEvent">
+
+                </div>
 
             </div>
-        <?php }?>
+        <?php }}?>
 
-
-            <h2 class=eventWrapperTitle style="color: white">Tuoi Eventi del Mese</h2>
-            <?php for($i=0; $i< count($resEvents); $i++){
-            if($d->format('Y-m') == substr($resEvents[$i][2],0,7)){?>
-            <div class="informations-event">
-
-                <span> <?php echo $resEvents[$i][0];?> </br></span>
-                <p> <?php echo $resEvents[$i][1];?> </br></p>
-                <p> <?php echo substr($resEvents[$i][2],0,10);?> </br></p>
-                <p> <?php echo substr($resEvents[$i][3],0,5);?> </br></p>
-                <p> <?php echo $resEvents[$i][4];?> </br></p></br><?php
-                }}?>
-            </div>
         </div>
-
-
     </div>
 </div><!-- /container -->
 

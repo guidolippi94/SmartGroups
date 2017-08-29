@@ -5,7 +5,7 @@
       <webServer id="a1208889-9e24-44d1-a737-c3944ddc4c4c" name="Altervista" url="http://smartgroups.altervista.org">
         <fileTransfer host="ftp.smartgroups.altervista.org" port="21" username="ppm" password="dfdadfdadfc7df98df9adf9bdf9d">
           <advancedOptions>
-            <advancedOptions dataProtectionLevel="Private" />
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" />
           </advancedOptions>
           <option name="port" value="21" />
         </fileTransfer>
