@@ -42,6 +42,7 @@ $_SESSION['nome'] = $nome;
 $_SESSION['email'] = $email;
 $_SESSION['immagine'] = $_POST['immagine'];
 $_SESSION['categories'] = $categories;
+$_SESSION['user_events']= $user_events;
 
 
 

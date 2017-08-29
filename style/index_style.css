@@ -223,43 +223,46 @@ body,
 
 .suggestEventWrapper{
     background-color: rgba(255,255,255,0.5);
-    height:300px;
+    height: 400px;
     min-width: 100%;
     text-align: center;
 }
 
-.suggestedEvent{
+.myEvent{
+    min-height: 300px;
+    min-width: 30%;
     border: 2px solid black;
-    height: 200px;
-    width: 30%;
     display: inline-block;
     margin-top: 1%;
     margin-left: 4%;
     float: left;
-
-
-
 }
 
 .preEvent{
+    min-height: 300px;
+    min-width: 30%;
     border: 2px solid black;
-    min-height: 200px;
-    width: 30%;
     display: inline-block;
     margin-top: 1%;
     margin-left: 1%;
     float: left;
+    /*background: linear-gradient(0deg, rgba(0,0,0,0.1), rgba(0,0,0,0.6)), url('../img/head_eventi.jpg') no-repeat center;*/
+    -webkit-background-size: contain;
+    background-size: cover;
 }
 
 .postEvent{
+    min-height: 300px;
+    min-width: 30%;
     border: 2px solid black;
-    min-height: 200px;
-    width: 30%;
     display: inline-block;
     margin-top: 1%;
     margin-right: 1%;
     float: right;
-
+    background: linear-gradient(0deg, rgba(0,0,0,0.1), rgba(0,0,0,0.6)), no-repeat, url('../img/login_background.jpg');
+;
+    -webkit-background-size: contain;
+    background-size: cover;
 }
 
 #pic_event {
@@ -270,13 +273,71 @@ body,
     float: left;
     margin-left: 40%;
     margin-top: 0.5%;
+    border: solid greenyellow 5px;
 }
 
-.infoSuggestEvent{
+.infoMyEvent{
     display: inline-block;
 }
 
 .shortEventInfo{
     color: black;
     font-size: small;
+}
+.shortEventName{
+
+    color: black;
+    font-size: medium;
+}
+.infoEventContainer{
+    background-color: rgba(255,255,255,0.8);
+    width: 350px;
+    height: 75px;
+    margin: 10px 10px 10px 10px;
+}
+
+
+
+
+@media all and (max-width: 768px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
+    .suggestEventWrapper{
+        background-color: rgba(255,255,255,0.5);
+        height: 200px;
+        width: 1000px;
+    }
+
+    .generalEvent{
+        width: 300px;
+        height: 150px;
+        margin: 20px 10px;
+        display: inline;
+        background-color: red;
+    }
+
+    .myEvent{
+        border: 2px solid black;
+    }
+
+    .preEvent{
+        background: linear-gradient(0deg, rgba(0,0,0,0.1), rgba(0,0,0,0.6)), url('../img/head_eventi.jpg') no-repeat center;
+        -webkit-background-size: contain;
+        background-size: cover;
+    }
+
+    .postEvent{
+        background: linear-gradient(0deg, rgba(0,0,0,0.1), rgba(0,0,0,0.6)), no-repeat, url('../img/login_background.jpg');
+        -webkit-background-size: contain;
+        background-size: cover;
+    }
+
+
+
+    .scrolly{
+        overflow: auto;
+        overflow-y: hidden;
+        margin: 0 auto;
+        white-space: nowrap;
+    }
+
+
 }

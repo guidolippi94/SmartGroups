@@ -7,6 +7,8 @@
  */
 
 // avvio la sessione
+
+
 session_start();
 
 // verifico di aver fatto il login
@@ -17,12 +19,13 @@ if (isset($_SESSION['idFacebook']) && is_numeric($_SESSION['idFacebook']) && $_S
     </script>
 <?php
 }
+
+
 ?>
 <html>
 <head>
 
     <meta charset="UTF-8">
-    <link type="text/css" rel="stylesheet" href="img">
     <link type="text/css" rel="stylesheet" href="style/index_style.css">
     <link type="text/css" rel="stylesheet" href="style/login_style.css">
     <link type="text/css" rel="stylesheet" href="style/general_style.css">
@@ -46,7 +49,7 @@ if (isset($_SESSION['idFacebook']) && is_numeric($_SESSION['idFacebook']) && $_S
 </head>
 <body>
 
-<div class="parallasse outer" id="login_wrapper" style="background: #fffce1">
+<div class="parallasse outer" id="login_wrapper" style="background-image: url("<?php var_dump($background); ?>")">
     <div class="middle">
         <div class="row login-container">
             <div style="text-align: center; height: 200px">
