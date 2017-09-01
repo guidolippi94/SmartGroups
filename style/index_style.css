@@ -216,53 +216,98 @@ body,
     transform: translate3d(0, 0, 0);
 }
 
-.eventWrapperTitle{
-    text-align: center;
+.title_my_event{
+    color: white;
+    margin-left: 21%;
+    margin-top: 50px;
+    display: inline-block;
+    float: left;
 }
 
+#icon_arrow_right{
+    color: white;
+    margin-top: 50px;
+    float: left;
+    display: inline-block;
+}
+
+.title_suggested_event{
+    color: white;
+    margin-left: 33%;
+    margin-top: 50px;
+    display: inline-block;
+    float: left;
+}
+
+.scrollx{
+    width: 100%;
+    overflow-x: auto;
+}
 
 .suggestEventWrapper{
     background-color: rgba(255,255,255,0.5);
-    height: 400px;
+    height: 329px;
     min-width: 100%;
     text-align: center;
+    margin-top: 1%;
+    border: 2px solid forestgreen;
+
 }
 
 .myEvent{
     min-height: 300px;
-    min-width: 30%;
+    min-width: 37%;
     border: 2px solid black;
     display: inline-block;
     margin-top: 1%;
-    margin-left: 4%;
+    margin-left: 8%;
+    margin-right: 6%;
     float: left;
 }
 
+/*
 .preEvent{
     min-height: 300px;
-    min-width: 30%;
+    min-width: 28%;
     border: 2px solid black;
     display: inline-block;
     margin-top: 1%;
     margin-left: 1%;
     float: left;
-    /*background: linear-gradient(0deg, rgba(0,0,0,0.1), rgba(0,0,0,0.6)), url('../img/head_eventi.jpg') no-repeat center;*/
     -webkit-background-size: contain;
     background-size: cover;
 }
+*/
 
 .postEvent{
     min-height: 300px;
-    min-width: 30%;
+    min-width: 36%;
     border: 2px solid black;
     display: inline-block;
     margin-top: 1%;
     margin-right: 1%;
-    float: right;
+    float: left;
     background: linear-gradient(0deg, rgba(0,0,0,0.1), rgba(0,0,0,0.6)), no-repeat, url('../img/login_background.jpg');
 ;
     -webkit-background-size: contain;
     background-size: cover;
+}
+
+/*
+.icon_arrow_left{
+    display: inline-block;
+    float: left;
+    margin-top: 12%;
+    margin-left: 2%;
+}
+*/
+
+.icon_arrow_right{
+    display: inline-block;
+    float: left;
+    margin-top: 12%;
+    margin-right: 5%;
+    font-size: xx-large;
 }
 
 #pic_event {
@@ -271,9 +316,9 @@ body,
     height: 100px;
     background:#FFCC00;
     float: left;
-    margin-left: 40%;
+    margin-left: 33%;
     margin-top: 0.5%;
-    border: solid greenyellow 5px;
+    border: solid #2f89ff 5px;
 }
 
 .infoMyEvent{
@@ -283,6 +328,7 @@ body,
 .shortEventInfo{
     color: black;
     font-size: small;
+
 }
 .shortEventName{
 
@@ -291,19 +337,50 @@ body,
 }
 .infoEventContainer{
     background-color: rgba(255,255,255,0.8);
-    width: 350px;
+    width: 90%;
     height: 75px;
     margin: 10px 10px 10px 10px;
 }
 
 
+@media screen and (min-width: 768px){
+    #icon_arrow_right{
+        display: none;
+    }
+}
 
 
 @media all and (max-width: 768px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
+
+    .title_my_event{
+        margin-left: 2%;
+        margin-top: 10%;
+        font-size: medium;
+    }
+
+    #icon_arrow_right{
+        font-size: medium;
+        margin-top: 11%;
+        margin-left: 6%;
+    }
+
+    .title_suggested_event{
+        margin-top: 10%;
+        margin-left: 6%;
+        font-size: medium;
+    }
+
+    .scrollx{
+        width: 100%;
+        overflow-x: auto;
+    }
+
     .suggestEventWrapper{
         background-color: rgba(255,255,255,0.5);
-        height: 200px;
-        width: 1000px;
+        height: 217px;
+        width: 540px;
+        /*padding: 7px;*/
+
     }
 
     .generalEvent{
@@ -315,28 +392,31 @@ body,
     }
 
     .myEvent{
+        min-height: 195px;
+        max-height: 195px;
+        min-width: 216px;
+        max-width: 216px;
+        margin-left: 1%;
         border: 2px solid black;
     }
 
-    .preEvent{
-        background: linear-gradient(0deg, rgba(0,0,0,0.1), rgba(0,0,0,0.6)), url('../img/head_eventi.jpg') no-repeat center;
-        -webkit-background-size: contain;
-        background-size: cover;
-    }
-
     .postEvent{
-        background: linear-gradient(0deg, rgba(0,0,0,0.1), rgba(0,0,0,0.6)), no-repeat, url('../img/login_background.jpg');
-        -webkit-background-size: contain;
-        background-size: cover;
+        min-height: 195px;
+        max-height: 195px;
+        min-width: 215px;
+        border: 2px solid black;
     }
 
 
-
-    .scrolly{
-        overflow: auto;
-        overflow-y: hidden;
-        margin: 0 auto;
-        white-space: nowrap;
+    #pic_event {
+        border-radius: 50% ;
+        width: 100px;
+        height: 100px;
+        background:#FFCC00;
+        float: left;
+        margin-left: 27%;
+        margin-top: 0.5%;
+        border: solid #2f89ff 5px;
     }
 
 

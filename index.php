@@ -43,6 +43,7 @@ $today = new DateTime("now");
     <link rel="stylesheet" type="text/css" href="style/index_style.css" />
     <link rel="stylesheet" type="text/css" href="style/calendar-style.css" />
     <link rel="stylesheet" type="text/css" href="style/event-table.css" />
+    <link rel="stylesheet" type="text/css" href="style/popup.css"/>
 
 
 
@@ -54,6 +55,7 @@ $today = new DateTime("now");
     <![endif]-->
 </head>
 <body>
+<a href="index_test.php"> test </a>
 <div class="container">
     <!-- dovrebbe venire fuori quello laterale -->
     <div class="menu-wrap">
@@ -115,7 +117,13 @@ $today = new DateTime("now");
                 </ul>
             </div>-->
 
-            <h2 class="eventWrapperTitle" style="color: white; margin-top: 50px;">Eventi suggeriti</h2>
+
+            <h2 class="title_my_event"> Miei Eventi </h2>
+            <i class="fa fa-long-arrow-right" id="icon_arrow_right"></i>
+            <h2 class="title_suggested_event"> Eventi suggeriti </h2>
+
+
+
 
             <?php
             $query="SELECT event_name, start_time, street, picture, cover, latitude, longitude, event_date FROM joined_events WHERE id_facebook = '$id_facebook'";
@@ -141,41 +149,39 @@ $today = new DateTime("now");
                 //var_dump($near_event);
                 suggestNearAndNowEvent($near_event, $orderedCategories, $id_facebook, $db);
              ?>
+             <div class="scrollx">
 
-            <div class="suggestEventWrapper scrolly">
+                 <div class="suggestEventWrapper">
 
+                     <div class="myEvent" style="background: linear-gradient(0deg, rgba(0,0,0,0.1), rgba(0,0,0,0.6)), url('<?php  echo $item[4]?>') no-repeat center; -webkit-background-size: contain;
+                            background-size: cover;
+                            ">
+                        <img id="pic_event" src="<?php echo($item[4]) ?>">
+                        <div class="infoMyEvent infoEventContainer">
+                                <p class="shortEventName"> <?php
+                                echo($item[0]);
+                                ?>
+                                </p>
+                                <p class="shortEventInfo"> <?php
+                                echo($item[2]." -- ");
+                                echo($item[1]);
 
-                <div class="preEvent" style="background: url('<?php choise($category)?>')">
-                    <img src="">
+                                ?>
+                                 </p>
+                        </div>
+                     </div>
 
-                </div>
+                     <div id="popup">
+                     </div>
 
-
-
-                <div class="myEvent" style="background: linear-gradient(0deg, rgba(0,0,0,0.1), rgba(0,0,0,0.6)), url('<?php  echo $item[4]?>') no-repeat center; -webkit-background-size: contain;
-                        background-size: cover;
-                        ">
-                    <img id="pic_event" src="<?php echo($item[4]) ?>">   <!-- Picture -->
-
-                    <div class="infoMyEvent infoEventContainer">
-                            <p class="shortEventName"> <?php
-                            echo($item[0]);
-                            ?>
-                            </p>
-                            <p class="shortEventInfo"> <?php
-                            echo($item[2]." -- ");
-                            echo($item[1]);
-                            ?>
-                             </p>
+                    <div class="icon_arrow_right">
+                        <i class="fa fa-long-arrow-right" style="display: inline-block;"></i>
                     </div>
-                </div>
 
-
-
-                <div class="postEvent">
+                    <div class="postEvent">
+                    </div>
 
                 </div>
-
             </div>
         <?php }}?>
 
@@ -197,6 +203,9 @@ $today = new DateTime("now");
 </div>
 
 
+
+
+<script src="js/popup.js"></script>
 <script src="js/events.js"></script>
 <script src="js/calendar.js"></script>
 <script src="js/classie.js"></script>

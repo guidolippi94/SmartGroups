@@ -27,51 +27,144 @@ $orderedCategories = array_keys($userPoint);
 
 //var_dump($orderedCategories);
 
-function suggestNearAndNowEvent($nearEvent, $orderedCategories)
+function suggestNearAndNowEvent($nearEvent, $orderedCategories, $idFacebook, $db)
 {
+    $eventSuggestionList = array();
+
 
     foreach ($nearEvent as $item){
         //var_dump($item);
+
+        $eventSuggest = new stdClass();
+
         switch ($item->decode_categoria){
             case $orderedCategories[0]:
-                print_r($item->testo_ita);
-                print_r("Indice gradimento calcolato: 99%");
+                $eventSuggest=eventItemCreator($idFacebook, $db, $item);
+                $eventSuggest->liking="99";
+                //var_dump($eventSuggest);
+                array_push($eventSuggestionList, $eventSuggest);
+
+                //print_r($eventSuggestionList);
                 break;
             case $orderedCategories[1]:
-                print_r($item->testo_ita);
-                print_r("Indice gradimento calcolato: 87%");
+                $eventSuggest=eventItemCreator($idFacebook, $db, $item);
+                $eventSuggest->liking="87";
+
+                array_push($eventSuggestionList, $eventSuggest);
+
+                //print_r($eventSuggestionList);
                 break;
             case $orderedCategories[2]:
-                print_r($item->testo_ita);
-                print_r("Indice gradimento calcolato: 75%");
+                $eventSuggest=eventItemCreator($idFacebook, $db, $item);
+                $eventSuggest->liking="75";
+
+                array_push($eventSuggestionList, $eventSuggest);
+
+                //print_r($eventSuggestionList);
                 break;
             case $orderedCategories[3]:
-                print_r($item->testo_ita);
-                print_r("Indice gradimento calcolato: 63%");
-                break;
-            case $orderedCategories[4]:
-                print_r($item->testo_ita);
-                print_r("Indice gradimento calcolato: 51%");
+                $eventSuggest=eventItemCreator($idFacebook, $db, $item);
+                $eventSuggest->liking="51";
+
+                array_push($eventSuggestionList, $eventSuggest);
+
+                //print_r($eventSuggestionList);
                 break;
             case $orderedCategories[5]:
-                print_r($item->testo_ita);
-                print_r("Indice gradimento calcolato: 39%");
+                $eventSuggest=eventItemCreator($idFacebook, $db, $item);
+                $eventSuggest->liking="39";
+
+                array_push($eventSuggestionList, $eventSuggest);
+
+                //print_r($eventSuggestionList);
                 break;
             case $orderedCategories[6]:
-                print_r($item->testo_ita);
-                print_r("Indice gradimento calcolato: 27%");
+                $eventSuggest=eventItemCreator($idFacebook, $db, $item);
+                $eventSuggest->liking="27";
+
+                array_push($eventSuggestionList, $eventSuggest);
+
+                //print_r($eventSuggestionList);
                 break;
             case $orderedCategories[7]:
-                print_r($item->testo_ita);
-                print_r("Indice gradimento calcolato: 15%");
+                $eventSuggest=eventItemCreator($idFacebook, $db, $item);
+                $eventSuggest->liking="15";
+
+                array_push($eventSuggestionList, $eventSuggest);
+
+                //print_r($eventSuggestionList);
                 break;
             default:
-                print_r($item->testo_ita);
-                print_r("Elemento non categorizzato, indice sconosciuto");
+                $eventSuggest=eventItemCreator($idFacebook, $db, $item);
+                $eventSuggest->liking="Indice sconosciuto";
+
+                array_push($eventSuggestionList, $eventSuggest);
+
+                //print_r($eventSuggestionList);
                 break;
+
         }
+
+    }
+    var_dump($eventSuggestionList);
+}
+
+
+
+
+function eventItemCreator($idFacebook, $db, $item){
+    $eventSuggest = new stdClass();
+    $query="SELECT * FROM event_partecipant WHERE facebook_id = $idFacebook AND event_id = $item->cod_evento ";
+    $result=$db->query($query);
+    if($result->num_rows ==0){
+        $query="INSERT INTO event_partecipant(facebook_id, event_id) VALUES ('$idFacebook', '$item->cod_evento') ";
+        $db->query($query);
+    }
+    $query="SELECT facebook_id FROM event_partecipant WHERE facebook_id != $idFacebook AND event_id = $item->cod_evento ";
+    $result=$db->query($query);
+
+    $result=$result->fetch_all();
+
+    //var_dump($result);
+
+
+    //fill di eventSuggest con item e lista di amici fb
+    $eventSuggest->item = $item;
+    $eventSuggest->idFbList = array();
+
+    foreach ($result as $value){
+        array_push($eventSuggest->idFbList, $value[0]);
     }
 
+    return $eventSuggest;
 
 }
+
 //mettere array di eventi da suggerire in session
+
+
+
+//suggestNearAndNowEvent($near_event, $orderedCategories, $id_facebook);
+/*
+                $query="SELECT * FROM event_partecipant WHERE facebook_id = $idFacebook AND event_id = $item->cod_evento ";
+                $result=$db->query($query);
+                if($result->num_rows ==0){
+                    $query="INSERT INTO event_partecipant(facebook_id, event_id) VALUES ('$idFacebook', '$item->cod_evento') ";
+                    $db->query($query);
+                }
+                $query="SELECT facebook_id FROM event_partecipant WHERE facebook_id != $idFacebook AND event_id = $item->cod_evento ";
+                $result=$db->query($query);
+
+                $result=$result->fetch_all();
+
+
+                //fill di eventSuggest con item e lista di amici fb
+                $eventSuggest->item = $item;
+                $eventSuggest->idFbList = array();
+
+                foreach ($result as $value){
+                    array_push($eventSuggest->idFbList, $value[0]);
+                }
+
+                var_dump($eventSuggest->idFbList);
+                //inserisco in lista di tipo event suggest*/
