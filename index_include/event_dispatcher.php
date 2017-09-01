@@ -29,12 +29,13 @@ $orderedCategories = array_keys($userPoint);
 
 function suggestNearAndNowEvent($nearEvent, $orderedCategories, $idFacebook, $db)
 {
+    $eventSuggestionList = array();
+
 
     foreach ($nearEvent as $item){
         //var_dump($item);
 
         $eventSuggest = new stdClass();
-        $eventSuggestionList = array();
 
         switch ($item->decode_categoria){
             case $orderedCategories[0]:
@@ -51,7 +52,7 @@ function suggestNearAndNowEvent($nearEvent, $orderedCategories, $idFacebook, $db
 
                 array_push($eventSuggestionList, $eventSuggest);
 
-                //print_r($eventSuiomggestionList);
+                //print_r($eventSuggestionList);
                 break;
             case $orderedCategories[2]:
                 $eventSuggest=eventItemCreator($idFacebook, $db, $item);
@@ -103,12 +104,9 @@ function suggestNearAndNowEvent($nearEvent, $orderedCategories, $idFacebook, $db
                 break;
 
         }
-        //var_dump($eventSuggestionList);
+
     }
-
-
-    file_put_contents("EventiParsed.json", $eventSuggestionList);
-
+    var_dump($eventSuggestionList);
 }
 
 
@@ -137,8 +135,6 @@ function eventItemCreator($idFacebook, $db, $item){
     foreach ($result as $value){
         array_push($eventSuggest->idFbList, $value[0]);
     }
-
-    var_dump($eventSuggest->idFbList);
 
     return $eventSuggest;
 

@@ -14,12 +14,13 @@ function nearby_events( $my_event_latitude, $my_event_longitude, $data, $all_eve
     foreach ($all_events->rows as $florence_event) {
         $florence_event_latitude = $florence_event->recapito[0]->lat;
         $florence_event_longitude = $florence_event->recapito[0]->lon;
-        $data_event_florence = $florence_event->data_to;
+        $data_event_florence = $florence_event->data_from;
 
         $distance = disgeod($my_event_latitude, $my_event_longitude, $florence_event_latitude, $florence_event_longitude);
-        if ($distance <= 500000 && $data == $data_event_florence) {
+        if ($distance <= 2000 && $data == $data_event_florence) {
             array_push($nearby_event, $florence_event);
         }
+
     }
     return $nearby_event;
 }

@@ -1,5 +1,7 @@
 
-$json = getJSON();
+
+
+
 
 $(".postEvent").click(function(){
     $("#popup").show();
@@ -10,11 +12,22 @@ $(".postEvent").click(function(){
     $("#popup").css('min-height','83%');
     $("#popup").css('top','11%');
     $("#popup").css('left','11%');
-    $("#popup").css('background','white');
+    $("#popup").css('background','grey');
     $("#popup").css('overflow-y','auto');
-    $("#popup").append('<i class="fa fa-angle-right" style="float:right></i>');
-    
+    $("#popup").append('<div id="top"></div>');
+    $("#top").append('<i class= "fa fa-angle-right" id="right"></i>');
+    $("#top").append('<i class="fa fa-angle-left" id="left"></i>');
+    $("#top").append('<img id="pic_icon">');
+    $("#popup").append('<div id="middle"></div>');
+    $("#middle").append('<p> </p>');    //nome
+    $("#middle").append('<p> </p>');    //luogo
+    $("#middle").append('<p> </p>');    //orario
+    $("#middle").append('<p> </p>');    //descrizione
+    $("#middle").append('<p> </p>');    //forse per qualcosaltro
 });
+
+$("#right").click(function () {
+})
 
 $(document).mouseup(function(e) {
     var container = $("#popup");
