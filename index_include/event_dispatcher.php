@@ -106,7 +106,9 @@ function suggestNearAndNowEvent($nearEvent, $orderedCategories, $idFacebook, $db
         }
 
     }
-    var_dump($eventSuggestionList);
+    //var_dump($eventSuggestionList);
+    $_SESSION['eventSuggestionList'] += $eventSuggestionList;
+    return $eventSuggestionList;
 }
 
 

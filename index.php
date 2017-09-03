@@ -147,7 +147,8 @@ $today = new DateTime("now");
                 // TODO il near_event è il tuo array.
                 $near_event = nearby_events($my_lat, $my_lon, $my_data_string, $json_file);
                 //var_dump($near_event);
-                suggestNearAndNowEvent($near_event, $orderedCategories, $id_facebook, $db);
+                $eventiPuttanaio = suggestNearAndNowEvent($near_event, $orderedCategories, $id_facebook, $db);
+                echo ($eventiPuttanaio);
              ?>
              <div class="scrollx">
 
