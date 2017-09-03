@@ -10,6 +10,7 @@
 
 }
 
+
 div .all-events{
     margin: 0;
     border-top: 7px groove #1abc9c;
@@ -49,4 +50,3 @@ div .all-events span{
 @media screen and (max-width:720px){
 
 }
-

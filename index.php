@@ -26,6 +26,7 @@ include('index_include/choice_image.php');
 include ('index_include/neaby_events.php');
 include ('index_include/our_category.php');
 include ('index_include/event_dispatcher.php');
+include ('index_include/my_interest_included.php');
 $today = new DateTime("now");
 ?>
 
@@ -67,14 +68,14 @@ $today = new DateTime("now");
 
             <div class="icon-list">
                 <!--<a href="#"><i class="fa fa-fw fa-star-o" id="icon"></i><span>Favorites</span></a> -->
-                <a href="#"><i class="fa fa-fw fa-bell-o" id="icon"></i><span>Notifiche</span></a>
+                <!-- <a href="#"><i class="fa fa-fw fa-bell-o" id="icon"></i><span>Notifiche</span></a> -->
                 <!-- <a href="#"><i class="fa fa-fw fa-envelope-o" id="icon"></i><span>Messages</span></a> -->
                 <a href="#"><i class="fa fa-fw fa-calendar-check-o" id="icon"></i><span class="show-events" id="close-button">All Events</span></a>
                 <a href="logout.php"><i class="fa fa-fw fa-undo" id="icon"></i><span>Logout</span></a>
                 <!--<a href="#"><i class="fa fa-fw fa-newspaper-o" id="icon"></i><span>Reading List</span></a>-->
             </div>
         </nav>
-        <button class="close-button" id="close-button"></button>
+        <!-- <button class="close-button" id="close-button"></button> -->
         <div class="morph-shape" id="morph-shape" data-morph-open="M-1,0h101c0,0,0-1,0,395c0,404,0,405,0,405H-1V0z">
             <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 800" preserveAspectRatio="none">
                 <path d="M-1,0h101c0,0-97.833,153.603-97.833,396.167C2.167,627.579,100,800,100,800H-1V0z"/>
@@ -84,11 +85,7 @@ $today = new DateTime("now");
     <button class="menu-button" id="open-button"></button>
     <div class="content-wrap">
         <div class="top-site">
-            <div style="width:100%; height: 7px"></div>
-            <div class="top-site-end">
-                <img src="img/logoSmartGroups.png" style="height: 100px; width: auto">
-            </div>
-            <div style="height: 62px"></div>
+            <img class="logo" src="img/logoSmartGroups.png" style=" float:right; height: 100px; width: auto">
 
             <!--<div class="calendar">
                 <div class="month" id="month">
@@ -116,12 +113,15 @@ $today = new DateTime("now");
                 <ul class="days" id="days">
                 </ul>
             </div>-->
+        </div>
+        <div class="middle-side">
 
 
-            <h2 class="title_my_event"> Miei Eventi </h2>
-            <i class="fa fa-long-arrow-right" id="icon_arrow_right"></i>
-            <h2 class="title_suggested_event"> Eventi suggeriti </h2>
-
+            <div class="title">
+                <h2 class="title_my_event"> Miei Eventi </h2>
+                <i class="fa fa-long-arrow-right" id="icon_arrow_right"></i>
+                <h2 class="title_suggested_event"> Eventi suggeriti </h2>
+            </div>
 
 
 
@@ -130,7 +130,10 @@ $today = new DateTime("now");
             $result=$db->query($query);
             $tmp=$result->fetch_all();
 
-
+            $i = 0;
+            $z=0;
+            $array_session = array();
+            unset($_SESSION['suggested_events']);
             foreach ($tmp as $item) {
 
                 $my_data = new DateTime($item[7]);
@@ -144,14 +147,16 @@ $today = new DateTime("now");
 
 
 
-                // TODO il near_event è il tuo array.
                 $near_event = nearby_events($my_lat, $my_lon, $my_data_string, $json_file);
                 //var_dump($near_event);
-                suggestNearAndNowEvent($near_event, $orderedCategories, $id_facebook, $db);
-             ?>
-             <div class="scrollx">
+                $eventiPuttanaio = suggestNearAndNowEvent($near_event, $orderedCategories, $id_facebook, $db);
+                //var_dump($eventiPuttanaio);
+                $array_session[$i]= $eventiPuttanaio;
+                //var_dump(count($eventiPuttanaio));
+                    ?>
+              <div class="scrollx">
 
-                 <div class="suggestEventWrapper">
+                 <div class="suggestEventWrapper" id="sug_event<?php echo $i+1 ?>">
 
                      <div class="myEvent" style="background: linear-gradient(0deg, rgba(0,0,0,0.1), rgba(0,0,0,0.6)), url('<?php  echo $item[4]?>') no-repeat center; -webkit-background-size: contain;
                             background-size: cover;
@@ -171,34 +176,54 @@ $today = new DateTime("now");
                         </div>
                      </div>
 
-                     <div id="popup">
+                     <?php for($j=0;$j<count($eventiPuttanaio);$j++){
+                         $text_button = able_disable($eventiPuttanaio[$j],$db,$id_facebook);
+                         ?>
+
+                     <div class="popup" style="display: none">
+                         <div class="top">
+                             <i class= "fa fa-angle-right right_"></i>
+                             <i class="fa fa-angle-left left_"></i>
+                             <img class="pic_icon">
+                             <button class="interest" id="button<?php echo $z?>" onclick="update_my_interest(<?php echo $i?>,<?php echo $j?>,<?php echo $z?>)"><?php echo $text_button?></button>
+                         </div>
+                         <div class="middle">
+                             <p><?php echo $eventiPuttanaio[$j]->item->titolo_ita; ?></p>
+                             <p><?php echo $eventiPuttanaio[$j]->item->indirizzi; ?></p>
+                             <p><?php echo $eventiPuttanaio[$j]->item->orario; ?></p>
+                             <p><?php echo $eventiPuttanaio[$j]->item->testo_ita; ?></p>
+                             <p><?php echo $eventiPuttanaio[$j]->linking; ?></p>
+                         </div>
                      </div>
+                     <?php $z++;}
+                     $_SESSION['suggested_events'][$i] = $array_session;
+                     $i ++;
+                     ?>
+
 
                     <div class="icon_arrow_right">
                         <i class="fa fa-long-arrow-right" style="display: inline-block;"></i>
                     </div>
 
-                    <div class="postEvent">
+                    <div class="postEvent" id="post<?php echo $i ?>">
                     </div>
 
                 </div>
             </div>
-        <?php }}?>
+        <?php }} ?>
 
         </div>
     </div>
 </div><!-- /container -->
 
-<div id="all-events">
+<div id="all-events" style="display: none">
     <span> All Events </span>
     <div class="all-events">
-        <?php for($i=0; $i< count($resEvents); $i++){?>
-        <div><span style="color: darkred"> <?php echo $resEvents[$i][0];?> </br></span></div>
-        <div><span> <?php echo $resEvents[$i][1];?> </br></span></div>
-        <div><span> <?php echo substr($resEvents[$i][2],0,10);?> </br></span></div>
-        <div><span> <?php echo substr($resEvents[$i][3],0,5);?> </br></span></div>
-        <div id="last"><span> <?php echo $resEvents[$i][4];?> </br></span></div><?php
-        }?>
+            <div><span style="color: darkred"> </br></span></div>
+            <div><span></br></span></div>
+            <div><span></br></span></div>
+            <div><span></br></span></div>
+            <div id="last"><span></br></span></div>
     </div>
 </div>
 

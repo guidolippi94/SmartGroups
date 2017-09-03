@@ -106,7 +106,8 @@ function suggestNearAndNowEvent($nearEvent, $orderedCategories, $idFacebook, $db
         }
 
     }
-    var_dump($eventSuggestionList);
+    //var_dump($eventSuggestionList);
+    return $eventSuggestionList;
 }
 
 
@@ -125,7 +126,7 @@ function eventItemCreator($idFacebook, $db, $item){
 
     $result=$result->fetch_all();
 
-    //var_dump($result);
+    var_dump($result);
 
 
     //fill di eventSuggest con item e lista di amici fb

@@ -1,23 +1,38 @@
 
-#right{
+.right_{
     font-size: xx-large;
     display: inline-block;
     float: right;
     margin-right: 2%;
     margin-top: 1%;
+    color: black;
 }
 
-#left{
+.left_{
     font-size: xx-large;
     display: inline-block;
     float: right;
     margin-right: 1%;
     margin-top: 1%;
+    color: black;
+
 }
 
-#pic_icon{
+.pic_icon{
     float: left;
     min-width: 100px;
     min-height: 100px;
+}
+
+.popup{
+    border-radius: 20px;
+    position: absolute;
+    min-height: 83%;
+    min-width: 75%;
+    max-width: 75%;
+    top: 11%;
+    left: 11%;
+    background: grey;
+    overflow-y: auto;
 }
 

@@ -2,6 +2,10 @@
     font-size: 20px;
 }
 
+#icon + span{
+    font-size: 14px;
+}
+
 #pic_profile {
     border-radius: 50% ;
     width: 70px;
@@ -25,12 +29,12 @@ body,
 }
 
 .container {
-    background: #1abc9c;
+    background: #6798ea;
     height: inherit;
 }
 
 .menu-wrap a {
-    /* color: #b8b7ad; */      <!-- Questo comando colora le scritte -->
+     color: #ffffff;
 }
 
 .menu-wrap a:hover,
@@ -46,12 +50,13 @@ body,
 }
 
 .top-site{
-    height: 75px;
+    margin-top: 7px;
+    height: 100px;
 }
 
-.top-site-end{
-    width: 245px;
-    height: 75px;
+.logo{
+    width: auto;
+    height: 100px;
     float: right;
 }
 .top-site-end p{
@@ -144,7 +149,7 @@ body,
 }
 
 .menu {
-    background: aliceblue;
+    background: #3b6ec0;
     width: calc(100% - 120px);
     height: 100%;
     padding: 2em 1em;
@@ -191,7 +196,7 @@ body,
     height: 100%;
     top: 0;
     right: 0;
-    fill: aliceblue;
+    fill: #3b6ec0;
     z-index: 1000;
 }
 
@@ -214,6 +219,10 @@ body,
     transition: opacity 0.3s;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
+}
+
+.title{
+
 }
 
 .title_my_event{
@@ -249,7 +258,7 @@ body,
     height: 329px;
     min-width: 100%;
     text-align: center;
-    margin-top: 1%;
+    margin-bottom: 3%;
     border: 2px solid forestgreen;
 
 }

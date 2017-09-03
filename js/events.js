@@ -1,10 +1,8 @@
-$(document).ready(function(){
-    $("#all-events").hide();
-});
 
 
 $(".show-events").click(function(){
     $("#all-events").show();
+    $("#all-events").css('display','inline-block');
 });
 
 // se clicco fuori dalla lista degli eventi questa mi si nasconde
@@ -15,5 +13,3 @@ $(document).mouseup(function(e) {
         container.hide();
     }
 });
-
-var bool = false;
