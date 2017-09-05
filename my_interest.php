@@ -48,14 +48,14 @@ $schedule = $my_eventsANDsuggested[$indice_1][$indice_2]->item->orario;
 $schedule = str_replace("'", " ", $schedule);
 //echo $schedule;
 $affinity = $my_eventsANDsuggested[$indice_1][$indice_2]->liking;
-//echo $sffinity;
+//var_dump($affinity);
 
 $query = "SELECT * FROM suggested_events WHERE id_evento='$cod' AND id_facebook='$id_facebook'";
 $res = $db->query($query);
 if ($db->errno != 0) { echo "Impossibile caricare gli eventi"; exit(); }
 
 if($res->num_rows == 0){
-    $query = "INSERT INTO suggested_events(id_evento, id_facebook, nome_evento, testo_ita, data_evento, orario, affinità) VALUES ('$cod', '$id_facebook','$name','$text','$date','$schedule','$affinity')";
+    $query = "INSERT INTO suggested_events(id_evento, id_facebook, nome_evento, testo_ita, data_evento, orario, affinity) VALUES ('$cod', '$id_facebook','$name','$text','$date','$schedule','$affinity')";
     $db->query($query);
 
     if ($db->errno != 0) { echo "Impossibile registrare il nuovo evento"; exit(); }

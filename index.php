@@ -212,8 +212,7 @@ $today = new DateTime("now");
                     </div>
 
                     <div class="postEvent" id="post<?php echo $i ?>">
-                        <?php echo count($eventiPuttanaio)
-                        ;?>
+                        <?php echo count($eventiPuttanaio)                        ;?>
                     </div>
 
                 </div>

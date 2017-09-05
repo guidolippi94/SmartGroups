@@ -1,5 +1,3 @@
-var lung = document.getElementById('lunghezza').textContent;
-
 
 for (j = 1; j < 12; j++) {
     $('#post' + j).click(function (w) {
@@ -47,27 +45,27 @@ function update_my_interest(num1, num2, z){
             console.log(result);
             result = JSON.parse(result);
             var len =result['length'];
-            var maxL = Math.max(lung,len);
+            //var maxL = Math.max(lung,len);
             console.log(result['length']);
             //console.log(result[0][0]);
             var j = 1;
             var bools = false;
-            for(i=0;i<maxL; i++) {
-                console.log(maxL);
+            for(i=0;i<len; i++) {
+                console.log(len);
                 if ((result[i] !== undefined)) {
-                    if(lung > i) {
-                        console.log("ok");
-                        if(bools === false){
-                            $('.all-events').nextAll('div').remove();   //rimuove tutto (almeno spero)
-                            $('.all-events').remove();
-                            bools = true;
-                        }
-                        $('#all-events').append('<div id="all'+i+'" class="all-events"></div>');
-                        $('#all'+i).append('<div><span>'+result[i][2]+'</span></div>');
-                        $('#all'+i).append('<div><span>'+result[i][4]+'</span></div>');
-                        $('#all'+i).append('<div><span>'+result[i][5]+'</span></div>');
-                        $('#all'+i).append('<div><span>'+result[i][3]+'</span></div>');
+
+                    console.log("ok");
+                    if(bools === false){
+                        $('.all-events').nextAll('div').remove();   //rimuove tutto (almeno spero)
+                        $('.all-events').remove();
+                        bools = true;
                     }
+                    $('#all-events').append('<div id="all'+i+'" class="all-events"></div>');
+                    $('#all'+i).append('<div><span>'+result[i][2]+'</span></div>');
+                    $('#all'+i).append('<div><span>'+result[i][4]+'</span></div>');
+                    $('#all'+i).append('<div><span>'+result[i][5]+'</span></div>');
+                    $('#all'+i).append('<div><span>'+result[i][3]+'</span></div>');
+
 
                 }
             }
