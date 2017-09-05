@@ -27,6 +27,7 @@ include ('index_include/neaby_events.php');
 include ('index_include/our_category.php');
 include ('index_include/event_dispatcher.php');
 include ('index_include/my_interest_included.php');
+include ('index_include/select _sug_events.php');
 $today = new DateTime("now");
 ?>
 
@@ -56,6 +57,8 @@ $today = new DateTime("now");
     <![endif]-->
 </head>
 <body>
+
+<div id="lunghezza" style="display: none"><?php echo count($sugg)?></div>
 <a href="index_test.php"> test </a>
 <div class="container">
     <!-- dovrebbe venire fuori quello laterale -->
@@ -132,9 +135,9 @@ $today = new DateTime("now");
 
             $i = 0;
             $z=0;
-            $array_session = array();
             unset($_SESSION['suggested_events']);
             foreach ($tmp as $item) {
+
 
                 $my_data = new DateTime($item[7]);
                 $my_lat = $item[5];
@@ -151,7 +154,8 @@ $today = new DateTime("now");
                 //var_dump($near_event);
                 $eventiPuttanaio = suggestNearAndNowEvent($near_event, $orderedCategories, $id_facebook, $db);
                 //var_dump($eventiPuttanaio);
-                $array_session[$i]= $eventiPuttanaio;
+                //$array_session[$i]= $eventiPuttanaio;
+                //var_dump($array_session);
                 //var_dump(count($eventiPuttanaio));
                     ?>
               <div class="scrollx">
@@ -178,6 +182,8 @@ $today = new DateTime("now");
 
                      <?php for($j=0;$j<count($eventiPuttanaio);$j++){
                          $text_button = able_disable($eventiPuttanaio[$j],$db,$id_facebook);
+
+
                          ?>
 
                      <div class="popup" style="display: none">
@@ -185,7 +191,7 @@ $today = new DateTime("now");
                              <i class= "fa fa-angle-right right_"></i>
                              <i class="fa fa-angle-left left_"></i>
                              <img class="pic_icon">
-                             <button class="interest" id="button<?php echo $z?>" onclick="update_my_interest(<?php echo $i?>,<?php echo $j?>,<?php echo $z?>)"><?php echo $text_button?></button>
+                             <button class="interest" id="button<?php echo $z?>" onclick="update_my_interest(<?php echo $i?>,<?php echo $j?>,<?php echo $z;?>)"><?php echo $text_button?></button>
                          </div>
                          <div class="middle">
                              <p><?php echo $eventiPuttanaio[$j]->item->titolo_ita; ?></p>
@@ -196,7 +202,7 @@ $today = new DateTime("now");
                          </div>
                      </div>
                      <?php $z++;}
-                     $_SESSION['suggested_events'][$i] = $array_session;
+                     $_SESSION['suggested_events'][$i] = $eventiPuttanaio;
                      $i ++;
                      ?>
 
@@ -206,25 +212,33 @@ $today = new DateTime("now");
                     </div>
 
                     <div class="postEvent" id="post<?php echo $i ?>">
+                        <?php echo count($eventiPuttanaio)
+                        ;?>
                     </div>
 
                 </div>
             </div>
-        <?php }} ?>
+        <?php }} $y=1?>
 
         </div>
     </div>
 </div><!-- /container -->
 
+
 <div id="all-events" style="display: none">
     <span> All Events </span>
+    <?php foreach ($sugg as $numb){
+
+    ?>
     <div class="all-events">
-            <div><span style="color: darkred"> </br></span></div>
-            <div><span></br></span></div>
-            <div><span></br></span></div>
-            <div><span></br></span></div>
+            <div><span id="spanne<?php echo $y; $y++;?>" style="color: darkred"> <?php echo $numb[2]?></br></span></div>
+            <div><span id="spanne<?php echo $y; $y++;?>"><?php echo $numb[4]?></br></span></div>
+            <div><span id="spanne<?php echo $y; $y++;?>"><?php echo $numb[5]?></br></span></div>
+            <div><span id="spanne<?php echo $y; $y++;?>"><?php echo $numb[3]?></br></span></div>
             <div id="last"><span></br></span></div>
     </div>
+    <?php }?>
+
 </div>
 
 

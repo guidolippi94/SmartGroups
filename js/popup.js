@@ -1,29 +1,11 @@
+var lung = document.getElementById('lunghezza').textContent;
 
-
-function reqListener () {
-    console.log(this.responseText);
-}
-
-var oReq = new XMLHttpRequest(); //New request object
-oReq.onload = function() {
-    //This is where you handle what to do with the response.
-    //The actual data is found on this.responseText
-    alert(oReq.responseText);
-};
-oReq.open("get", "../cazzo.php", true);
-//                               ^ Don't block the rest of the execution.
-//                                 Don't wait until the request finishes to
-//                                 continue.
-
-oReq.send();
 
 for (j = 1; j < 12; j++) {
     $('#post' + j).click(function (w) {
         console.log(w['handleObj']['guid']);
         l = w['handleObj']['guid'];
-        z = w['handleObj']['guid'] + 1;
-        $('#sug_event' + l + ' div:nth-child(' + z + ')').css('display', 'inline-block');
-        console.log(z);
+        $('#sug_event' + l + ' div:nth-child(2)').css('display', 'inline-block');
     });
 }
 
@@ -63,8 +45,35 @@ function update_my_interest(num1, num2, z){
         },
         success: function (result) {
             console.log(result);
-            console.log(result[0][0]);
+            result = JSON.parse(result);
+            var len =result['length'];
+            var maxL = Math.max(lung,len);
+            console.log(result['length']);
+            //console.log(result[0][0]);
+            var j = 1;
+            var bools = false;
+            for(i=0;i<maxL; i++) {
+                console.log(maxL);
+                if ((result[i] !== undefined)) {
+                    if(lung > i) {
+                        console.log("ok");
+                        if(bools === false){
+                            $('.all-events').nextAll('div').remove();   //rimuove tutto (almeno spero)
+                            $('.all-events').remove();
+                            bools = true;
+                        }
+                        $('#all-events').append('<div id="all'+i+'" class="all-events"></div>');
+                        $('#all'+i).append('<div><span>'+result[i][2]+'</span></div>');
+                        $('#all'+i).append('<div><span>'+result[i][4]+'</span></div>');
+                        $('#all'+i).append('<div><span>'+result[i][5]+'</span></div>');
+                        $('#all'+i).append('<div><span>'+result[i][3]+'</span></div>');
+                    }
 
+                }
+            }
+        },
+        error: function(){
+            alert("Non c'è connessione. Riprovare tra poco.")
         }
     })
 }

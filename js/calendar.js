@@ -167,8 +167,9 @@ function numberOfDays() {
         }
     }
 }
-
+/*
 
 function isEmpty( el ){
     return !$.trim(el.html())
 }
+*/
